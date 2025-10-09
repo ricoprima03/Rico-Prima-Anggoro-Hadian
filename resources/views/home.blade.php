@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KitaBersama - Donasi Online</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
@@ -53,52 +56,23 @@
     <section class="py-16 bg-white">
         <div class="max-w-5xl mx-auto px-6 text-center">
             <h2 class="text-2xl font-semibold mb-10 text-gray-800">Mau berbuat baik apa hari ini?</h2>
-
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
-
                 <div class="flex flex-col items-center">
                     <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" class="w-16 h-16 mb-2" alt="Donasi">
                     <p class="font-medium">Donasi</p>
                 </div>
-
                 <div class="flex flex-col items-center">
                     <img src="https://cdn-icons-png.flaticon.com/512/1041/1041080.png" class="w-16 h-16 mb-2" alt="Zakat">
                     <p class="font-medium">Zakat</p>
                 </div>
-
                 <div class="flex flex-col items-center">
                     <img src="https://cdn-icons-png.flaticon.com/512/1642/1642190.png" class="w-16 h-16 mb-2" alt="Galang Dana">
                     <p class="font-medium">Galang Dana</p>
                 </div>
-
                 <div class="flex flex-col items-center">
                     <img src="https://cdn-icons-png.flaticon.com/512/3039/3039433.png" class="w-16 h-16 mb-2" alt="Donasi Otomatis">
                     <p class="font-medium text-center">Donasi Otomatis</p>
                 </div>
-
-                <div class="flex flex-col items-center relative">
-                    <span class="absolute -top-2 right-4 text-xs bg-pink-500 text-white px-2 py-0.5 rounded-full">BARU</span>
-                    <img src="https://cdn-icons-png.flaticon.com/512/3621/3621715.png" class="w-16 h-16 mb-2" alt="Experience">
-                    <p class="font-medium text-center">Kitabisa Experience</p>
-                </div>
-
-                <div class="flex flex-col items-center relative">
-                    <span class="absolute -top-2 right-4 text-xs bg-pink-500 text-white px-2 py-0.5 rounded-full">BARU</span>
-                    <img src="https://cdn-icons-png.flaticon.com/512/3094/3094899.png" class="w-16 h-16 mb-2" alt="Kolaborasi CSR">
-                    <p class="font-medium text-center">Kolaborasi CSR</p>
-                </div>
-
-                <div class="flex flex-col items-center relative">
-                    <span class="absolute -top-2 right-4 text-xs bg-pink-500 text-white px-2 py-0.5 rounded-full">BARU</span>
-                    <img src="https://cdn-icons-png.flaticon.com/512/3106/3106909.png" class="w-16 h-16 mb-2" alt="Asuransi SalingJaga">
-                    <p class="font-medium text-center">Asuransi SalingJaga</p>
-                </div>
-
-                <div class="flex flex-col items-center">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1642/1642154.png" class="w-16 h-16 mb-2" alt="Dana Abadi">
-                    <p class="font-medium text-center">Dana Abadi</p>
-                </div>
-
             </div>
         </div>
     </section>
@@ -119,7 +93,6 @@
                         <a href="#" class="text-blue-600 font-semibold hover:underline">Donasi Sekarang</a>
                     </div>
                 </div>
-
                 <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
                     <img src="https://images.unsplash.com/photo-1576765607924-3f7e3c0c7d5b" class="rounded-t-xl w-full h-48 object-cover">
                     <div class="p-4">
@@ -131,7 +104,6 @@
                         <a href="#" class="text-blue-600 font-semibold hover:underline">Donasi Sekarang</a>
                     </div>
                 </div>
-
                 <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
                     <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="rounded-t-xl w-full h-48 object-cover">
                     <div class="p-4">
@@ -147,25 +119,120 @@
         </div>
     </section>
 
-    <!-- Spesial Buat Kamu -->
+    <!-- Tambahan dari file kedua -->
+    <section class="py-16 bg-white text-center">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Berbuat Baik Dimulai dari Sekarang</h2>
+            <p class="text-gray-600 mb-8">Jadilah bagian dari perubahan besar melalui langkah kecilmu hari ini.</p>
+            <img src="https://img.freepik.com/free-vector/charity-donation-concept-illustration_114360-1775.jpg" alt="Berbuat Baik" class="mx-auto w-80">
+        </div>
+    </section>
+
+    <section class="py-16 bg-blue-50 text-center">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Doa-Doa dari Para Donatur</h2>
+            <p class="text-gray-600 mb-8">Setiap donasi membawa harapan dan doa untuk mereka yang membutuhkan.</p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <p>"Semoga bantuan ini bisa meringankan beban saudara-saudara kita."</p>
+                    <p class="mt-2 text-sm text-gray-500">– Ahmad, Jakarta</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <p>"Bersama kita bisa mewujudkan banyak kebaikan."</p>
+                    <p class="mt-2 text-sm text-gray-500">– Rina, Bandung</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <p>"Teruslah berbagi tanpa henti."</p>
+                    <p class="mt-2 text-sm text-gray-500">– Dwi, Surabaya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white text-center">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Tentang KitaBersama</h2>
+            <p class="text-gray-600 mb-8">KitaBersama adalah platform donasi online yang memudahkan siapa pun untuk membantu sesama, dengan transparansi dan kepercayaan penuh.</p>
+            <img src="https://img.freepik.com/free-vector/people-holding-hands-together_52683-29121.jpg" alt="Tentang Kita" class="mx-auto w-80">
+        </div>
+    </section>
+
+    <section class="py-16 bg-blue-100 text-center">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Saling Jaga, Saling Bantu</h2>
+            <p class="text-gray-600 mb-8">Karena kebaikan yang kecil, jika dilakukan bersama-sama, bisa membawa dampak yang besar bagi banyak orang.</p>
+            <img src="https://img.freepik.com/free-vector/group-people-holding-hands-together_23-2148345565.jpg" alt="Saling Jaga" class="mx-auto w-80">
+        </div>
+    </section>
+
+    <!-- Swiper Slider -->
     <section class="py-10 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="text-xl font-semibold mb-6 text-gray-800">Spesial Buat Kamu</h2>
-            <div class="bg-blue-100 rounded-xl overflow-hidden flex flex-col md:flex-row">
-                <div class="flex-1 p-8">
-                    <h3 class="text-sm uppercase font-semibold text-blue-600 mb-2">Galang Dana Pilihan</h3>
-                    <h2 class="text-2xl font-bold text-gray-800 mb-3">
-                        Satu Donasimu = Selamatkan 1 Anak
-                    </h2>
-                    <p class="text-gray-600 mb-6">Bantu pasien anak dhuafa berobat lawan sakit kronis!</p>
-                    <a href="#" class="bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 font-semibold">
-                        Antar Kesembuhan
-                    </a>
+
+            <div class="swiper mySwiper rounded-xl overflow-hidden">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="bg-blue-100 flex flex-col md:flex-row">
+                            <div class="flex-1 p-8">
+                                <h3 class="text-sm uppercase font-semibold text-blue-600 mb-2">Galang Dana Pilihan</h3>
+                                <h2 class="text-2xl font-bold text-gray-800 mb-3">
+                                    Satu Donasimu = Selamatkan 1 Anak
+                                </h2>
+                                <p class="text-gray-600 mb-6">Bantu pasien anak dhuafa berobat lawan sakit kronis!</p>
+                                <a href="#" class="bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 font-semibold">
+                                    Antar Kesembuhan
+                                </a>
+                            </div>
+                            <div class="flex-1">
+                                <img src="https://img.freepik.com/free-photo/doctor-checking-child-s-temperature-with-thermometer_23-2148769443.jpg" 
+                                     alt="Anak Sakit" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="bg-pink-100 flex flex-col md:flex-row">
+                            <div class="flex-1 p-8">
+                                <h3 class="text-sm uppercase font-semibold text-pink-600 mb-2">Program Sosial</h3>
+                                <h2 class="text-2xl font-bold text-gray-800 mb-3">
+                                    Donasi untuk Pendidikan Anak Indonesia
+                                </h2>
+                                <p class="text-gray-600 mb-6">Bantu mereka agar tetap bisa sekolah dan meraih cita-cita.</p>
+                                <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 font-semibold">
+                                    Donasi Sekarang
+                                </a>
+                            </div>
+                            <div class="flex-1">
+                                <img src="https://img.freepik.com/free-photo/group-kids-school-uniform-classroom_1303-27645.jpg" 
+                                     alt="Pendidikan" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="bg-green-100 flex flex-col md:flex-row">
+                            <div class="flex-1 p-8">
+                                <h3 class="text-sm uppercase font-semibold text-green-600 mb-2">Kesehatan</h3>
+                                <h2 class="text-2xl font-bold text-gray-800 mb-3">
+                                    Bersama Lawan Kelaparan
+                                </h2>
+                                <p class="text-gray-600 mb-6">Setiap donasi akan membantu menyediakan makanan bergizi untuk mereka yang membutuhkan.</p>
+                                <a href="#" class="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 font-semibold">
+                                    Donasi Sekarang
+                                </a>
+                            </div>
+                            <div class="flex-1">
+                                <img src="https://img.freepik.com/free-photo/volunteers-giving-food-poor-people_1150-24968.jpg" 
+                                     alt="Bantuan Makanan" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex-1">
-                    <img src="https://img.freepik.com/free-photo/doctor-checking-child-s-temperature-with-thermometer_23-2148769443.jpg" 
-                         alt="Anak Sakit" class="w-full h-full object-cover">
-                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -184,9 +251,8 @@
                         <a href="#" class="text-blue-600 hover:underline font-medium">Donasi Otomatis</a>
                     </div>
                 </div>
-
                 <div class="bg-white shadow rounded-xl overflow-hidden">
-                    <img src="https://img.freepik.com/free-photo/people-donating-blood-hospital_23-2148758775.jpg" class="w-full h-44 object-cover">
+                    <img src="https://img.free-photo/people-donating-blood-hospital_23-2148758775.jpg" class="w-full h-44 object-cover">
                     <div class="p-4">
                         <p class="text-sm text-blue-600 font-semibold mb-1">Yayasan Peduli</p>
                         <h3 class="font-semibold mb-2">Berbagi Pendampingan Psikologis untuk Warga</h3>
@@ -194,7 +260,6 @@
                         <a href="#" class="text-blue-600 hover:underline font-medium">Donasi Sekarang</a>
                     </div>
                 </div>
-
                 <div class="bg-white shadow rounded-xl overflow-hidden">
                     <img src="https://img.freepik.com/free-photo/happy-african-kid-smiling-hugging-her-mother-home_181624-56312.jpg" class="w-full h-44 object-cover">
                     <div class="p-4">
@@ -209,41 +274,49 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-300 py-10">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-6">
+    <footer class="bg-gray-900 text-gray-300 py-10">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
             <div>
-                <h4 class="font-bold text-white mb-3">KitaBersama</h4>
-                <p>Platform galang dana online untuk bantu sesama dan menyebarkan kebaikan.</p>
+                <h3 class="text-lg font-semibold mb-3 text-white">KitaBersama</h3>
+                <p>Platform donasi digital terpercaya untuk membantu sesama dengan mudah dan aman.</p>
             </div>
             <div>
-                <h4 class="font-bold text-white mb-3">Tentang</h4>
+                <h3 class="text-lg font-semibold mb-3 text-white">Navigasi</h3>
                 <ul>
-                    <li><a href="#" class="hover:underline">Tentang Kami</a></li>
-                    <li><a href="#" class="hover:underline">Karier</a></li>
-                    <li><a href="#" class="hover:underline">Kontak</a></li>
+                    <li><a href="#" class="hover:text-white">Tentang Kami</a></li>
+                    <li><a href="#" class="hover:text-white">Cara Donasi</a></li>
+                    <li><a href="#" class="hover:text-white">Kebijakan Privasi</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="font-bold text-white mb-3">Bantuan</h4>
-                <ul>
-                    <li><a href="#" class="hover:underline">FAQ</a></li>
-                    <li><a href="#" class="hover:underline">Syarat & Ketentuan</a></li>
-                    <li><a href="#" class="hover:underline">Kebijakan Privasi</a></li>
-                </ul>
+                <h3 class="text-lg font-semibold mb-3 text-white">Kontak</h3>
+                <p>Email: support@kitabersama.org</p>
+                <p>Telp: +62 812-3456-7890</p>
             </div>
             <div>
-                <h4 class="font-bold text-white mb-3">Ikuti Kami</h4>
-                <div class="flex space-x-3">
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="w-6" alt="fb"></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" class="w-6" alt="ig"></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" class="w-6" alt="tw"></a>
+                <h3 class="text-lg font-semibold mb-3 text-white">Ikuti Kami</h3>
+                <div class="flex space-x-4">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="w-6 h-6" alt="Facebook"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" class="w-6 h-6" alt="Instagram"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" class="w-6 h-6" alt="Twitter"></a>
                 </div>
             </div>
         </div>
-        <div class="text-center mt-10 text-sm text-gray-500">
-            © 2025 KitaBersama. Semua Hak Dilindungi.
+        <div class="text-center mt-10 text-gray-500 text-sm">
+            &copy; 2025 KitaBersama. Semua Hak Dilindungi.
         </div>
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            loop: true,
+            autoplay: { delay: 4000 },
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+        });
+    </script>
 
 </body>
 </html>
