@@ -19,7 +19,7 @@
         <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <img src="https://cdn-icons-png.flaticon.com/512/2099/2099058.png" class="w-8 h-8" alt="logo">
-                <span class="text-xl font-bold text-blue-600">KitaBersama</span>
+                <span class="text-xl font-bold text-blue-600">Lazismu DIY</span>
             </div>
             <div class="hidden md:flex space-x-6">
                 <a href="#" class="hover:text-blue-600">Galang Dana</a>
@@ -317,7 +317,7 @@
             &copy; 2025 KitaBersama. Semua Hak Dilindungi.
         </div>
     </footer>
-    
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
