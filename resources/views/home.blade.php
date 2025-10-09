@@ -8,6 +8,9 @@
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
@@ -52,33 +55,41 @@
         </div>
     </section>
 
-    <!-- Mau Berbuat Baik Apa Hari Ini -->
-    <section class="py-16 bg-white">
-        <div class="max-w-5xl mx-auto px-6 text-center">
-            <h2 class="text-2xl font-semibold mb-10 text-gray-800">Mau berbuat baik apa hari ini?</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
-                <div class="flex flex-col items-center">
-                    <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" class="w-16 h-16 mb-2" alt="Donasi">
+    <!-- Mau Berbuat Baik Apa Hari Ini (Lucide Icon Version) -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-2xl font-bold mb-8 text-center text-gray-800">Mau berbuat baik apa hari ini?</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 text-center">
+                
+                <div class="flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:shadow-md cursor-pointer transform hover:-translate-y-1 transition">
+                    <i data-lucide="heart-handshake" class="w-10 h-10 text-blue-600 mb-2"></i>
                     <p class="font-medium">Donasi</p>
                 </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1041/1041080.png" class="w-16 h-16 mb-2" alt="Zakat">
+
+                <div class="flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:shadow-md cursor-pointer transform hover:-translate-y-1 transition">
+                    <i data-lucide="cow" class="w-10 h-10 text-blue-600 mb-2"></i>
+                    <p class="font-medium">Qurban</p>
+                </div>
+
+                <div class="flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:shadow-md cursor-pointer transform hover:-translate-y-1 transition">
+                    <i data-lucide="coins" class="w-10 h-10 text-blue-600 mb-2"></i>
                     <p class="font-medium">Zakat</p>
                 </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1642/1642190.png" class="w-16 h-16 mb-2" alt="Galang Dana">
+
+                <div class="flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:shadow-md cursor-pointer transform hover:-translate-y-1 transition">
+                    <i data-lucide="users" class="w-10 h-10 text-blue-600 mb-2"></i>
                     <p class="font-medium">Galang Dana</p>
                 </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3039/3039433.png" class="w-16 h-16 mb-2" alt="Donasi Otomatis">
-                    <p class="font-medium text-center">Donasi Otomatis</p>
+
+                <div class="flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:shadow-md cursor-pointer transform hover:-translate-y-1 transition">
+                    <i data-lucide="repeat" class="w-10 h-10 text-blue-600 mb-2"></i>
+                    <p class="font-medium">Donasi Otomatis</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Campaign Pilihan -->
-    <section class="py-16 bg-gray-50">
+    <!-- Campaign Pilihan --><section class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="text-2xl font-semibold mb-6 text-gray-800">Campaign Pilihan</h2>
             <div class="grid md:grid-cols-3 gap-6">
@@ -306,7 +317,7 @@
             &copy; 2025 KitaBersama. Semua Hak Dilindungi.
         </div>
     </footer>
-
+    
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -316,6 +327,7 @@
             pagination: { el: '.swiper-pagination', clickable: true },
             navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
         });
+        lucide.createIcons();
     </script>
 
 </body>
