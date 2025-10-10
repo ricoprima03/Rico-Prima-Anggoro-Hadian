@@ -66,10 +66,10 @@
                     <p class="font-medium">Donasi</p>
                 </div>
 
-                <div class="flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:shadow-md cursor-pointer transform hover:-translate-y-1 transition">
+                <a href="{{ route('qurban') }}" class="flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:shadow-md cursor-pointer transform hover:-translate-y-1 transition">
                     <i data-lucide="cow" class="w-10 h-10 text-blue-600 mb-2"></i>
                     <p class="font-medium">Qurban</p>
-                </div>
+                    </a>
 
                 <div class="flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:shadow-md cursor-pointer transform hover:-translate-y-1 transition">
                     <i data-lucide="coins" class="w-10 h-10 text-blue-600 mb-2"></i>
