@@ -1,334 +1,648 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KitaBersama - Donasi Online</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<!-- Import Jakarta Sans font -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body class="bg-gray-50 text-gray-800">
+<!-- Header Lazismu -->
+<header style="background: #fff; border-bottom: 1px solid #eee; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif;">
+	<div style="display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; height: 60px;">
+		<!-- Logo -->
+		<div style="display: flex; align-items: center;">
+			<img src="/logo-lazismu.png" alt="Lazismu" style="height: 60px;">
+		</div>
+		<!-- Navigation -->
+		<nav style="display: flex; align-items: center; gap: 18px; font-family: 'Plus Jakarta Sans', sans-serif;">
+			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">HOME</a>
+			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">TENTANG KAMI</a>
+			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">PROGRAM</a>
+			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">LAYANAN</a>
+			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">BERITA</a>
+			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">BLOG</a>
+			<!-- Tombol Oranye -->
+			<button style="background: #ff9900; border: none; width: 40px; height: 40px; border-radius: 2px; margin-left: 10px; cursor: pointer;"></button>
+		</nav>
+	</div>
+</header>
 
-    <!-- Navbar -->
-    <nav class="bg-white shadow fixed w-full z-50">
-        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <img src="https://cdn-icons-png.flaticon.com/512/2099/2099058.png" class="w-8 h-8" alt="logo">
-                <span class="text-xl font-bold text-blue-600">Lazismu DIY</span>
+<!-- Banner Qurban -->
+<div style="width: 100%; display: flex; justify-content: center; margin-top: 24px;">
+	<img src="/qurban-banner.jpeg" alt="Qurban Banner" style="max-width: 1000px; width: 100%; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);">
+</div>
+
+<!-- Info Rendangmu -->
+<div style="
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 32px; 
+    background: #ffb347; 
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08); 
+    padding: 40px 5vw 40px 5vw;
+">
+
+    <div style="
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        max-width: 1000px; 
+        gap: 32px;
+        flex-wrap: wrap;
+        width: 100%;
+    ">
+
+        <!-- Gambar di kiri -->
+        <img src="/rendangmu-info.png" 
+            alt="Info Rendangmu" 
+            style="max-width: 400px; width: 100%; flex: 1 1 300px;">
+
+        <!-- Teks di kanan -->
+        <div style="max-width: 600px; width: 100%; flex: 1 1 300px; text-align: left;">
+            <h2 style="
+                font-size: 2rem; 
+                font-weight: bold; 
+                margin-bottom: 16px; 
+                color: #222; 
+                font-family: 'Plus Jakarta Sans', sans-serif;
+            ">
+                Apa itu Rendangmu?
+            </h2>
+
+            <p style="
+                font-size: 1.1rem; 
+                color: #222; 
+                font-family: 'Plus Jakarta Sans', sans-serif; 
+                line-height: 1.7; 
+                margin-bottom: 0;
+            ">
+                Lazismu memfasilitasi sahabat untuk bisa berqurban hebat dengan mudah, pesan qurbannya via online, 
+                kami uruskan dari mulai penyembelihan hingga pendistribusian qurbannya. Dengan Rendangmu, daging 
+                qurban yang telah disembelih secara syariah kemudian diolah menjadi kornet yang tahan hingga 3 tahun 
+                atau rendang dan kari yang tahan hingga 2 tahun. Pendistribusiannya bisa sampai pelosok dan menjadi 
+                persediaan pangan untuk daerah bencana.
+            </p>
+
+            <a href="#" style="
+                display: inline-block; 
+                margin-top: 28px; 
+                padding: 14px 36px; 
+                background: #ff9900; 
+                color: #fff; 
+                font-size: 1.1rem; 
+                font-weight: bold; 
+                border: none; 
+                border-radius: 8px; 
+                box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
+                text-decoration: none; 
+                font-family: 'Plus Jakarta Sans', sans-serif; 
+                transition: background 0.2s;
+            ">
+                Donasi Sekarang
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Qurban Syariah -->
+<div style="width: 100%; margin-top: 0;">
+    <div style="
+        background: #fff475; 
+        border-radius: 0; 
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08); 
+        padding: 40px 5vw 32px 5vw; 
+        width: 100%; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        gap: 32px;
+        flex-wrap: wrap;
+    ">
+        
+        <!-- Gambar di kiri -->
+        <img src="/qurban-syariah-info.png" 
+            alt="Qurban Syariah" 
+            style="max-width: 400px; width: 100%; flex: 1 1 300px;">
+
+        <!-- Teks di kanan -->
+        <div style="max-width: 700px; width: 100%; flex: 1 1 300px;">
+            <h2 style="
+                font-size: 2rem; 
+                font-weight: bold; 
+                margin-bottom: 16px; 
+                color: #222; 
+                font-family: 'Plus Jakarta Sans', sans-serif;
+            ">
+                Qurban Sesuai Syariah dan Manfaatnya Lebih Luas
+            </h2>
+
+            <p style="
+                font-size: 1.1rem; 
+                color: #222; 
+                font-family: 'Plus Jakarta Sans', sans-serif; 
+                line-height: 1.7; 
+                margin-bottom: 0;
+            ">
+                Rendangmu Luaskan manfaat Qurban Anda Dengan Rendangmu, daging qurban dioptimalisasi dengan diolah 
+                menjadi kornet atau rendang sehingga pendistribusiannya lebih luas. Sehingga daging qurban tidak 
+                hanya dirasakan oleh warga kota saja. Rendangmu distribusikan untuk masyarakat yang membutuhkan di 
+                berbagai pelosok Indonesia, hingga ke wilayah rawan pangan maupun terkena bencana.
+            </p>
+
+            <a href="#" style="
+                display: inline-block; 
+                margin-top: 28px; 
+                padding: 14px 36px; 
+                background: #ff9900; 
+                color: #fff; 
+                font-size: 1.1rem; 
+                font-weight: bold; 
+                border: none; 
+                border-radius: 8px; 
+                box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
+                text-decoration: none; 
+                font-family: 'Plus Jakarta Sans', sans-serif; 
+                transition: background 0.2s;
+            ">
+                Donasi Sekarang
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<!-- Video   -->
+<div style="width: 100%; display: flex; justify-content: center; margin-top: 24px;">
+	<img src="/qurban-banner.jpeg" alt="Qurban Banner" style="max-width: 1000px; width: 100%; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);">
+</div>
+
+<!-- ==== SECTION: Bagaimana Rendangmu di Proses ==== -->
+<style>
+    .timeline-section {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .timeline-title {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #d88b19;
+        margin-bottom: 40px;
+    }
+
+    .timeline-container {
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+
+    /* Garis vertikal */
+    .timeline-line {
+        width: 2px;
+        background: #ff9900;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 150px;
+        margin-left: -1px;
+    }
+
+    .timeline-left {
+        width: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+
+    .timeline-left .step {
+        font-size: 1rem;
+        margin-bottom: 70px;
+        color: #555;
+        position: relative;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    /* Titik */
+    .timeline-left .step::after {
+        content: "";
+        width: 12px;
+        height: 12px;
+        background: #ff9900;
+        border-radius: 50%;
+        position: absolute;
+        right: -7px;
+        top: 5px;
+    }
+
+    .timeline-right {
+        flex: 1;
+        padding-left: 80px;
+    }
+
+    /* Card */
+    .timeline-card {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .timeline-card img {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+    }
+
+    .timeline-card .text h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 6px;
+        color: #222;
+    }
+
+    .timeline-card .text p {
+        font-size: 1rem;
+        color: #444;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width: 768px) {
+        .timeline-container {
+            flex-direction: column;
+        }
+
+        .timeline-left {
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .timeline-left .step {
+            width: 100%;
+            text-align: center;
+            padding-right: 0;
+        }
+
+        .timeline-left .step::after {
+            display: none;
+        }
+
+        .timeline-line {
+            display: none;
+        }
+
+        .timeline-right {
+            padding-left: 0;
+        }
+
+        .timeline-card {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+
+<div class="timeline-section">
+    <h2 class="timeline-title">Bagaimana Rendangmu di Proses?</h2>
+
+    <div class="timeline-container">
+
+        <div class="timeline-line"></div>
+
+        <!-- LEFT LABELS -->
+        <div class="timeline-left">
+            <div class="step">Narahlbung</div>
+            <div class="step">Rekapitulasi</div>
+            <div class="step">Pengadaan</div>
+            <div class="step">Pemotongan</div>
+            <div class="step">Pengolahan</div>
+            <div class="step">Distribusi</div>
+            <div class="step">Siap Santap</div>
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="timeline-right">
+
+            <div class="timeline-card">
+                <img src="/icon-callcenter.png" alt="">
+                <div class="text">
+                    <h3>Call Center</h3>
+                    <p>Hubungi narahubung melalui 0854-1700-2970</p>
+                </div>
             </div>
-            <div class="hidden md:flex space-x-6">
-                <a href="#" class="hover:text-blue-600">Galang Dana</a>
-                <a href="#" class="hover:text-blue-600">Zakat</a>
-                <a href="#" class="hover:text-blue-600">Kebaikan</a>
-                <a href="#" class="hover:text-blue-600">Tentang Kami</a>
+
+            <div class="timeline-card">
+                <img src="/icon-rekap.png" alt="">
+                <div class="text">
+                    <h3>Rekapitulasi</h3>
+                    <p>Narahubung akan mencatat jumlah qurban yang akan dilakukan.</p>
+                </div>
             </div>
-            <div class="flex items-center space-x-4">
-                <a href="#" class="text-blue-600 hover:underline">Masuk</a>
-                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Daftar</a>
+
+            <div class="timeline-card">
+                <img src="/icon-cow.png" alt="">
+                <div class="text">
+                    <h3>Pengadaan Hewan Qurban</h3>
+                    <p>Pencarian qurban dilaksanakan oleh peternakan mitra yang dijamin sehat.</p>
+                </div>
+            </div>
+
+            <div class="timeline-card">
+                <img src="/icon-slaughter.png" alt="">
+                <div class="text">
+                    <h3>Pemotongan Melalui RPH</h3>
+                    <p>Pemotongan dilakukan di rumah potong hewan sesuai standar syariah dan kesehatan.</p>
+                </div>
+            </div>
+
+            <div class="timeline-card">
+                <img src="/icon-factory.png" alt="">
+                <div class="text">
+                    <h3>Pengolahan</h3>
+                    <p>Daging diolah menjadi kornet atau rendang dengan masa ketahanan hingga 2 tahun.</p>
+                </div>
+            </div>
+
+            <div class="timeline-card">
+                <img src="/icon-truck.png" alt="">
+                <div class="text">
+                    <h3>Distribusi</h3>
+                    <p>Daging siap didistribusikan ke pelosok dan wilayah terdampak bencana.</p>
+                </div>
+            </div>
+
+            <div class="timeline-card">
+                <img src="/icon-rendang.png" alt="">
+                <div class="text">
+                    <h3>Siap Santap</h3>
+                    <p>Produk Rendangmu siap dikonsumsi kapan saja.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- ==== SECTION: Mengapa Harus Qurban di Rendangmu ==== -->
+<style>
+    .benefit-section {
+        width: 100%;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 20px;
+        text-align: center;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .benefit-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 40px;
+    }
+
+    .benefit-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .benefit-item {
+        width: 180px;
+        text-align: center;
+    }
+
+    .benefit-icon {
+        width: 80px;
+        height: 80px;
+        background: #ff9900;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 16px auto;
+    }
+
+    .benefit-icon img {
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+    }
+
+    .benefit-title-small {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 6px;
+    }
+
+    .benefit-desc {
+        font-size: 0.95rem;
+        color: #444;
+        line-height: 1.4;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+        .benefit-container {
+            justify-content: center;
+        }
+        .benefit-item {
+            width: 45%;
+        }
+    }
+
+    @media(max-width: 480px) {
+        .benefit-item {
+            width: 100%;
+        }
+    }
+</style>
+
+<div class="benefit-section">
+
+    <h2 class="benefit-title">Mengapa Harus Qurban di Rendangmu?</h2>
+
+    <div class="benefit-container">
+
+        <div class="benefit-item">
+            <div class="benefit-icon">
+                <img src="/icon-amanah.png" alt="">
+            </div>
+            <div class="benefit-title-small">AMANAH</div>
+            <div class="benefit-desc">
+                Shohibul qurban akan menerima dokumentasi saat penyembelihan dan penyaluran
             </div>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="pt-24 bg-blue-50">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 py-12">
-            <div class="flex-1 mb-8 md:mb-0">
-                <h1 class="text-4xl font-bold text-gray-800 mb-4 leading-snug">
-                    Bersama, kita bisa bantu mereka yang membutuhkan
-                </h1>
-                <p class="text-gray-600 mb-6">
-                    Mulai donasi atau galang dana untuk membantu sesama dengan mudah dan transparan.
-                </p>
-                <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
-                    Galang Dana Sekarang
-                </a>
+        <div class="benefit-item">
+            <div class="benefit-icon">
+                <img src="/icon-profesional.png" alt="">
             </div>
-            <div class="flex-1">
-                <img src="https://cdn.dribbble.com/users/331579/screenshots/18103145/media/7d1235a761c122ba6a23b6bafc71af80.png" 
-                     alt="Donasi" class="w-full rounded-lg shadow-lg">
+            <div class="benefit-title-small">PROFESIONAL</div>
+            <div class="benefit-desc">
+                Ditangani vendor berkompeten dan bersertifikat
             </div>
         </div>
-    </section>
 
-    <!-- Mau Berbuat Baik Apa Hari Ini (Lucide Icon Version) -->
-    <section class="py-12 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-2xl font-bold mb-8 text-center text-gray-800">Mau berbuat baik apa hari ini?</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 text-center">
-                
-                <div class="flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:shadow-md cursor-pointer transform hover:-translate-y-1 transition">
-                    <i data-lucide="heart-handshake" class="w-10 h-10 text-blue-600 mb-2"></i>
-                    <p class="font-medium">Donasi</p>
-                </div>
-
-                <a href="{{ route('qurban') }}" class="flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:shadow-md cursor-pointer transform hover:-translate-y-1 transition">
-                    <i data-lucide="cow" class="w-10 h-10 text-blue-600 mb-2"></i>
-                    <p class="font-medium">Qurban</p>
-                    </a>
-
-                <div class="flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:shadow-md cursor-pointer transform hover:-translate-y-1 transition">
-                    <i data-lucide="coins" class="w-10 h-10 text-blue-600 mb-2"></i>
-                    <p class="font-medium">Zakat</p>
-                </div>
-
-                <div class="flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:shadow-md cursor-pointer transform hover:-translate-y-1 transition">
-                    <i data-lucide="users" class="w-10 h-10 text-blue-600 mb-2"></i>
-                    <p class="font-medium">Galang Dana</p>
-                </div>
-
-                <div class="flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:shadow-md cursor-pointer transform hover:-translate-y-1 transition">
-                    <i data-lucide="repeat" class="w-10 h-10 text-blue-600 mb-2"></i>
-                    <p class="font-medium">Donasi Otomatis</p>
-                </div>
+        <div class="benefit-item">
+            <div class="benefit-icon">
+                <img src="/icon-higenis.png" alt="">
+            </div>
+            <div class="benefit-title-small">HIGIENIS</div>
+            <div class="benefit-desc">
+                Perijinan RendangMU teregistrasi melalui BPOM RI
             </div>
         </div>
-    </section>
 
-    <!-- Campaign Pilihan --><section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Campaign Pilihan</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
-                    <img src="https://images.unsplash.com/photo-1601572607035-4f03e263ba15" class="rounded-t-xl w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="font-semibold text-lg mb-2">Bantu Korban Banjir di Kalimantan</h3>
-                        <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
-                            <div class="bg-blue-600 h-2 rounded-full" style="width: 70%"></div>
-                        </div>
-                        <p class="text-sm text-gray-600 mb-2">Terkumpul Rp 70.000.000 dari Rp 100.000.000</p>
-                        <a href="#" class="text-blue-600 font-semibold hover:underline">Donasi Sekarang</a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
-                    <img src="https://images.unsplash.com/photo-1576765607924-3f7e3c0c7d5b" class="rounded-t-xl w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="font-semibold text-lg mb-2">Bantu Pendidikan Anak Yatim</h3>
-                        <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
-                            <div class="bg-blue-600 h-2 rounded-full" style="width: 50%"></div>
-                        </div>
-                        <p class="text-sm text-gray-600 mb-2">Terkumpul Rp 25.000.000 dari Rp 50.000.000</p>
-                        <a href="#" class="text-blue-600 font-semibold hover:underline">Donasi Sekarang</a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
-                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="rounded-t-xl w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="font-semibold text-lg mb-2">Bantu Pembangunan Rumah Sakit Gratis</h3>
-                        <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
-                            <div class="bg-blue-600 h-2 rounded-full" style="width: 40%"></div>
-                        </div>
-                        <p class="text-sm text-gray-600 mb-2">Terkumpul Rp 120.000.000 dari Rp 300.000.000</p>
-                        <a href="#" class="text-blue-600 font-semibold hover:underline">Donasi Sekarang</a>
-                    </div>
-                </div>
+        <div class="benefit-item">
+            <div class="benefit-icon">
+                <img src="/icon-tepat.png" alt="">
+            </div>
+            <div class="benefit-title-small">TEPAT SASARAN</div>
+            <div class="benefit-desc">
+                Pendistribusian merata ke beberapa sektor termasuk wilayah tertinggal, terdepan, terluar
             </div>
         </div>
-    </section>
 
-    <!-- Tambahan dari file kedua -->
-    <section class="py-16 bg-white text-center">
-        <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Berbuat Baik Dimulai dari Sekarang</h2>
-            <p class="text-gray-600 mb-8">Jadilah bagian dari perubahan besar melalui langkah kecilmu hari ini.</p>
-            <img src="https://img.freepik.com/free-vector/charity-donation-concept-illustration_114360-1775.jpg" alt="Berbuat Baik" class="mx-auto w-80">
-        </div>
-    </section>
-
-    <section class="py-16 bg-blue-50 text-center">
-        <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Doa-Doa dari Para Donatur</h2>
-            <p class="text-gray-600 mb-8">Setiap donasi membawa harapan dan doa untuk mereka yang membutuhkan.</p>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <p>"Semoga bantuan ini bisa meringankan beban saudara-saudara kita."</p>
-                    <p class="mt-2 text-sm text-gray-500">– Ahmad, Jakarta</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <p>"Bersama kita bisa mewujudkan banyak kebaikan."</p>
-                    <p class="mt-2 text-sm text-gray-500">– Rina, Bandung</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <p>"Teruslah berbagi tanpa henti."</p>
-                    <p class="mt-2 text-sm text-gray-500">– Dwi, Surabaya</p>
-                </div>
+        <div class="benefit-item">
+            <div class="benefit-icon">
+                <img src="/icon-kalender.png" alt="">
+            </div>
+            <div class="benefit-title-small">MANFAAT BERKELANJUTAN</div>
+            <div class="benefit-desc">
+                Selama 5 tahun turut berpartisipasi dalam program kemanusian
             </div>
         </div>
-    </section>
 
-    <section class="py-16 bg-white text-center">
-        <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Tentang KitaBersama</h2>
-            <p class="text-gray-600 mb-8">KitaBersama adalah platform donasi online yang memudahkan siapa pun untuk membantu sesama, dengan transparansi dan kepercayaan penuh.</p>
-            <img src="https://img.freepik.com/free-vector/people-holding-hands-together_52683-29121.jpg" alt="Tentang Kita" class="mx-auto w-80">
-        </div>
-    </section>
+    </div>
 
-    <section class="py-16 bg-blue-100 text-center">
-        <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Saling Jaga, Saling Bantu</h2>
-            <p class="text-gray-600 mb-8">Karena kebaikan yang kecil, jika dilakukan bersama-sama, bisa membawa dampak yang besar bagi banyak orang.</p>
-            <img src="https://img.freepik.com/free-vector/group-people-holding-hands-together_23-2148345565.jpg" alt="Saling Jaga" class="mx-auto w-80">
-        </div>
-    </section>
+</div>
 
-    <!-- Swiper Slider -->
-    <section class="py-10 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-xl font-semibold mb-6 text-gray-800">Spesial Buat Kamu</h2>
+<!-- ==== SECTION: Penyaluran Rendangmu ==== -->
+<style>
+    .distribution-section {
+        width: 100%;
+        text-align: center;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        padding: 40px 20px;
+        background: #ffffff;
+        position: relative;
+    }
 
-            <div class="swiper mySwiper rounded-xl overflow-hidden">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="bg-blue-100 flex flex-col md:flex-row">
-                            <div class="flex-1 p-8">
-                                <h3 class="text-sm uppercase font-semibold text-blue-600 mb-2">Galang Dana Pilihan</h3>
-                                <h2 class="text-2xl font-bold text-gray-800 mb-3">
-                                    Satu Donasimu = Selamatkan 1 Anak
-                                </h2>
-                                <p class="text-gray-600 mb-6">Bantu pasien anak dhuafa berobat lawan sakit kronis!</p>
-                                <a href="#" class="bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 font-semibold">
-                                    Antar Kesembuhan
-                                </a>
-                            </div>
-                            <div class="flex-1">
-                                <img src="https://img.freepik.com/free-photo/doctor-checking-child-s-temperature-with-thermometer_23-2148769443.jpg" 
-                                     alt="Anak Sakit" class="w-full h-full object-cover">
-                            </div>
-                        </div>
-                    </div>
+    .distribution-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 6px;
+    }
 
-                    <div class="swiper-slide">
-                        <div class="bg-pink-100 flex flex-col md:flex-row">
-                            <div class="flex-1 p-8">
-                                <h3 class="text-sm uppercase font-semibold text-pink-600 mb-2">Program Sosial</h3>
-                                <h2 class="text-2xl font-bold text-gray-800 mb-3">
-                                    Donasi untuk Pendidikan Anak Indonesia
-                                </h2>
-                                <p class="text-gray-600 mb-6">Bantu mereka agar tetap bisa sekolah dan meraih cita-cita.</p>
-                                <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 font-semibold">
-                                    Donasi Sekarang
-                                </a>
-                            </div>
-                            <div class="flex-1">
-                                <img src="https://img.freepik.com/free-photo/group-kids-school-uniform-classroom_1303-27645.jpg" 
-                                     alt="Pendidikan" class="w-full h-full object-cover">
-                            </div>
-                        </div>
-                    </div>
+    .distribution-subtitle {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 40px;
+    }
 
-                    <div class="swiper-slide">
-                        <div class="bg-green-100 flex flex-col md:flex-row">
-                            <div class="flex-1 p-8">
-                                <h3 class="text-sm uppercase font-semibold text-green-600 mb-2">Kesehatan</h3>
-                                <h2 class="text-2xl font-bold text-gray-800 mb-3">
-                                    Bersama Lawan Kelaparan
-                                </h2>
-                                <p class="text-gray-600 mb-6">Setiap donasi akan membantu menyediakan makanan bergizi untuk mereka yang membutuhkan.</p>
-                                <a href="#" class="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 font-semibold">
-                                    Donasi Sekarang
-                                </a>
-                            </div>
-                            <div class="flex-1">
-                                <img src="https://img.freepik.com/free-photo/volunteers-giving-food-poor-people_1150-24968.jpg" 
-                                     alt="Bantuan Makanan" class="w-full h-full object-cover">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    /* Background map */
+    .map-wrapper {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        position: relative;
+    }
 
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+    .map-wrapper img {
+        width: 100%;
+        opacity: 0.3;
+    }
+
+    .stats-container {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .stat-item {
+        text-align: center;
+        color: #000;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 6px;
+    }
+
+    .stat-label {
+        font-size: 1rem;
+        color: #333;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width: 768px) {
+        .stats-container {
+            flex-direction: column;
+            gap: 20px;
+            position: static;
+            transform: none;
+            margin-top: -40px;
+        }
+
+        .map-wrapper img {
+            opacity: 0.15;
+        }
+    }
+</style>
+
+<div class="distribution-section">
+
+    <h2 class="distribution-title">Penyaluran Rendangmu</h2>
+    <p class="distribution-subtitle">Penyaluran Rendangmu tahun 2024</p>
+
+    <div class="map-wrapper">
+        <img src="/peta-indonesia.png" alt="Peta Indonesia">
+
+        <div class="stats-container">
+
+            <div class="stat-item">
+                <div class="stat-number">16</div>
+                <div class="stat-label">Wilayah</div>
             </div>
-        </div>
-    </section>
 
-    <!-- Program Donasi Berkelanjutan -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-xl font-semibold mb-6 text-gray-800">Program Donasi Berkelanjutan</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white shadow rounded-xl overflow-hidden">
-                    <img src="https://img.freepik.com/free-photo/volunteers-giving-donations-poor-people_1150-20254.jpg" class="w-full h-44 object-cover">
-                    <div class="p-4">
-                        <p class="text-sm text-blue-600 font-semibold mb-1">Callista Lee David</p>
-                        <h3 class="font-semibold mb-2">Donasi Rutin untuk Mereka yang Membutuhkan</h3>
-                        <p class="text-gray-600 text-sm mb-3">Tersedia Rp 2.096.590</p>
-                        <a href="#" class="text-blue-600 hover:underline font-medium">Donasi Otomatis</a>
-                    </div>
-                </div>
-                <div class="bg-white shadow rounded-xl overflow-hidden">
-                    <img src="https://img.free-photo/people-donating-blood-hospital_23-2148758775.jpg" class="w-full h-44 object-cover">
-                    <div class="p-4">
-                        <p class="text-sm text-blue-600 font-semibold mb-1">Yayasan Peduli</p>
-                        <h3 class="font-semibold mb-2">Berbagi Pendampingan Psikologis untuk Warga</h3>
-                        <p class="text-gray-600 text-sm mb-3">Tersedia Rp 7.886.000</p>
-                        <a href="#" class="text-blue-600 hover:underline font-medium">Donasi Sekarang</a>
-                    </div>
-                </div>
-                <div class="bg-white shadow rounded-xl overflow-hidden">
-                    <img src="https://img.freepik.com/free-photo/happy-african-kid-smiling-hugging-her-mother-home_181624-56312.jpg" class="w-full h-44 object-cover">
-                    <div class="p-4">
-                        <p class="text-sm text-blue-600 font-semibold mb-1">Cinta Kasih Foundation</p>
-                        <h3 class="font-semibold mb-2">Bantuan Rutin untuk Anak Yatim dan Dhuafa</h3>
-                        <p class="text-gray-600 text-sm mb-3">Tersedia Rp 4.560.000</p>
-                        <a href="#" class="text-blue-600 hover:underline font-medium">Donasi Sekarang</a>
-                    </div>
-                </div>
+            <div class="stat-item">
+                <div class="stat-number">207.235</div>
+                <div class="stat-label">Paket Rendangmu</div>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-10">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
-            <div>
-                <h3 class="text-lg font-semibold mb-3 text-white">KitaBersama</h3>
-                <p>Platform donasi digital terpercaya untuk membantu sesama dengan mudah dan aman.</p>
+            <div class="stat-item">
+                <div class="stat-number">103.618</div>
+                <div class="stat-label">Penerima Manfaat</div>
             </div>
-            <div>
-                <h3 class="text-lg font-semibold mb-3 text-white">Navigasi</h3>
-                <ul>
-                    <li><a href="#" class="hover:text-white">Tentang Kami</a></li>
-                    <li><a href="#" class="hover:text-white">Cara Donasi</a></li>
-                    <li><a href="#" class="hover:text-white">Kebijakan Privasi</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-lg font-semibold mb-3 text-white">Kontak</h3>
-                <p>Email: support@kitabersama.org</p>
-                <p>Telp: +62 812-3456-7890</p>
-            </div>
-            <div>
-                <h3 class="text-lg font-semibold mb-3 text-white">Ikuti Kami</h3>
-                <div class="flex space-x-4">
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="w-6 h-6" alt="Facebook"></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" class="w-6 h-6" alt="Instagram"></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" class="w-6 h-6" alt="Twitter"></a>
-                </div>
-            </div>
-        </div>
-        <div class="text-center mt-10 text-gray-500 text-sm">
-            &copy; 2025 KitaBersama. Semua Hak Dilindungi.
-        </div>
-    </footer>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.mySwiper', {
-            loop: true,
-            autoplay: { delay: 4000 },
-            pagination: { el: '.swiper-pagination', clickable: true },
-            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-        });
-        lucide.createIcons();
-    </script>
+        </div>
+    </div>
 
-</body>
-</html>
+</div>
+
+
+
