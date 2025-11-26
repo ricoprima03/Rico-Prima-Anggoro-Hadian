@@ -408,22 +408,25 @@
     </div>
 </div>
 
-<!-- sedang Trending -->
- <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
- <style>
-    body {
-        font-family: 'Plus Jakarta Sans', sans-serif;
-        margin: 0;
-        padding: 0;
+<!-- Section Sedang Trending -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+    /* Reset font (tidak mengubah section lain) */
+    .trending-section, 
+    .trending-section * {
+        font-family: 'Plus Jakarta Sans', sans-serif !important;
+        box-sizing: border-box;
     }
 
-    /* SECTION BACKGROUND */
+    /* SECTION BACKGROUND — HANYA INI YANG PAKAI BG */
     .trending-section {
+        width: 100%;
         background: linear-gradient(to right, #f6e7dd, #f0edcf);
         padding: 60px 40px;
         display: flex;
         flex-direction: column;
-        align-items: center; /* <-- MEMBUAT SEMUA TENGAH */
+        align-items: center;
+        margin: 0;           /* tidak mengganggu section lain */
     }
 
     .trending-title {
@@ -436,17 +439,17 @@
         color: #222;
     }
 
-    /* WRAPPER: CARD + BUTTON */
+    /* WRAPPER */
     .trending-content {
         width: 100%;
-        max-width: 1100px; /* <-- MEMBATASI LEBAR, AGAR TIDAK MELEBAR KE KANAN */
+        max-width: 1100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 40px;
     }
 
-    /* LEFT CARDS */
+    /* CARDS */
     .trending-cards {
         display: flex;
         gap: 25px;
@@ -475,6 +478,7 @@
         font-size: 16px;
         font-weight: 700;
         margin: 0 0 8px 0;
+        line-height: 1.4;
     }
 
     .meta {
@@ -493,7 +497,7 @@
         border-radius: 8px;
         white-space: nowrap;
         box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        margin-right: 20px; /* <-- MENDEKATKAN BUTTON KE KIRI */
+        margin-right: 20px;
     }
 
     /* RESPONSIVE */
@@ -513,7 +517,7 @@
 </style>
 
 
-<!-- SECTION -->
+<!-- SECTION TRENDING (HANYA INI YANG PUNYA BACKGROUND) -->
 <div class="trending-section">
 
     <h2 class="trending-title">Sedang Trending</h2>
@@ -548,4 +552,438 @@
 
 </div>
 
+<!-- Ziswaf Section -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
 
+    /* SECTION */
+    .ziswaf-section {
+        padding: 60px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* JUDUL RATA KIRI */
+    .ziswaf-title {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        text-align: left;            /* RATA KIRI */
+        width: 100%;
+        max-width: 1300px;           /* Agar sejajar dengan grid */
+    }
+
+    /* GRID WRAPPER */
+    .ziswaf-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        max-width: 1300px;
+        width: 100%;
+        justify-items: center;
+    }
+
+    /* CARD */
+    .ziswaf-card {
+        width: 100%;
+        max-width: 260px;
+        text-align: left;
+    }
+
+    .ziswaf-img {
+        width: 100%;
+        height: 160px;
+        background: #d9d9d9;
+        border-radius: 6px;
+        margin-bottom: 12px;
+    }
+
+    .ziswaf-card h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+        font-weight: 700;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .ziswaf-meta {
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .ziswaf-desc {
+        font-size: 14px;
+        color: #444;
+        line-height: 1.5;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1100px) {
+        .ziswaf-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (max-width: 850px) {
+        .ziswaf-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 580px) {
+        .ziswaf-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<body>
+
+<div class="ziswaf-section">
+
+    <h2 class="ziswaf-title">Tentang Ziswaf</h2>
+
+    <div class="ziswaf-grid">
+
+        <!-- CARD 1 -->
+        <div class="ziswaf-card">
+            <div class="ziswaf-img"></div>
+            <h3>Apa Pentingnya Pendidikan Setara untuk Anak Yatim? Yuk Cek!</h3>
+            <div class="ziswaf-meta">25 Juli 2024 /// Tidak ada komentar</div>
+            <div class="ziswaf-desc">
+                Setiap anak berhak mendapatkan pendidikan yang layak, termasuk...
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="ziswaf-card">
+            <div class="ziswaf-img"></div>
+            <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
+            <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
+            <div class="ziswaf-desc">
+                Fidyah untuk anak yatim tidak diperbolehkan jika ia...
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="ziswaf-card">
+            <div class="ziswaf-img"></div>
+            <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
+            <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
+            <div class="ziswaf-desc">
+                Fidyah untuk anak yatim tidak diperbolehkan jika ia...
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="ziswaf-card">
+            <div class="ziswaf-img"></div>
+            <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
+            <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
+            <div class="ziswaf-desc">
+                Fidyah untuk anak yatim tidak diperbolehkan jika ia...
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Perdalam Ilmu Agama Section -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* SECTION */
+    .ziswaf-section {
+        padding: 60px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* JUDUL RATA KIRI */
+    .ziswaf-title {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        text-align: left;            /* RATA KIRI */
+        width: 100%;
+        max-width: 1300px;           /* Agar sejajar dengan grid */
+    }
+
+    /* GRID WRAPPER */
+    .ziswaf-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        max-width: 1300px;
+        width: 100%;
+        justify-items: center;
+    }
+
+    /* CARD */
+    .ziswaf-card {
+        width: 100%;
+        max-width: 260px;
+        text-align: left;
+    }
+
+    .ziswaf-img {
+        width: 100%;
+        height: 160px;
+        background: #d9d9d9;
+        border-radius: 6px;
+        margin-bottom: 12px;
+    }
+
+    .ziswaf-card h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+        font-weight: 700;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .ziswaf-meta {
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .ziswaf-desc {
+        font-size: 14px;
+        color: #444;
+        line-height: 1.5;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1100px) {
+        .ziswaf-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (max-width: 850px) {
+        .ziswaf-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 580px) {
+        .ziswaf-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<body>
+
+<div class="ziswaf-section">
+
+    <h2 class="ziswaf-title">Perdalam Ilmu Agama</h2>
+
+    <div class="ziswaf-grid">
+
+        <!-- CARD 1 -->
+        <div class="ziswaf-card">
+            <div class="ziswaf-img"></div>
+            <h3>Apa Pentingnya Pendidikan Setara untuk Anak Yatim? Yuk Cek!</h3>
+            <div class="ziswaf-meta">25 Juli 2024 /// Tidak ada komentar</div>
+            <div class="ziswaf-desc">
+                Setiap anak berhak mendapatkan pendidikan yang layak, termasuk...
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="ziswaf-card">
+            <div class="ziswaf-img"></div>
+            <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
+            <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
+            <div class="ziswaf-desc">
+                Fidyah untuk anak yatim tidak diperbolehkan jika ia...
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="ziswaf-card">
+            <div class="ziswaf-img"></div>
+            <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
+            <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
+            <div class="ziswaf-desc">
+                Fidyah untuk anak yatim tidak diperbolehkan jika ia...
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="ziswaf-card">
+            <div class="ziswaf-img"></div>
+            <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
+            <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
+            <div class="ziswaf-desc">
+                Fidyah untuk anak yatim tidak diperbolehkan jika ia...
+            </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="ziswaf-card">
+            <div class="ziswaf-img"></div>
+            <h3>Apa Pentingnya Pendidikan Setara untuk Anak Yatim? Yuk Cek!</h3>
+            <div class="ziswaf-meta">25 Juli 2024 /// Tidak ada komentar</div>
+            <div class="ziswaf-desc">
+                Setiap anak berhak mendapatkan pendidikan yang layak, termasuk...
+            </div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="ziswaf-card">
+            <div class="ziswaf-img"></div>
+            <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
+            <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
+            <div class="ziswaf-desc">
+                Fidyah untuk anak yatim tidak diperbolehkan jika ia...
+            </div>
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="ziswaf-card">
+            <div class="ziswaf-img"></div>
+            <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
+            <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
+            <div class="ziswaf-desc">
+                Fidyah untuk anak yatim tidak diperbolehkan jika ia...
+            </div>
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="ziswaf-card">
+            <div class="ziswaf-img"></div>
+            <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
+            <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
+            <div class="ziswaf-desc">
+                Fidyah untuk anak yatim tidak diperbolehkan jika ia...
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+<!-- HERO ZISWAF SECTION -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    .hero-ziswaf {
+        width: 100%;
+        padding: 80px 30px;
+        background: linear-gradient(to bottom, #ffb703, #ea7317);
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-box {
+        background: #f47f20;
+        padding: 50px;
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        max-width: 1100px;
+        width: 100%;
+        color: white;
+    }
+
+    .hero-text {
+        flex: 1;
+    }
+
+    .hero-text h2 {
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+        color: #f9f9f9;
+    }
+
+    .hero-btn {
+        display: inline-block;
+        background: #1d4ed8;
+        padding: 12px 28px;
+        border-radius: 8px;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+        text-decoration: none;
+        transition: 0.2s;
+    }
+
+    .hero-btn:hover {
+        opacity: 0.9;
+        transform: translateY(-2px);
+    }
+
+    .hero-img {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-img img {
+        width: 260px;
+        object-fit: contain;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+        .hero-box {
+            flex-direction: column;
+            text-align: center;
+        }
+        .hero-text {
+            text-align: center;
+        }
+    }
+</style>
+
+<section class="hero-ziswaf">
+    <div class="hero-box">
+
+        <!-- TEXT -->
+        <div class="hero-text">
+            <h2>Yuk, Bantu 5.000+ Anak Yatim Dapat Masa Depan Lebih Cerah!</h2>
+            <p>
+                Satu donasi kecil dari kamu, bisa jadi awal perubahan besar untuk mereka.  
+                Jangan tunggu nanti. Lihat bagaimana sedikit yang kamu berikan, bisa berarti segalanya bagi anak-anak yatim.
+            </p>
+            <a href="#" class="hero-btn">Kirim Donasi Sekarang →</a>
+        </div>
+
+        <!-- IMAGE -->
+        <div class="hero-img">
+            <img src="https://i.ibb.co/0J9KkVC/kids.png" alt="anak yatim">
+        </div>
+
+    </div>
+</section>
+
+</body>
