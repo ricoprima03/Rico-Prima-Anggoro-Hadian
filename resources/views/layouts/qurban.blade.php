@@ -10,26 +10,59 @@
 <!-- Import Jakarta Sans font -->
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-<!-- Header Lazismu -->
-<header style="background: #fff; border-bottom: 1px solid #eee; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif;">
-	<div style="display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; height: 60px;">
-		<!-- Logo -->
-		<div style="display: flex; align-items: center;">
-			<img src="/logo-lazismu.png" alt="Lazismu" style="height: 60px;">
-		</div>
-		<!-- Navigation -->
-		<nav style="display: flex; align-items: center; gap: 18px; font-family: 'Plus Jakarta Sans', sans-serif;">
-			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">HOME</a>
-			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">TENTANG KAMI</a>
-			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">PROGRAM</a>
-			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">LAYANAN</a>
-            <a href="{{ url('/qurban') }}" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">BERITA</a>
-			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">BLOG</a>
-			<!-- Tombol Oranye -->
-			<button style="background: #ff9900; border: none; width: 40px; height: 40px; border-radius: 2px; margin-left: 10px; cursor: pointer;"></button>
-		</nav>
-	</div>
+<!-- Header Lazismu (Fixed & Logo Besar) -->
+<header style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 0;
+    z-index: 9999;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+">
+    <div style="
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 80px; /* Tinggi header lebih besar */
+    ">
+        
+        <!-- LOGO LEBIH BESAR -->
+        <div style="display: flex; align-items: center;">
+            <img src="/logo-lazismu.png" 
+                 alt="Lazismu" 
+                 style="height: 100px;"> <!-- perbesar logo -->
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav style="display: flex; align-items: center; gap: 22px;">
+            <a href="#" style="color: #ff9900; text-decoration: none; font-size: 15px; font-weight: 600;">HOME</a>
+            <a href="#" style="color: #ff9900; text-decoration: none; font-size: 15px; font-weight: 600;">TENTANG KAMI</a>
+            <a href="#" style="color: #ff9900; text-decoration: none; font-size: 15px; font-weight: 600;">PROGRAM</a>
+            <a href="#" style="color: #ff9900; text-decoration: none; font-size: 15px; font-weight: 600;">LAYANAN</a>
+            <a href="{{ url('/qurban') }}" style="color: #ff9900; text-decoration: none; font-size: 15px; font-weight: 600;">BERITA</a>
+            <a href="#" style="color: #ff9900; text-decoration: none; font-size: 15px; font-weight: 600;">BLOG</a>
+
+            <!-- Tombol Oranye -->
+            <button style="
+                background: #ff9900;
+                border: none;
+                width: 42px;
+                height: 42px;
+                border-radius: 2px;
+                margin-left: 12px;
+                cursor: pointer;
+            "></button>
+        </nav>
+    </div>
 </header>
+
+<!-- Spacer agar konten tidak tertutup header -->
+<div style="height: 90px;"></div>
 
 <!-- Banner Zakat -->
 <div style="width: 100%; display: flex; justify-content: center; margin-top: 24px;">

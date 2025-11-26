@@ -10,26 +10,60 @@
 <!-- Import Jakarta Sans font -->
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-<!-- Header Lazismu -->
-<header style="background: #fff; border-bottom: 1px solid #eee; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif;">
-	<div style="display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; height: 60px;">
-		<!-- Logo -->
-		<div style="display: flex; align-items: center;">
-			<img src="/logo-lazismu.png" alt="Lazismu" style="height: 60px;">
-		</div>
-		<!-- Navigation -->
-		<nav style="display: flex; align-items: center; gap: 18px; font-family: 'Plus Jakarta Sans', sans-serif;">
-			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">HOME</a>
-			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">TENTANG KAMI</a>
-			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">PROGRAM</a>
-			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">LAYANAN</a>
-            <a href="{{ url('/qurban') }}" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">BERITA</a>
-			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">BLOG</a>
-			<!-- Tombol Oranye -->
-			<button style="background: #ff9900; border: none; width: 40px; height: 40px; border-radius: 2px; margin-left: 10px; cursor: pointer;"></button>
-		</nav>
-	</div>
+<!-- Header Lazismu (Fixed & Logo Besar) -->
+<header style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 0;
+    z-index: 9999;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+">
+    <div style="
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 80px; /* Tinggi header lebih besar */
+    ">
+        
+        <!-- LOGO LEBIH BESAR -->
+        <div style="display: flex; align-items: center;">
+            <img src="/logo-lazismu.png" 
+                 alt="Lazismu" 
+                 style="height: 100px;"> <!-- perbesar logo -->
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav style="display: flex; align-items: center; gap: 22px;">
+            <a href="#" style="color: #ff9900; text-decoration: none; font-size: 15px; font-weight: 600;">HOME</a>
+            <a href="#" style="color: #ff9900; text-decoration: none; font-size: 15px; font-weight: 600;">TENTANG KAMI</a>
+            <a href="#" style="color: #ff9900; text-decoration: none; font-size: 15px; font-weight: 600;">PROGRAM</a>
+            <a href="#" style="color: #ff9900; text-decoration: none; font-size: 15px; font-weight: 600;">LAYANAN</a>
+            <a href="{{ url('/qurban') }}" style="color: #ff9900; text-decoration: none; font-size: 15px; font-weight: 600;">BERITA</a>
+            <a href="#" style="color: #ff9900; text-decoration: none; font-size: 15px; font-weight: 600;">BLOG</a>
+
+            <!-- Tombol Oranye -->
+            <button style="
+                background: #ff9900;
+                border: none;
+                width: 42px;
+                height: 42px;
+                border-radius: 2px;
+                margin-left: 12px;
+                cursor: pointer;
+            "></button>
+        </nav>
+    </div>
 </header>
+
+<!-- Spacer agar konten tidak tertutup header -->
+<div style="height: 90px;"></div>
+
 
 <!-- Banner Qurban -->
 <div style="width: 100%; display: flex; justify-content: center; margin-top: 24px;">
@@ -90,7 +124,7 @@
                 persediaan pangan untuk daerah bencana.
             </p>
 
-            <a href="#" style="
+            <a href="{{ url('/Pembayaran.php') }}" style="
                 display: inline-block; 
                 margin-top: 28px; 
                 padding: 14px 36px; 
@@ -158,7 +192,7 @@
                 berbagai pelosok Indonesia, hingga ke wilayah rawan pangan maupun terkena bencana.
             </p>
 
-            <a href="#" style="
+            <a href="{{ url('/Pembayaran.php') }}" style="
                 display: inline-block; 
                 margin-top: 28px; 
                 padding: 14px 36px; 
@@ -433,7 +467,6 @@
     cards.forEach(card => observer.observe(card));
 </script>
 
-
 <!-- ==== SECTION: Mengapa Harus Qurban di Rendangmu ==== -->
 <style>
     .benefit-section {
@@ -459,10 +492,27 @@
         flex-wrap: wrap;
     }
 
+    /* Default: belum muncul */
     .benefit-item {
         width: 180px;
         text-align: center;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 1.2s ease;
     }
+
+    /* Jika terlihat di layar → animasi muncul */
+    .benefit-item.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Delay animasi */
+    .benefit-item:nth-child(1).show { transition-delay: 0.2s; }
+    .benefit-item:nth-child(2).show { transition-delay: 0.4s; }
+    .benefit-item:nth-child(3).show { transition-delay: 0.6s; }
+    .benefit-item:nth-child(4).show { transition-delay: 0.8s; }
+    .benefit-item:nth-child(5).show { transition-delay: 1s; }
 
     .benefit-icon {
         width: 80px;
@@ -511,7 +561,6 @@
 </style>
 
 <div class="benefit-section">
-
     <h2 class="benefit-title">Mengapa Harus Qurban di Rendangmu?</h2>
 
     <div class="benefit-container">
@@ -567,8 +616,28 @@
         </div>
 
     </div>
-
 </div>
+
+<!-- ==== SCROLL REVEAL SCRIPT ==== -->
+<script>
+    const items = document.querySelectorAll('.benefit-item');
+
+    const showOnScroll = () => {
+        items.forEach(item => {
+            const rect = item.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 80) {
+                item.classList.add('show');
+            }
+        });
+    };
+
+    // Run saat scroll
+    window.addEventListener('scroll', showOnScroll);
+
+    // Run saat halaman pertama kali tampil (jika elemen sudah terlihat)
+    showOnScroll();
+</script>
+
 
 <!-- ==== SECTION: Penyaluran Rendangmu ==== -->
 <style>
@@ -682,7 +751,7 @@
 </div>
 
 <!-- ==== SECTION: Pilih Rendangmu ==== -->
- <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
     body {
@@ -728,7 +797,17 @@
         box-shadow: 0px 8px 18px rgba(0,0,0,0.12);
         overflow: hidden;
         display: flex;
-        flex-direction: column;        /* WAJIB agar tombol ikut di bawah */
+        flex-direction: column;
+        cursor: pointer;
+
+        /* ANIMASI */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* ZOOM SAAT HOVER */
+    .card:hover {
+        transform: scale(1.06);
+        box-shadow: 0px 14px 25px rgba(0,0,0,0.20);
     }
 
     .card img {
@@ -739,7 +818,7 @@
     .card-body {
         padding: 20px;
         text-align: center;
-        flex-grow: 1;                 /* Membuat ruang agar tombol tidak hilang */
+        flex-grow: 1;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -759,7 +838,6 @@
         color: #222;
     }
 
-    /* FIX TOMBOL */
     .btn-donasi {
         margin-top: 20px;
         padding: 14px 0;
