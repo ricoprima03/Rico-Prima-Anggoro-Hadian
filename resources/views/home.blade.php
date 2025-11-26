@@ -52,7 +52,7 @@
     ">
 
         <!-- Gambar di kiri -->
-        <img src="/rendangmu-info.png" 
+        <img src="/hewan_qurban-removebg-preview.png" 
             alt="Info Rendangmu" 
             style="max-width: 400px; width: 100%; flex: 1 1 300px;">
 
@@ -121,7 +121,7 @@
     ">
         
         <!-- Gambar di kiri -->
-        <img src="/qurban-syariah-info.png" 
+        <img src="/image_1.png" 
             alt="Qurban Syariah" 
             style="max-width: 400px; width: 100%; flex: 1 1 300px;">
 
@@ -256,6 +256,17 @@
         display: flex;
         align-items: center;
         gap: 20px;
+
+        /* ANIMASI SCROLL (awal) */
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.8s ease;
+    }
+
+    /* Animasi aktif */
+    .timeline-card.show {
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .timeline-card img {
@@ -338,7 +349,7 @@
         <div class="timeline-right">
 
             <div class="timeline-card">
-                <img src="/icon-callcenter.png" alt="">
+                <img src="/callcanter.png" alt="">
                 <div class="text">
                     <h3>Call Center</h3>
                     <p>Hubungi narahubung melalui 0854-1700-2970</p>
@@ -346,7 +357,7 @@
             </div>
 
             <div class="timeline-card">
-                <img src="/icon-rekap.png" alt="">
+                <img src="/rekap.png" alt="">
                 <div class="text">
                     <h3>Rekapitulasi</h3>
                     <p>Narahubung akan mencatat jumlah qurban yang akan dilakukan.</p>
@@ -354,7 +365,7 @@
             </div>
 
             <div class="timeline-card">
-                <img src="/icon-cow.png" alt="">
+                <img src="/icon_sapi.png" alt="">
                 <div class="text">
                     <h3>Pengadaan Hewan Qurban</h3>
                     <p>Pencarian qurban dilaksanakan oleh peternakan mitra yang dijamin sehat.</p>
@@ -362,7 +373,7 @@
             </div>
 
             <div class="timeline-card">
-                <img src="/icon-slaughter.png" alt="">
+                <img src="/daging.png" alt="">
                 <div class="text">
                     <h3>Pemotongan Melalui RPH</h3>
                     <p>Pemotongan dilakukan di rumah potong hewan sesuai standar syariah dan kesehatan.</p>
@@ -370,7 +381,7 @@
             </div>
 
             <div class="timeline-card">
-                <img src="/icon-factory.png" alt="">
+                <img src="/gudang.png" alt="">
                 <div class="text">
                     <h3>Pengolahan</h3>
                     <p>Daging diolah menjadi kornet atau rendang dengan masa ketahanan hingga 2 tahun.</p>
@@ -378,7 +389,7 @@
             </div>
 
             <div class="timeline-card">
-                <img src="/icon-truck.png" alt="">
+                <img src="/truk.png" alt="">
                 <div class="text">
                     <h3>Distribusi</h3>
                     <p>Daging siap didistribusikan ke pelosok dan wilayah terdampak bencana.</p>
@@ -386,7 +397,7 @@
             </div>
 
             <div class="timeline-card">
-                <img src="/icon-rendang.png" alt="">
+                <img src="/kaleng.png" alt="">
                 <div class="text">
                     <h3>Siap Santap</h3>
                     <p>Produk Rendangmu siap dikonsumsi kapan saja.</p>
@@ -396,6 +407,24 @@
         </div>
     </div>
 </div>
+
+<!-- ==== ANIMASI SCROLL SCRIPT ==== -->
+<script>
+    const cards = document.querySelectorAll(".timeline-card");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    cards.forEach(card => observer.observe(card));
+</script>
+
 
 <!-- ==== SECTION: Mengapa Harus Qurban di Rendangmu ==== -->
 <style>
@@ -481,7 +510,7 @@
 
         <div class="benefit-item">
             <div class="benefit-icon">
-                <img src="/icon-amanah.png" alt="">
+                <img src="/Untitled_design-removebg-preview 1.png" alt="">
             </div>
             <div class="benefit-title-small">AMANAH</div>
             <div class="benefit-desc">
@@ -491,7 +520,7 @@
 
         <div class="benefit-item">
             <div class="benefit-icon">
-                <img src="/icon-profesional.png" alt="">
+                <img src="/c7c456cf-2566-4c34-8707-ff4910c1e63a-removebg-preview.png" alt="">
             </div>
             <div class="benefit-title-small">PROFESIONAL</div>
             <div class="benefit-desc">
@@ -501,7 +530,7 @@
 
         <div class="benefit-item">
             <div class="benefit-icon">
-                <img src="/icon-higenis.png" alt="">
+                <img src="/7b8982e8-78db-4afb-9870-72b0f2777493-removebg-preview.png" alt="">
             </div>
             <div class="benefit-title-small">HIGIENIS</div>
             <div class="benefit-desc">
@@ -511,7 +540,7 @@
 
         <div class="benefit-item">
             <div class="benefit-icon">
-                <img src="/icon-tepat.png" alt="">
+                <img src="/a3838f4f-7e27-4d2f-bc7d-e63464aff584-removebg-preview.png" alt="">
             </div>
             <div class="benefit-title-small">TEPAT SASARAN</div>
             <div class="benefit-desc">
@@ -521,7 +550,7 @@
 
         <div class="benefit-item">
             <div class="benefit-icon">
-                <img src="/icon-kalender.png" alt="">
+                <img src="/0d1163ec-5ff5-4efa-b0a3-2efa7de425a9-removebg-preview.png" alt="">
             </div>
             <div class="benefit-title-small">MANFAAT BERKELANJUTAN</div>
             <div class="benefit-desc">
@@ -620,7 +649,7 @@
     <p class="distribution-subtitle">Penyaluran Rendangmu tahun 2024</p>
 
     <div class="map-wrapper">
-        <img src="/peta-indonesia.png" alt="Peta Indonesia">
+        <img src="/background-peta-indonesia-abu-silver-putih_852799-39.jpg" alt="Peta Indonesia">
 
         <div class="stats-container">
 
@@ -786,7 +815,7 @@
 <style>
     .testimoni-section {
         position: relative;
-        background: url('background.jpg') center/cover no-repeat;
+        background: url('Rectangle_33.png') center/cover no-repeat;
         padding: 60px 20px;
         text-align: center;
         overflow: hidden;
@@ -855,19 +884,19 @@
     <div class="gallery-wrapper">
 
         <div class="gallery-item">
-            <img src="image1.jpg" alt="Foto Kegiatan 1">
+            <img src="36bca86d-5d65-4462-ac39-e30e44a183db.jpg" alt="Foto Kegiatan 1">
         </div>
 
         <div class="gallery-item">
-            <img src="image2.jpg" alt="Foto Kegiatan 2">
+            <img src="6e6041d4-94ba-456b-9993-c8c0246083c4.jpg" alt="Foto Kegiatan 2">
         </div>
 
         <div class="gallery-item">
-            <img src="image3.jpg" alt="Foto Kegiatan 3">
+            <img src="357d057b-7479-41cb-965f-fd99f3a6e0f7.jpg" alt="Foto Kegiatan 3">
         </div>
 
         <div class="gallery-item">
-            <img src="image4.jpg" alt="Foto Kegiatan 4">
+            <img src="352b8064-1c18-4d2e-a660-8148dfb262d1.jpg" alt="Foto Kegiatan 4">
         </div>
 
     </div>
