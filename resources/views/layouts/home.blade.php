@@ -23,7 +23,7 @@
 			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">TENTANG KAMI</a>
 			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">PROGRAM</a>
 			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">LAYANAN</a>
-			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">BERITA</a>
+            <a href="{{ url('/qurban') }}" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">BERITA</a>
 			<a href="#" style="color: #ff9900; text-decoration: none; font-size: 14px; font-weight: 500;">BLOG</a>
 			<!-- Tombol Oranye -->
 			<button style="background: #ff9900; border: none; width: 40px; height: 40px; border-radius: 2px; margin-left: 10px; cursor: pointer;"></button>
