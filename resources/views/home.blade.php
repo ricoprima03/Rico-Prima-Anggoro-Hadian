@@ -644,5 +644,400 @@
 
 </div>
 
+<!-- ==== SECTION: Pilih Rendangmu ==== -->
+ <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+    }
+
+    .orange-section {
+        background: #f4a935;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .orange-section h1 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #222;
+        margin-bottom: 10px;
+    }
+
+    .orange-section p {
+        font-size: 18px;
+        color: #222;
+        margin-top: 0;
+    }
+
+    /* WRAPPER CARD */
+    .card-wrapper {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    /* CARD STYLE */
+    .card {
+        width: 320px;
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0px 8px 18px rgba(0,0,0,0.12);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;        /* WAJIB agar tombol ikut di bawah */
+    }
+
+    .card img {
+        width: 100%;
+        display: block;
+    }
+
+    .card-body {
+        padding: 20px;
+        text-align: center;
+        flex-grow: 1;                 /* Membuat ruang agar tombol tidak hilang */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card-body h3 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #222;
+    }
+
+    .card-body p {
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.5;
+        color: #222;
+    }
+
+    /* FIX TOMBOL */
+    .btn-donasi {
+        margin-top: 20px;
+        padding: 14px 0;
+        background: #f9a825;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 8px;
+        text-decoration: none;
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .btn-donasi:hover {
+        background: #ffb300;
+    }
+</style>
 
 
+<!-- SECTION ORANYE -->
+<div class="orange-section">
+
+    <h1>Pilih RendangMu Anda Sekarang</h1>
+    <p>Pilih hewan qurban Anda, dan Berdayakan Desa dengan Berqurban</p>
+
+    <div class="card-wrapper">
+
+        <!-- CARD KAMBING -->
+        <div class="card">
+            <img src="/superqurban-kambing.png" alt="Superqurban Kambing">
+            <div class="card-body">
+                <h3>Rendangmu Kambing</h3>
+                <p>Rp. 2.900.000,-<br>
+                    - Kornet 30 Kaleng <br>
+                    - Rendang 25 Kaleng
+                </p>
+                <a href="#" class="btn-donasi">Tunaikan Langsung</a>
+            </div>
+        </div>
+
+        <!-- CARD SAPI -->
+        <div class="card">
+            <img src="/superqurban-sapi.png" alt="Superqurban Sapi">
+            <div class="card-body">
+                <h3>Rendangmu Sapi</h3>
+                <p>Rp. 19.450.000,-<br>
+                    - Kornet 350 Kaleng <br>
+                    - Rendang 250 Kaleng
+                </p>
+                <a href="#" class="btn-donasi">Tunaikan Langsung</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ==== SECTION: Testimoni Pequrban ==== -->
+<style>
+    .testimoni-section {
+        position: relative;
+        background: url('background.jpg') center/cover no-repeat;
+        padding: 60px 20px;
+        text-align: center;
+        overflow: hidden;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        border-radius: 0; /* optional */
+    }
+
+    .testimoni-section::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.3); /* overlay 30% */
+        z-index: 1;
+    }
+
+    .testimoni-section h1,
+    .gallery-wrapper {
+        position: relative;
+        z-index: 2;
+    }
+
+    .testimoni-section h1 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 10px;
+        text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+
+    .gallery-wrapper {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 2;
+    }
+
+    .gallery-item {
+        background: #ffffff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0px 6px 16px rgba(0,0,0,0.12);
+    }
+
+    .gallery-item img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    @media(max-width: 700px) {
+        .gallery-wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<!-- SECTION -->
+<div class="testimoni-section">
+
+    <h1>TESTIMONI PEQURBAN 2024</h1>
+
+    <div class="gallery-wrapper">
+
+        <div class="gallery-item">
+            <img src="image1.jpg" alt="Foto Kegiatan 1">
+        </div>
+
+        <div class="gallery-item">
+            <img src="image2.jpg" alt="Foto Kegiatan 2">
+        </div>
+
+        <div class="gallery-item">
+            <img src="image3.jpg" alt="Foto Kegiatan 3">
+        </div>
+
+        <div class="gallery-item">
+            <img src="image4.jpg" alt="Foto Kegiatan 4">
+        </div>
+
+    </div>
+</div>
+
+<!-- ==== FOOTER ==== -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+    .footer {
+        width: 100%;
+        background: linear-gradient(180deg, #e9a870 0%, #ea7b0c 100%);
+        padding: 60px 60px 30px;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        color: #fff;
+    }
+
+    .footer-container {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 1fr;
+        gap: 60px;
+    }
+
+    .footer h3 {
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+
+    .footer p,
+    .footer a {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        opacity: 0.8;
+    }
+
+    /* SOCIAL ICON LIST */
+    .footer-social {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .social-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .social-item img {
+        width: 26px;
+        height: 26px;
+        object-fit: contain;
+        filter: brightness(0) invert(1); /* menjadikan logo putih */
+    }
+
+    /* BLACK BOX */
+    .footer-warning {
+        background: #1e1e1e;
+        padding: 25px 30px;
+        border-radius: 12px;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-top: 20px;
+        color: #fff;
+        max-width: 350px;
+    }
+
+    /* COPYRIGHT */
+    .footer-bottom {
+        text-align: center;
+        font-size: 14px;
+        padding-top: 35px;
+        color: #000;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+        .footer-container {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+        .footer-warning {
+            max-width: 100%;
+        }
+    }
+</style>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- KOLOM 1 -->
+        <div>
+            <h3>Lazismu Daerah Istimewa Yogyakarta</h3>
+            <p>
+                LAZISMU adalah lembaga amil zakat nasional dengan SK. Menteri Agama RI No. 90 Tahun 2022,
+                yang berkhidmat dalam pemberdayaan masyarakat, melalui pendayagunaan dana zakat, infak dan
+                dana kedermawanan lainnya baik dari perseorangan, lembaga, perusahaan dan instansi lainnya.
+            </p>
+
+            <h3 style="margin-top:30px;">Kantor</h3>
+            <p>
+                Jl. Gedongkuning No.152, RT.41, Rejowinangun, Kec. Kotagede,<br>
+                Kota Yogyakarta, Daerah Istimewa Yogyakarta
+            </p>
+        </div>
+
+        <!-- KOLOM 2 -->
+        <div>
+            <h3>Tentang Kami</h3>
+            <p><a href="#">Latar Belakang</a></p>
+            <p><a href="#">Visi dan Misi</a></p>
+            <p><a href="#">Struktur Pengelola</a></p>
+            <p><a href="#">Kebijakan Strategis</a></p>
+            <p><a href="#">Laporan</a></p>
+            <p><a href="#">Mitra</a></p>
+            <p><a href="#">Daftar Rekening</a></p>
+            <p><a href="#">Donasi Online</a></p>
+        </div>
+
+        <!-- KOLOM 3 -->
+        <div>
+
+            <div class="footer-social">
+                <div class="social-item">
+                    <img src="ig.png" alt="Instagram">
+                    <p>@lazismudiy</p>
+                </div>
+
+                <div class="social-item">
+                    <img src="web.png" alt="Website">
+                    <p>jalanekabaikan.id</p>
+                </div>
+
+                <div class="social-item">
+                    <img src="wa.png" alt="WhatsApp / Telepon">
+                    <p>+62 895–3635–20118</p>
+                </div>
+
+                <div class="social-item">
+                    <img src="fb.png" alt="Facebook">
+                    <p>Lazismu DIY</p>
+                </div>
+
+                <div class="social-item">
+                    <img src="mail.png" alt="Email">
+                    <p>info@lazismu.org</p>
+                </div>
+            </div>
+
+            <div class="footer-warning">
+                Dana yang didonasikan melalui Lazismu Peduli bukan bersumber dan bukan untuk tujuan pencucian uang
+                (money laundering), termasuk terorisme maupun tindak kejahatan lainnya.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        Copyright © 2023 Lazismu D.I. Yogyakarta
+    </div>
+
+</footer>
