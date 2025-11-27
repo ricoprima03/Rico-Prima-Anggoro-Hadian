@@ -84,155 +84,192 @@
 	<img src="/Rectangle_36.png" alt="Zakat Banner" style="max-width: 1000px; width: 100%; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);">
 </div>
 
-<!-- Konten Utama -->
- <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!-- Perdalam Ilmu Agama Section -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
     body {
         font-family: 'Plus Jakarta Sans', sans-serif;
         margin: 0;
         padding: 0;
-        background: #fff;
     }
 
-    /* WRAPPER SECTION */
-    .section-wrapper {
-        padding: 50px 60px;
+    /* SECTION */
+    .ziswaf-section {
+        padding: 60px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .section-title {
+    /* JUDUL RATA KIRI */
+    .ziswaf-title {
         font-size: 32px;
         font-weight: 700;
         margin-bottom: 40px;
-        color: #222;
+        text-align: left;            /* RATA KIRI */
+        width: 100%;
+        max-width: 1300px;           /* Agar sejajar dengan grid */
     }
 
-    /* GRID */
-    .news-grid {
+    /* GRID WRAPPER */
+    .ziswaf-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 35px 40px;
+        gap: 40px;
+        max-width: 1300px;
+        width: 100%;
+        justify-items: center;
     }
 
     /* CARD */
-    .news-card img {
+    .ziswaf-card {
+        width: 100%;
+        max-width: 260px;
+        text-align: left;
+    }
+
+    .ziswaf-img {
         width: 100%;
         height: 160px;
-        background: #dcdcdc;
+        background: #d9d9d9;
         border-radius: 6px;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
     }
 
-    .news-card h3 {
+    .ziswaf-card h3 {
         font-size: 16px;
+        margin-bottom: 5px;
         font-weight: 700;
-        color: #222;
-        margin: 0 0 8px 0;
-        line-height: 1.4;
+        text-decoration: underline;
+        cursor: pointer;
     }
 
-    .news-meta {
+    .ziswaf-meta {
         font-size: 13px;
-        color: #777;
-        margin-bottom: 8px;
+        color: #666;
+        margin-bottom: 10px;
     }
 
-    .news-card p {
+    .ziswaf-desc {
         font-size: 14px;
-        line-height: 1.4;
         color: #444;
-        margin: 0;
+        line-height: 1.5;
     }
 
     /* RESPONSIVE */
-    @media (max-width: 992px) {
-        .news-grid {
+    @media (max-width: 1100px) {
+        .ziswaf-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (max-width: 850px) {
+        .ziswaf-grid {
             grid-template-columns: repeat(2, 1fr);
         }
     }
 
-    @media (max-width: 576px) {
-        .news-grid {
-            grid-template-columns: repeat(1, 1fr);
+    @media (max-width: 580px) {
+        .ziswaf-grid {
+            grid-template-columns: 1fr;
         }
     }
 </style>
 
+<body>
 
-<!-- SECTION -->
-<div class="section-wrapper">
+<div class="ziswaf-section">
 
-    <h2 class="section-title">Raih Kepedulian Anak Yatim</h2>
+    <h2 class="ziswaf-title">Raih Kepedulian Anak Yatim</h2>
 
-    <div class="news-grid">
+    <div class="ziswaf-grid">
 
         <!-- CARD 1 -->
-        <div class="news-card">
-            <img src="" alt="">
+        <div class="ziswaf-card">
+            <div class="ziswaf-img"></div>
             <h3>Apa Pentingnya Pendidikan Setara untuk Anak Yatim? Yuk Cek!</h3>
-            <div class="news-meta">25 Juli 2024 / 7 kali dibaca</div>
-            <p>Setiap anak berhak mendapatkan pendidikan yang layak, termasuk anak yatim.</p>
+            <div class="ziswaf-meta">25 Juli 2024 /// Tidak ada komentar</div>
+            <div class="ziswaf-desc">
+                Setiap anak berhak mendapatkan pendidikan yang layak, termasuk...
+            </div>
         </div>
 
         <!-- CARD 2 -->
-        <div class="news-card">
-            <img src="" alt="">
+        <div class="ziswaf-card">
+            <div class="ziswaf-img"></div>
             <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
-            <div class="news-meta">14 Februari 2025 / 17 kali dibaca</div>
-            <p>Fidyah untuk anak yatim tidak diperbolehkan jika...</p>
+            <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
+            <div class="ziswaf-desc">
+                Fidyah untuk anak yatim tidak diperbolehkan jika ia...
+            </div>
         </div>
 
         <!-- CARD 3 -->
-        <div class="news-card">
-            <img src="" alt="">
+        <div class="ziswaf-card">
+            <div class="ziswaf-img"></div>
             <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
-            <div class="news-meta">14 Februari 2025 / 17 kali dibaca</div>
-            <p>Fidyah untuk anak yatim tidak diperbolehkan jika...</p>
+            <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
+            <div class="ziswaf-desc">
+                Fidyah untuk anak yatim tidak diperbolehkan jika ia...
+            </div>
         </div>
 
         <!-- CARD 4 -->
-        <div class="news-card">
-            <img src="" alt="">
+        <div class="ziswaf-card">
+            <div class="ziswaf-img"></div>
             <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
-            <div class="news-meta">14 Februari 2025 / 17 kali dibaca</div>
-            <p>Fidyah untuk anak yatim tidak diperbolehkan jika...</p>
+            <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
+            <div class="ziswaf-desc">
+                Fidyah untuk anak yatim tidak diperbolehkan jika ia...
+            </div>
         </div>
 
-
         <!-- CARD 5 -->
-        <div class="news-card">
-            <img src="" alt="">
+        <div class="ziswaf-card">
+            <div class="ziswaf-img"></div>
             <h3>Apa Pentingnya Pendidikan Setara untuk Anak Yatim? Yuk Cek!</h3>
-            <div class="news-meta">25 Juli 2024 / 7 kali dibaca</div>
-            <p>Setiap anak berhak mendapatkan pendidikan yang layak, termasuk anak yatim.</p>
+            <div class="ziswaf-meta">25 Juli 2024 /// Tidak ada komentar</div>
+            <div class="ziswaf-desc">
+                Setiap anak berhak mendapatkan pendidikan yang layak, termasuk...
+            </div>
         </div>
 
         <!-- CARD 6 -->
-        <div class="news-card">
-            <img src="" alt="">
+        <div class="ziswaf-card">
+            <div class="ziswaf-img"></div>
             <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
-            <div class="news-meta">14 Februari 2025 / 17 kali dibaca</div>
-            <p>Fidyah untuk anak yatim tidak diperbolehkan jika...</p>
+            <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
+            <div class="ziswaf-desc">
+                Fidyah untuk anak yatim tidak diperbolehkan jika ia...
+            </div>
         </div>
 
         <!-- CARD 7 -->
-        <div class="news-card">
-            <img src="" alt="">
+        <div class="ziswaf-card">
+            <div class="ziswaf-img"></div>
             <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
-            <div class="news-meta">14 Februari 2025 / 17 kali dibaca</div>
-            <p>Fidyah untuk anak yatim tidak diperbolehkan jika...</p>
+            <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
+            <div class="ziswaf-desc">
+                Fidyah untuk anak yatim tidak diperbolehkan jika ia...
+            </div>
         </div>
 
         <!-- CARD 8 -->
-        <div class="news-card">
-            <img src="" alt="">
+        <div class="ziswaf-card">
+            <div class="ziswaf-img"></div>
             <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
-            <div class="news-meta">14 Februari 2025 / 17 kali dibaca</div>
-            <p>Fidyah untuk anak yatim tidak diperbolehkan jika...</p>
+            <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
+            <div class="ziswaf-desc">
+                Fidyah untuk anak yatim tidak diperbolehkan jika ia...
+            </div>
         </div>
 
     </div>
+
 </div>
+
+</body>
 
 <!-- dapatkan Pahala berlipat untuk berbagi kepada anak yatim -->
  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -931,107 +968,284 @@
 
 </body>
 
-<!-- HERO ZISWAF SECTION -->
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+<!-- ==== SECTION AJAKAN DONASI TANPA BACKGROUND ==== -->
 <style>
-    .hero-ziswaf {
+    .donasi-section {
         width: 100%;
-        padding: 80px 30px;
-        background: linear-gradient(to bottom, #ffb703, #ea7317);
+        padding: 40px 20px;
         display: flex;
         justify-content: center;
+        font-family: 'Plus Jakarta Sans', sans-serif;
     }
 
-    .hero-box {
-        background: #f47f20;
-        padding: 50px;
-        border-radius: 18px;
-        display: flex;
-        align-items: center;
-        gap: 30px;
+    .donasi-box {
         max-width: 1100px;
         width: 100%;
+        background: #f47f20;
+        border-radius: 30px;
+        padding: 55px 55px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
         color: white;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.18);
     }
 
-    .hero-text {
-        flex: 1;
+    .donasi-text {
+        flex: 1.3;
     }
 
-    .hero-text h2 {
-        font-size: 34px;
-        font-weight: 700;
-        line-height: 1.3;
-        margin-bottom: 15px;
+    .donasi-text h2 {
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 1.32;
+        margin-bottom: 20px;
     }
 
-    .hero-text p {
+    .donasi-text p {
         font-size: 16px;
         line-height: 1.6;
-        margin-bottom: 25px;
-        color: #f9f9f9;
+        margin-bottom: 28px;
     }
 
-    .hero-btn {
+    /* BUTTON GRADIENT */
+    .donasi-btn {
         display: inline-block;
-        background: #1d4ed8;
-        padding: 12px 28px;
-        border-radius: 8px;
+        background: linear-gradient(90deg, #1d4ed8, #2563eb);
+        padding: 14px 30px;
+        border-radius: 10px;
         color: white;
-        font-weight: 600;
         font-size: 15px;
+        font-weight: 600;
         text-decoration: none;
         transition: 0.2s;
     }
 
-    .hero-btn:hover {
-        opacity: 0.9;
+    .donasi-btn:hover {
         transform: translateY(-2px);
+        opacity: 0.9;
     }
 
-    .hero-img {
+    .donasi-image {
         flex: 1;
         display: flex;
         justify-content: center;
     }
 
-    .hero-img img {
-        width: 260px;
+    .donasi-image img {
+        width: 270px;
         object-fit: contain;
     }
 
     /* RESPONSIVE */
-    @media (max-width: 900px) {
-        .hero-box {
+    @media(max-width: 900px) {
+        .donasi-box {
             flex-direction: column;
             text-align: center;
+            padding: 45px 30px;
         }
-        .hero-text {
-            text-align: center;
+        .donasi-image img {
+            width: 220px;
         }
     }
 </style>
 
-<section class="hero-ziswaf">
-    <div class="hero-box">
-
+<section class="donasi-section">
+    <div class="donasi-box">
+        
         <!-- TEXT -->
-        <div class="hero-text">
-            <h2>Yuk, Bantu 5.000+ Anak Yatim Dapat Masa Depan Lebih Cerah!</h2>
+        <div class="donasi-text">
+            <h2>Yuk, Bantu 5.000+ Anak Yatim<br>Dapat Masa Depan Lebih Cerah!</h2>
+
             <p>
-                Satu donasi kecil dari kamu, bisa jadi awal perubahan besar untuk mereka.  
-                Jangan tunggu nanti. Lihat bagaimana sedikit yang kamu berikan, bisa berarti segalanya bagi anak-anak yatim.
+                Satu donasi kecil dari kamu, bisa jadi awal perubahan besar untuk mereka.
+                Jangan tunggu nanti. Lihat bagaimana sedikit yang kamu berikan,
+                bisa berarti segalanya bagi anak-anak yatim.
             </p>
-            <a href="#" class="hero-btn">Kirim Donasi Sekarang →</a>
+
+            <a href="#" class="donasi-btn">Kirim Donasi Sekarang →</a>
         </div>
 
         <!-- IMAGE -->
-        <div class="hero-img">
-            <img src="https://i.ibb.co/0J9KkVC/kids.png" alt="anak yatim">
+        <div class="donasi-image">
+            <img src="https://i.ibb.co/0J9KkVC/kids.png" alt="Anak Yatim">
         </div>
 
     </div>
 </section>
 
-</body>
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- ==== FOOTER NEW DESIGN ==== -->
+<style>
+    .footer {
+        width: 100%;
+        background: linear-gradient(180deg, #f59e3b 0%, #ea7b0c 100%);
+        padding: 80px 60px 35px;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        color: #fff;
+    }
+
+    .footer-container {
+        max-width: 1250px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.3fr 1fr 1fr;
+        gap: 60px;
+        align-items: start;
+    }
+
+    .footer h3 {
+        font-weight: 800;
+        font-size: 22px;
+        margin-bottom: 18px;
+    }
+
+    .footer p,
+    .footer a {
+        font-size: 15px;
+        line-height: 1.7;
+        color: #fff;
+        text-decoration: none;
+        opacity: 0.95;
+    }
+
+    .footer a:hover {
+        opacity: 1;
+        font-weight: 600;
+    }
+
+    /* ---- SOCIAL ---- */
+    .footer-social {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-bottom: 25px;
+    }
+
+    .social-item {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .social-item img {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+        filter: brightness(0) invert(1);
+    }
+
+    /* ---- WARNING BOX ---- */
+    .footer-warning {
+        background: rgba(0, 0, 0, 0.75);
+        padding: 22px 26px;
+        border-radius: 14px;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-top: 18px;
+    }
+
+    /* ---- COPYRIGHT ---- */
+    .footer-bottom {
+        text-align: center;
+        font-size: 14px;
+        padding-top: 35px;
+        opacity: 0.9;
+    }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 900px) {
+        .footer {
+            padding: 60px 30px 30px;
+        }
+
+        .footer-container {
+            grid-template-columns: 1fr;
+            gap: 45px;
+        }
+    }
+</style>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- KOLOM 1 -->
+        <div>
+            <h3>Lazismu Daerah Istimewa Yogyakarta</h3>
+            <p>
+                LAZISMU adalah lembaga amil zakat nasional dengan SK Menteri Agama RI No. 90 Tahun 2022,
+                berkhidmat dalam pemberdayaan masyarakat melalui pendayagunaan zakat, infak, dan dana
+                kedermawanan lainnya.
+            </p>
+
+            <h3 style="margin-top:28px;">Kantor</h3>
+            <p>
+                Jl. Gedongkuning No.152, RT.41, Rejowinangun, Kec. Kotagede,<br>
+                Kota Yogyakarta, Daerah Istimewa Yogyakarta
+            </p>
+        </div>
+
+        <!-- KOLOM 2 -->
+        <div>
+            <h3>Tentang Kami</h3>
+            <p><a href="#">Latar Belakang</a></p>
+            <p><a href="#">Visi & Misi</a></p>
+            <p><a href="#">Struktur Pengelola</a></p>
+            <p><a href="#">Kebijakan Strategis</a></p>
+            <p><a href="#">Laporan</a></p>
+            <p><a href="#">Mitra</a></p>
+            <p><a href="#">Daftar Rekening</a></p>
+            <p><a href="#">Donasi Online</a></p>
+        </div>
+
+        <!-- KOLOM 3 -->
+        <div>
+
+            <div class="footer-social">
+
+                <div class="social-item">
+                    <img src="ig.png">
+                    <p>lazismudiy</p>
+                </div>
+
+                <div class="social-item">
+                    <img src="ig.png">
+                    <p>jalanekabaikan.id</p>
+                </div>
+
+                <div class="social-item">
+                    <img src="wa.png">
+                    <p>+62 895–3635–20118</p>
+                </div>
+
+                <div class="social-item">
+                    <img src="fb.png">
+                    <p>Lazismu DIY</p>
+                </div>
+
+                <div class="social-item">
+                    <img src="x_twiter.png">
+                    <p>Lazismu DIY</p>
+                </div>
+
+            </div>
+
+            <div class="footer-warning">
+                Dana yang didonasikan melalui Lazismu Peduli bukan bersumber dan bukan untuk tujuan pencucian uang
+                (money laundering), termasuk terorisme maupun tindak kejahatan lainnya.
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2023 Lazismu D.I. Yogyakarta — All Rights Reserved.
+    </div>
+
+</footer>
+
+

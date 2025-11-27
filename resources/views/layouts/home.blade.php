@@ -1020,95 +1020,96 @@
     </div>
 </div>
 
-
-<!-- ==== FOOTER ==== -->
+<!-- GOOGLE FONT -->
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
+<!-- ==== FOOTER NEW DESIGN ==== -->
 <style>
     .footer {
         width: 100%;
-        background: linear-gradient(180deg, #e9a870 0%, #ea7b0c 100%);
-        padding: 60px 60px 30px;
+        background: linear-gradient(180deg, #f59e3b 0%, #ea7b0c 100%);
+        padding: 80px 60px 35px;
         font-family: 'Plus Jakarta Sans', sans-serif;
         color: #fff;
     }
 
     .footer-container {
-        max-width: 1300px;
+        max-width: 1250px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: 1.2fr 1fr 1fr;
+        grid-template-columns: 1.3fr 1fr 1fr;
         gap: 60px;
+        align-items: start;
     }
 
     .footer h3 {
-        font-weight: 700;
-        font-size: 20px;
-        margin-bottom: 15px;
-        color: #fff;
+        font-weight: 800;
+        font-size: 22px;
+        margin-bottom: 18px;
     }
 
     .footer p,
     .footer a {
         font-size: 15px;
-        line-height: 1.6;
+        line-height: 1.7;
         color: #fff;
         text-decoration: none;
+        opacity: 0.95;
     }
 
     .footer a:hover {
-        opacity: 0.8;
+        opacity: 1;
+        font-weight: 600;
     }
 
-    /* SOCIAL ICON LIST */
+    /* ---- SOCIAL ---- */
     .footer-social {
         display: flex;
         flex-direction: column;
-        gap: 12px;
-        margin-bottom: 20px;
+        gap: 14px;
+        margin-bottom: 25px;
     }
 
     .social-item {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 14px;
     }
 
     .social-item img {
-        width: 26px;
-        height: 26px;
+        width: 28px;
+        height: 28px;
         object-fit: contain;
-        filter: brightness(0) invert(1); /* menjadikan logo putih */
+        filter: brightness(0) invert(1);
     }
 
-    /* BLACK BOX */
+    /* ---- WARNING BOX ---- */
     .footer-warning {
-        background: #1e1e1e;
-        padding: 25px 30px;
-        border-radius: 12px;
+        background: rgba(0, 0, 0, 0.75);
+        padding: 22px 26px;
+        border-radius: 14px;
         font-size: 14px;
         line-height: 1.6;
-        margin-top: 20px;
-        color: #fff;
-        max-width: 350px;
+        margin-top: 18px;
     }
 
-    /* COPYRIGHT */
+    /* ---- COPYRIGHT ---- */
     .footer-bottom {
         text-align: center;
         font-size: 14px;
         padding-top: 35px;
-        color: #000;
+        opacity: 0.9;
     }
 
-    /* RESPONSIVE */
+    /* ---- RESPONSIVE ---- */
     @media (max-width: 900px) {
+        .footer {
+            padding: 60px 30px 30px;
+        }
+
         .footer-container {
             grid-template-columns: 1fr;
-            gap: 40px;
-        }
-        .footer-warning {
-            max-width: 100%;
+            gap: 45px;
         }
     }
 </style>
@@ -1121,12 +1122,12 @@
         <div>
             <h3>Lazismu Daerah Istimewa Yogyakarta</h3>
             <p>
-                LAZISMU adalah lembaga amil zakat nasional dengan SK. Menteri Agama RI No. 90 Tahun 2022,
-                yang berkhidmat dalam pemberdayaan masyarakat, melalui pendayagunaan dana zakat, infak dan
-                dana kedermawanan lainnya baik dari perseorangan, lembaga, perusahaan dan instansi lainnya.
+                LAZISMU adalah lembaga amil zakat nasional dengan SK Menteri Agama RI No. 90 Tahun 2022,
+                berkhidmat dalam pemberdayaan masyarakat melalui pendayagunaan zakat, infak, dan dana
+                kedermawanan lainnya.
             </p>
 
-            <h3 style="margin-top:30px;">Kantor</h3>
+            <h3 style="margin-top:28px;">Kantor</h3>
             <p>
                 Jl. Gedongkuning No.152, RT.41, Rejowinangun, Kec. Kotagede,<br>
                 Kota Yogyakarta, Daerah Istimewa Yogyakarta
@@ -1137,7 +1138,7 @@
         <div>
             <h3>Tentang Kami</h3>
             <p><a href="#">Latar Belakang</a></p>
-            <p><a href="#">Visi dan Misi</a></p>
+            <p><a href="#">Visi & Misi</a></p>
             <p><a href="#">Struktur Pengelola</a></p>
             <p><a href="#">Kebijakan Strategis</a></p>
             <p><a href="#">Laporan</a></p>
@@ -1150,42 +1151,45 @@
         <div>
 
             <div class="footer-social">
+
                 <div class="social-item">
-                    <img src="ig.png" alt="Instagram">
+                    <img src="ig.png">
                     <p>lazismudiy</p>
                 </div>
 
                 <div class="social-item">
-                    <img src="ig.png" alt="Instagram">
+                    <img src="ig.png">
                     <p>jalanekabaikan.id</p>
                 </div>
 
                 <div class="social-item">
-                    <img src="wa.png" alt="WhatsApp / Telepon">
+                    <img src="wa.png">
                     <p>+62 895–3635–20118</p>
                 </div>
 
                 <div class="social-item">
-                    <img src="fb.png" alt="Facebook">
+                    <img src="fb.png">
                     <p>Lazismu DIY</p>
                 </div>
 
                 <div class="social-item">
-                    <img src="x_twiter.png" alt="X">
+                    <img src="x_twiter.png">
                     <p>Lazismu DIY</p>
                 </div>
+
             </div>
 
             <div class="footer-warning">
                 Dana yang didonasikan melalui Lazismu Peduli bukan bersumber dan bukan untuk tujuan pencucian uang
                 (money laundering), termasuk terorisme maupun tindak kejahatan lainnya.
             </div>
+
         </div>
 
     </div>
 
     <div class="footer-bottom">
-        Copyright © 2023 Lazismu D.I. Yogyakarta
+        © 2023 Lazismu D.I. Yogyakarta — All Rights Reserved.
     </div>
 
 </footer>
