@@ -5,6 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rendangmu - Lazismu</title>
 <link rel="icon" type="image/png" href="/logo-lazismu.png">
+<style>
+    html {
+        box-sizing: border-box;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+    body {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+</style>
 </head>
 <body style="margin: 0; padding: 0; background: #f9f9f9;">
 <!-- Import Jakarta Sans font -->
