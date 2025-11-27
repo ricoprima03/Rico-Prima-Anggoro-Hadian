@@ -1,6 +1,6 @@
 
 <?php
-Route::get('/Pembayaran.php', function () {
+Route::get('/Pembayaran', function () {
     return view('Pembayaran');
 });
 
