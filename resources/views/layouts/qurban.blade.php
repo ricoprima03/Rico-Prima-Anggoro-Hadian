@@ -107,9 +107,9 @@
         font-size: 32px;
         font-weight: 700;
         margin-bottom: 40px;
-        text-align: left;            /* RATA KIRI */
+        text-align: left;
         width: 100%;
-        max-width: 1300px;           /* Agar sejajar dengan grid */
+        max-width: 1300px;
     }
 
     /* GRID WRAPPER */
@@ -129,12 +129,15 @@
         text-align: left;
     }
 
+    /* FOTO / THUMBNAIL */
     .ziswaf-img {
         width: 100%;
         height: 160px;
-        background: #d9d9d9;
         border-radius: 6px;
         margin-bottom: 12px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .ziswaf-card h3 {
@@ -187,7 +190,7 @@
 
         <!-- CARD 1 -->
         <div class="ziswaf-card">
-            <div class="ziswaf-img"></div>
+            <div class="ziswaf-img" style="background-image: url('/img/foto1.jpg');"></div>
             <h3>Apa Pentingnya Pendidikan Setara untuk Anak Yatim? Yuk Cek!</h3>
             <div class="ziswaf-meta">25 Juli 2024 /// Tidak ada komentar</div>
             <div class="ziswaf-desc">
@@ -197,7 +200,7 @@
 
         <!-- CARD 2 -->
         <div class="ziswaf-card">
-            <div class="ziswaf-img"></div>
+            <div class="ziswaf-img" style="background-image: url('/img/foto2.jpg');"></div>
             <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
             <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
             <div class="ziswaf-desc">
@@ -207,7 +210,7 @@
 
         <!-- CARD 3 -->
         <div class="ziswaf-card">
-            <div class="ziswaf-img"></div>
+            <div class="ziswaf-img" style="background-image: url('/img/foto3.jpg');"></div>
             <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
             <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
             <div class="ziswaf-desc">
@@ -217,7 +220,7 @@
 
         <!-- CARD 4 -->
         <div class="ziswaf-card">
-            <div class="ziswaf-img"></div>
+            <div class="ziswaf-img" style="background-image: url('/img/foto4.jpg');"></div>
             <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
             <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
             <div class="ziswaf-desc">
@@ -227,7 +230,7 @@
 
         <!-- CARD 5 -->
         <div class="ziswaf-card">
-            <div class="ziswaf-img"></div>
+            <div class="ziswaf-img" style="background-image: url('/img/foto5.jpg');"></div>
             <h3>Apa Pentingnya Pendidikan Setara untuk Anak Yatim? Yuk Cek!</h3>
             <div class="ziswaf-meta">25 Juli 2024 /// Tidak ada komentar</div>
             <div class="ziswaf-desc">
@@ -237,7 +240,7 @@
 
         <!-- CARD 6 -->
         <div class="ziswaf-card">
-            <div class="ziswaf-img"></div>
+            <div class="ziswaf-img" style="background-image: url('/img/foto6.jpg');"></div>
             <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
             <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
             <div class="ziswaf-desc">
@@ -247,7 +250,7 @@
 
         <!-- CARD 7 -->
         <div class="ziswaf-card">
-            <div class="ziswaf-img"></div>
+            <div class="ziswaf-img" style="background-image: url('/img/foto7.jpg');"></div>
             <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
             <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
             <div class="ziswaf-desc">
@@ -257,7 +260,7 @@
 
         <!-- CARD 8 -->
         <div class="ziswaf-card">
-            <div class="ziswaf-img"></div>
+            <div class="ziswaf-img" style="background-image: url('/img/foto8.jpg');"></div>
             <h3>Bolehkah Fidyah untuk Anak Yatim? Ini Penjelasan Lengkapnya!</h3>
             <div class="ziswaf-meta">14 Februari 2025 /// Tidak ada komentar</div>
             <div class="ziswaf-desc">
@@ -270,6 +273,7 @@
 </div>
 
 </body>
+
 
 <!-- dapatkan Pahala berlipat untuk berbagi kepada anak yatim -->
  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">

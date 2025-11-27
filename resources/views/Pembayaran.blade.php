@@ -138,7 +138,7 @@
     }
 
     .rekening-logo img {
-        width: 90px;
+        width: 130px;
         object-fit: contain;
     }
 
@@ -170,7 +170,7 @@
                 <p class="nomor">53 2000 8000</p>
             </div>
             <div class="rekening-logo">
-                <img src="https://i.ibb.co/mFYWX8b/muamalat.png" alt="Muamalat">
+                <img src="muamalat.png" alt="Muamalat">
             </div>
         </div>
 
@@ -181,7 +181,7 @@
                 <p class="nomor">801 211 017964</p>
             </div>
             <div class="rekening-logo">
-                <img src="https://i.ibb.co/h1bbNXV/bpd.png" alt="BPD DIY">
+                <img src="BPD_Syariah.png" alt="BPD DIY">
             </div>
         </div>
 
@@ -192,7 +192,7 @@
                 <p class="nomor">04 6818 1912</p>
             </div>
             <div class="rekening-logo">
-                <img src="https://i.ibb.co/7XYvbmy/bca-syariah.png" alt="BCA Syariah">
+                <img src="Bca.png" alt="BCA Syariah">
             </div>
         </div>
 
@@ -210,7 +210,7 @@
                 <p class="nomor">801 211 017965</p>
             </div>
             <div class="rekening-logo">
-                <img src="https://i.ibb.co/h1bbNXV/bpd.png" alt="BPD Syariah">
+                <img src="BPD_Syariah.png" alt="BPD Syariah">
             </div>
         </div>
 
@@ -230,7 +230,7 @@
     }
 
     .qris-section img.qris-title {
-        width: 140px;
+        width: 250px;
         margin-bottom: 25px;
         opacity: 0.9;
     }
@@ -266,7 +266,7 @@
     }
 
     .qris-card img.bank-logo {
-        width: 110px;
+        width: 130px;
         object-fit: contain;
     }
 
@@ -278,7 +278,7 @@
             gap: 20px;
         }
         .qris-card img.bank-logo {
-            width: 120px;
+            width: 100px;
         }
     }
 </style>
@@ -286,21 +286,21 @@
 <section class="qris-section">
 
     <!-- QRIS TITLE -->
-    <img class="qris-title" src="https://i.ibb.co/SRHyG4G/qris.png" alt="QRIS Logo">
+    <img class="qris-title" src="logo_qris.png" alt="QRIS Logo">
 
     <!-- CARD WRAPPER -->
     <div class="qris-wrapper">
 
         <!-- QR BPD DIY -->
         <div class="qris-card">
-            <img class="qr" src="QR-BPD.png" alt="QRIS BPD DIY">
-            <img class="bank-logo" src="https://i.ibb.co/h1bbNXV/bpd.png" alt="Bank BPD DIY Syariah">
+            <img class="qr" src="qris_bpd.png" alt="QRIS BPD DIY">
+            <img class="bank-logo" src="BPD_Syariah.png" alt="Bank BPD DIY Syariah">
         </div>
 
         <!-- QR BCA SYARIAH -->
         <div class="qris-card">
-            <img class="qr" src="QR-BCA.png" alt="QRIS BCA Syariah">
-            <img class="bank-logo" src="https://i.ibb.co/7XYvbmy/bca-syariah.png" alt="BCA Syariah Logo">
+            <img class="qr" src="qris_bca.png" alt="QRIS BCA Syariah">
+            <img class="bank-logo" src="Bca.png" alt="BCA Syariah Logo">
         </div>
 
     </div>

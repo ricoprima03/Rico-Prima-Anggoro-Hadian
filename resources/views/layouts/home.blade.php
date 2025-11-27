@@ -243,7 +243,6 @@
 
 </div>
 
-
 <!-- ==== SECTION: Bagaimana Rendangmu di Proses ==== -->
 <style>
     .timeline-section {
@@ -252,10 +251,17 @@
         margin: 0 auto;
         padding: 40px 20px;
         font-family: 'Plus Jakarta Sans', sans-serif;
+        text-align: center;
+    }
+
+    /* LOGO DI ATAS JUDUL */
+    .timeline-logo {
+        width: 50px;
+        margin: 0 auto 15px auto;
+        display: block;
     }
 
     .timeline-title {
-        text-align: center;
         font-size: 2rem;
         font-weight: 700;
         color: #d88b19;
@@ -266,19 +272,21 @@
         display: flex;
         width: 100%;
         position: relative;
+        text-align: left;
     }
 
-    /* Garis vertikal */
+    /* === GARIS VERTIKAL SUDAH DIPASIN === */
     .timeline-line {
         width: 2px;
         background: #ff9900;
         position: absolute;
         top: 0;
         bottom: 0;
-        left: 150px;
-        margin-left: -1px;
+        left: 167px; /* ← INI SUDAH DIPASIN AGAR GARIS PAS DI TENGAH TITIK */
+        z-index: 1;
     }
 
+    /* KIRI: NAMA STEP */
     .timeline-left {
         width: 180px;
         display: flex;
@@ -296,7 +304,7 @@
         padding-right: 20px;
     }
 
-    /* Titik */
+    /* TITIK */
     .timeline-left .step::after {
         content: "";
         width: 12px;
@@ -306,14 +314,15 @@
         position: absolute;
         right: -7px;
         top: 5px;
+        z-index: 3;
     }
 
+    /* KANAN: KARTU */
     .timeline-right {
         flex: 1;
         padding-left: 80px;
     }
 
-    /* Card */
     .timeline-card {
         background: #ffffff;
         padding: 20px;
@@ -323,14 +332,11 @@
         display: flex;
         align-items: center;
         gap: 20px;
-
-        /* ANIMASI SCROLL (awal) */
         opacity: 0;
         transform: translateY(40px);
         transition: all 0.8s ease;
     }
 
-    /* Animasi aktif */
     .timeline-card.show {
         opacity: 1;
         transform: translateY(0);
@@ -352,14 +358,15 @@
     .timeline-card .text p {
         font-size: 1rem;
         color: #444;
-        line-height: 1.6;
         margin: 0;
+        line-height: 1.6;
     }
 
     /* RESPONSIVE */
     @media(max-width: 768px) {
         .timeline-container {
             flex-direction: column;
+            text-align: center;
         }
 
         .timeline-left {
@@ -389,19 +396,20 @@
 
         .timeline-card {
             flex-direction: column;
-            text-align: center;
         }
     }
 </style>
 
 <div class="timeline-section">
+
+    <img src="logo_emblem.png" alt="Logo Rendangmu" class="timeline-logo">
+
     <h2 class="timeline-title">Bagaimana Rendangmu di Proses?</h2>
 
     <div class="timeline-container">
 
         <div class="timeline-line"></div>
 
-        <!-- LEFT LABELS -->
         <div class="timeline-left">
             <div class="step">Narahlbung</div>
             <div class="step">Rekapitulasi</div>
@@ -412,7 +420,6 @@
             <div class="step">Siap Santap</div>
         </div>
 
-        <!-- RIGHT CONTENT -->
         <div class="timeline-right">
 
             <div class="timeline-card">
@@ -475,7 +482,6 @@
     </div>
 </div>
 
-<!-- ==== ANIMASI SCROLL SCRIPT ==== -->
 <script>
     const cards = document.querySelectorAll(".timeline-card");
 
@@ -485,12 +491,12 @@
                 entry.target.classList.add("show");
             }
         });
-    }, {
-        threshold: 0.2
-    });
+    }, { threshold: 0.2 });
 
     cards.forEach(card => observer.observe(card));
 </script>
+
+
 
 <!-- ==== SECTION: Mengapa Harus Qurban di Rendangmu ==== -->
 <style>
@@ -501,6 +507,13 @@
         padding: 20px;
         text-align: center;
         font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* LOGO DI ATAS JUDUL */
+    .benefit-logo {
+        width: 50px;
+        margin: 0 auto 15px auto;
+        display: block;
     }
 
     .benefit-title {
@@ -517,7 +530,6 @@
         flex-wrap: wrap;
     }
 
-    /* Default: belum muncul */
     .benefit-item {
         width: 180px;
         text-align: center;
@@ -526,13 +538,11 @@
         transition: all 1.2s ease;
     }
 
-    /* Jika terlihat di layar → animasi muncul */
     .benefit-item.show {
         opacity: 1;
         transform: translateY(0);
     }
 
-    /* Delay animasi */
     .benefit-item:nth-child(1).show { transition-delay: 0.2s; }
     .benefit-item:nth-child(2).show { transition-delay: 0.4s; }
     .benefit-item:nth-child(3).show { transition-delay: 0.6s; }
@@ -568,7 +578,6 @@
         line-height: 1.4;
     }
 
-    /* Responsive */
     @media(max-width: 768px) {
         .benefit-container {
             justify-content: center;
@@ -586,6 +595,10 @@
 </style>
 
 <div class="benefit-section">
+
+    <!-- LOGO / FOTO DI ATAS JUDUL -->
+    <img src="logo_emblem.png" alt="logo_emblem" class="benefit-logo">
+
     <h2 class="benefit-title">Mengapa Harus Qurban di Rendangmu?</h2>
 
     <div class="benefit-container">
@@ -643,6 +656,7 @@
     </div>
 </div>
 
+
 <!-- ==== SCROLL REVEAL SCRIPT ==== -->
 <script>
     const items = document.querySelectorAll('.benefit-item');
@@ -662,7 +676,6 @@
     // Run saat halaman pertama kali tampil (jika elemen sudah terlihat)
     showOnScroll();
 </script>
-
 
 <!-- ==== SECTION: Penyaluran Rendangmu ==== -->
 <style>
@@ -685,7 +698,7 @@
     .distribution-subtitle {
         font-size: 1rem;
         color: #555;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     /* Background map */
@@ -701,13 +714,14 @@
         opacity: 0.3;
     }
 
+    /* Container angka */
     .stats-container {
         position: absolute;
-        top: 40%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
-        max-width: 900px;
+        max-width: 850px;
         display: flex;
         justify-content: space-between;
         padding: 0 20px;
@@ -716,12 +730,28 @@
     .stat-item {
         text-align: center;
         color: #000;
+
+        /* ANIMASI (awal) */
+        opacity: 0;
+        transform: translateY(25px);
+        transition: all 1.3s ease;
     }
+
+    /* Saat muncul */
+    .stat-item.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Delay antar item */
+    .stat-item:nth-child(1).show { transition-delay: 0.2s; }
+    .stat-item:nth-child(2).show { transition-delay: 0.4s; }
+    .stat-item:nth-child(3).show { transition-delay: 0.6s; }
 
     .stat-number {
         font-size: 2rem;
         font-weight: 700;
-        margin-bottom: 6px;
+        margin-bottom: 4px;
     }
 
     .stat-label {
@@ -733,14 +763,18 @@
     @media(max-width: 768px) {
         .stats-container {
             flex-direction: column;
-            gap: 20px;
+            gap: 16px;
             position: static;
             transform: none;
-            margin-top: -40px;
+            margin-top: -20px;
         }
 
         .map-wrapper img {
             opacity: 0.15;
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
         }
     }
 </style>
@@ -775,6 +809,21 @@
 
 </div>
 
+<script>
+    const stats = document.querySelectorAll(".stat-item");
+
+    const observerStats = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, { threshold: 0.3 });
+
+    stats.forEach(stat => observerStats.observe(stat));
+</script>
+
+
 <!-- ==== SECTION: Pilih Rendangmu ==== -->
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
@@ -787,9 +836,15 @@
     }
 
     .orange-section {
-        background: #f4a935;
+        background: #f8f8f8ff; /* DIGANTI PUTIH */
         text-align: center;
         padding: 60px 20px;
+    }
+
+    /* LOGO DI ATAS JUDUL */
+    .logo-top {
+        width: 50px;
+        margin-bottom: 10px;
     }
 
     .orange-section h1 {
@@ -801,7 +856,7 @@
 
     .orange-section p {
         font-size: 18px;
-        color: #222;
+        color: #555;
         margin-top: 0;
     }
 
@@ -860,7 +915,7 @@
         margin: 0;
         font-size: 15px;
         line-height: 1.5;
-        color: #222;
+        color: #333;
     }
 
     .btn-donasi {
@@ -885,8 +940,11 @@
 </style>
 
 
-<!-- SECTION ORANYE -->
+<!-- SECTION PUTIH -->
 <div class="orange-section">
+
+    <!-- LOGO DI ATAS TULISAN -->
+    <img src="logo_emblem.png" alt="Logo" class="logo-top">
 
     <h1>Pilih RendangMu Anda Sekarang</h1>
     <p>Pilih hewan qurban Anda, dan Berdayakan Desa dengan Berqurban</p>
@@ -921,6 +979,7 @@
 
     </div>
 </div>
+
 
 <!-- ==== SECTION: Testimoni Pequrban ==== -->
 <style>
