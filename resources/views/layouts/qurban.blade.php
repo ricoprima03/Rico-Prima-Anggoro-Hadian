@@ -1,10 +1,10 @@
 <DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Rendangmu - Lazismu</title>
-	<link rel="icon" type="image/png" href="/logo-lazismu.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rendangmu - Lazismu</title>
+<link rel="icon" type="image/png" href="/logo-lazismu.png">
 </head>
 <body style="margin: 0; padding: 0; background: #f9f9f9;">
 <!-- Import Jakarta Sans font -->
@@ -56,7 +56,8 @@
                 border-radius: 2px;
                 margin-left: 12px;
                 cursor: pointer;
-            "></button>
+            "><img src="/search-icon.png-removebg-preview.png" alt="Search" style="width: 22px; height: 22px;">
+            </div>
         </nav>
     </div>
 </header>

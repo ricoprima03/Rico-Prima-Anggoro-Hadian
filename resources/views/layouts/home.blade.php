@@ -1,10 +1,10 @@
 <DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Rendangmu - Lazismu</title>
-	<link rel="icon" type="image/png" href="/logo-lazismu.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rendangmu - Lazismu</title>
+<link rel="icon" type="image/png" href="/logo-lazismu.png">
 </head>
 <body style="margin: 0; padding: 0; background: #f9f9f9;">
 <!-- Import Jakarta Sans font -->
@@ -56,7 +56,8 @@
                 border-radius: 2px;
                 margin-left: 12px;
                 cursor: pointer;
-            "></button>
+            "><img src="/search-icon.png-removebg-preview.png" alt="Search" style="width: 22px; height: 22px;">
+            </div>
         </nav>
     </div>
 </header>
@@ -214,10 +215,20 @@
     </div>
 </div>
 
-<!-- Video   -->
+<!-- Video -->
 <div style="width: 100%; display: flex; justify-content: center; margin-top: 24px;">
-	<img src="/qurban-banner.jpeg" alt="Qurban Banner" style="max-width: 1000px; width: 100%; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);">
+
+    <a href="https://youtu.be/tCZNPkouUEo?si=HuPsF2oZxNXdYeRk" 
+       target="_blank" 
+       style="display: inline-block;">
+
+        <img src="/teaser_video.png" 
+             alt="teaser video rendangmu" 
+             style="max-width: 1000px; width: 100%; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); cursor: pointer;">
+    </a>
+
 </div>
+
 
 <!-- ==== SECTION: Bagaimana Rendangmu di Proses ==== -->
 <style>
@@ -567,7 +578,7 @@
 
         <div class="benefit-item">
             <div class="benefit-icon">
-                <img src="/Untitled_design-removebg-preview 1.png" alt="">
+                <img src="/jabat_tangan.png" alt="">
             </div>
             <div class="benefit-title-small">AMANAH</div>
             <div class="benefit-desc">
@@ -870,7 +881,7 @@
 
         <!-- CARD KAMBING -->
         <div class="card">
-            <img src="/superqurban-kambing.png" alt="Superqurban Kambing">
+            <img src="/kambbing.png" alt="Kambing">
             <div class="card-body">
                 <h3>Rendangmu Kambing</h3>
                 <p>Rp. 2.900.000,-<br>
@@ -883,7 +894,7 @@
 
         <!-- CARD SAPI -->
         <div class="card">
-            <img src="/superqurban-sapi.png" alt="Superqurban Sapi">
+            <img src="/sapi.png" alt="Rendangmu Sapi">
             <div class="card-body">
                 <h3>Rendangmu Sapi</h3>
                 <p>Rp. 19.450.000,-<br>
@@ -1119,11 +1130,11 @@
             <div class="footer-social">
                 <div class="social-item">
                     <img src="ig.png" alt="Instagram">
-                    <p>@lazismudiy</p>
+                    <p>lazismudiy</p>
                 </div>
 
                 <div class="social-item">
-                    <img src="web.png" alt="Website">
+                    <img src="ig.png" alt="Instagram">
                     <p>jalanekabaikan.id</p>
                 </div>
 
@@ -1138,8 +1149,8 @@
                 </div>
 
                 <div class="social-item">
-                    <img src="mail.png" alt="Email">
-                    <p>info@lazismu.org</p>
+                    <img src="x_twiter.png" alt="X">
+                    <p>Lazismu DIY</p>
                 </div>
             </div>
 
