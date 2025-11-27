@@ -1,7 +1,12 @@
+
 <?php
+Route::get('/Pembayaran', function () {
+    return view('layouts.Pembayaran');
+});
 
 use Illuminate\Support\Facades\Route;
 
+Route::view('/qurban', 'layouts.qurban')->name('qurban');
 Route::get('/', function () {
-    return view('home');
+    return view('layouts.home');
 });
