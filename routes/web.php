@@ -1,7 +1,7 @@
 
 <?php
 Route::get('/Pembayaran', function () {
-    return view('Pembayaran');
+    return view('layouts.Pembayaran');
 });
 
 use Illuminate\Support\Facades\Route;
