@@ -1037,7 +1037,7 @@
     }
 
     .donasi-image img {
-        width: 270px;
+        width: 500px;
         object-fit: contain;
     }
 
@@ -1072,7 +1072,7 @@
 
         <!-- IMAGE -->
         <div class="donasi-image">
-            <img src="https://i.ibb.co/0J9KkVC/kids.png" alt="Anak Yatim">
+            <img src="anak_yatim.png" alt="Anak Yatim">
         </div>
 
     </div>
