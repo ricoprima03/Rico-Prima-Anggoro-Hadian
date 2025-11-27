@@ -1,4 +1,8 @@
+
 <?php
+Route::get('/Pembayaran.php', function () {
+    return view('Pembayaran');
+});
 
 use Illuminate\Support\Facades\Route;
 

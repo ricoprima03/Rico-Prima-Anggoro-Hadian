@@ -139,7 +139,7 @@
                 persediaan pangan untuk daerah bencana.
             </p>
 
-            <a href="{{ url('/Pembayaran.php') }}" style="
+            <a href="{{ url('/Pembayaran') }}" style="
                 display: inline-block; 
                 margin-top: 28px; 
                 padding: 14px 36px; 
@@ -207,7 +207,7 @@
                 berbagai pelosok Indonesia, hingga ke wilayah rawan pangan maupun terkena bencana.
             </p>
 
-            <a href="{{ url('/Pembayaran.php') }}" style="
+            <a href="{{ url('/Pembayaran') }}" style="
                 display: inline-block; 
                 margin-top: 28px; 
                 padding: 14px 36px; 
