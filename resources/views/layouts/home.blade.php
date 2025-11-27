@@ -917,7 +917,6 @@
         text-align: center;
         overflow: hidden;
         font-family: 'Plus Jakarta Sans', sans-serif;
-        border-radius: 0; /* optional */
     }
 
     .testimoni-section::before {
@@ -928,10 +927,19 @@
         z-index: 1;
     }
 
+    /* Ensure logo & title are above overlay */
+    .testimoni-logo,
     .testimoni-section h1,
     .gallery-wrapper {
         position: relative;
         z-index: 2;
+    }
+
+    /* Logo style */
+    .testimoni-logo img {
+        width: 50px;      /* kamu bisa ganti ukurannya */
+        margin-bottom: 15px;
+        filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));
     }
 
     .testimoni-section h1 {
@@ -950,7 +958,6 @@
         max-width: 900px;
         margin-left: auto;
         margin-right: auto;
-        z-index: 2;
     }
 
     .gallery-item {
@@ -976,28 +983,29 @@
 <!-- SECTION -->
 <div class="testimoni-section">
 
+    <!-- LOGO DI ATAS JUDUL -->
+    <div class="testimoni-logo">
+        <img src="/logo_emblem.png" alt="Logo Testimoni">
+    </div>
+
     <h1>TESTIMONI PEQURBAN 2024</h1>
 
     <div class="gallery-wrapper">
-
         <div class="gallery-item">
             <img src="36bca86d-5d65-4462-ac39-e30e44a183db.jpg" alt="Foto Kegiatan 1">
         </div>
-
         <div class="gallery-item">
             <img src="6e6041d4-94ba-456b-9993-c8c0246083c4.jpg" alt="Foto Kegiatan 2">
         </div>
-
         <div class="gallery-item">
             <img src="357d057b-7479-41cb-965f-fd99f3a6e0f7.jpg" alt="Foto Kegiatan 3">
         </div>
-
         <div class="gallery-item">
             <img src="352b8064-1c18-4d2e-a660-8148dfb262d1.jpg" alt="Foto Kegiatan 4">
         </div>
-
     </div>
 </div>
+
 
 <!-- ==== FOOTER ==== -->
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
