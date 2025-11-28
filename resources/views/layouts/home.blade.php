@@ -960,7 +960,7 @@
                     - Kornet 30 Kaleng <br>
                     - Rendang 25 Kaleng
                 </p>
-                <a href="#" class="btn-donasi">Tunaikan Langsung</a>
+                <a href="{{ url('/tunaikansekarangkambing') }}" class="btn-donasi">Tunaikan Langsung</a>
             </div>
         </div>
 
@@ -973,7 +973,7 @@
                     - Kornet 350 Kaleng <br>
                     - Rendang 250 Kaleng
                 </p>
-                <a href="#" class="btn-donasi">Tunaikan Langsung</a>
+                <a href="{{ url('/tunaikanSekarangSapi') }}" class="btn-donasi">Tunaikan Langsung</a>
             </div>
         </div>
 

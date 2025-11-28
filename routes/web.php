@@ -9,3 +9,11 @@ Route::get('/', function () {
 Route::get('/Pembayaran', function () {
     return view('layouts.Pembayaran');
 });
+
+Route::get('/tunaikansekarangkambing', function () {
+    return view('layouts.tunaikansekarangkambing');
+});
+
+Route::get('/tunaikanSekarangSapi', function () {
+    return view('layouts.tunaikanSekarangSapi');
+});
