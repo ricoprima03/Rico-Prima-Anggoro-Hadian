@@ -17,3 +17,7 @@ Route::get('/tunaikansekarangkambing', function () {
 Route::get('/tunaikanSekarangSapi', function () {
     return view('layouts.tunaikanSekarangSapi');
 });
+
+Route::get('/struktur-organisasi', function () {
+    return view('layouts.StrukturOrganisasi');
+});
