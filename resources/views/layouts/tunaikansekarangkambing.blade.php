@@ -249,23 +249,24 @@
     <h2>Tentang Program</h2>
 </div>
 
-<!--  Deskrpisi Tentang Program  -->
-  <!-- IMPORT FONT -->
+<!--  Deskripsi Tentang Program  -->
+<!-- IMPORT FONT -->
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+    /* === DESKRIPSI PROGRAM === */
     .program-content {
         max-width: 1000px;
         margin: 24px auto 60px;
         padding: 0 16px;
         font-family: 'Plus Jakarta Sans', sans-serif;
-        font-size: 17px;              /* teks utama diperbesar */
+        font-size: 17px;
         line-height: 1.75;
         color: #444;
     }
 
     .program-content h3 {
-        font-size: 20px;              /* judul diperbesar */
+        font-size: 20px;
         font-weight: 700;
         margin-top: 26px;
         margin-bottom: 10px;
@@ -276,7 +277,7 @@
         color: #ff7a00;
         font-weight: 700;
         margin-top: 30px;
-        font-size: 21px;              /* judul oranye lebih menonjol */
+        font-size: 21px;
     }
 
     .program-content ul {
@@ -286,7 +287,7 @@
 
     .program-content ul li {
         margin-bottom: 8px;
-        font-size: 17px;              /* list diperbesar */
+        font-size: 17px;
     }
 
     .program-content .note-title {
@@ -295,62 +296,13 @@
         color: #000;
         font-size: 20px;
     }
-</style>
 
-<div class="program-content">
-
-    <h3>SOLDOUT</h3>
-
-    <h3>Semoga Penyesalan Tahun Lalu Tidak Terulang Di Tahun Ini</h3>
-
-    <p>Tak sempat tunaikan ibadah qurban di tahun sebelumnya, dengan alasan salah satunya mungkin karena keterbatasan atau tabungan kita yang belum mencapai target. Tapi semoga tahun ini cita-cita kamu terwujud!</p>
-
-    <p>Menunaikan ibadah qurban sebagai ikhtiar mendekatkan diri dan bentuk penghambaan pada Allah dengan menjadikan ibadah yang paling di cinta-Nya. Juga menjadi bentuk kepedulian sosial terhadap sesama.</p>
-
-    <p>Berbagi dengan mereka yang hidup dalam keterbatasan, untuk kembali merasakan dampak baik ibadah dan nikmat Allah di bulan Dzulhijjah.</p>
-
-    <h3>Pastikan Qurban Kamu Punya Kelebihan Ini</h3>
-
-    <p>Rumah Zakat bersama program Superqurban, sepenuh hati memfasilitasi ibadah qurban sahabat tahun ini dengan mudah cukup pesan hewan via online dari rumah. Kami uruskan mulai dari penyembelihan hingga pendistribusian qurban hingga daerah pelosok, daerah minim pequrban, dan daerah terdampak bencana.</p>
-
-    <p>Dengan inovasi pengolahan hewan qurban dalam bentuk daging olah, yang tahan hingga 2 tahun.</p>
-
-    <h3 class="orange-title">Mengapa Harus Memilih Rendangmu</h3>
-
-    <p>Sebab, Rendangmu Memiliki Keunggulan :</p>
-
-    <ul>
-        <li>Hewan Qurban berkualitas, sehat dan bebas PMK</li>
-        <li>Donatur bisa memilih untuk mendapatkan hak pekurban berupa kornet atau rendangnya yang akan dikirimkan H+90 setelah hari tasyrik ketiga. Atau bisa memilih untuk seluruhnya disedekahkan.</li>
-        <li>Sesuai Syariah</li>
-        <li>Jangkauan lebih luas, tahan lama dan praktis.</li>
-        <li>Aksi distribusi dilakukan sepanjang tahun, menjangkau pelosok, daerah terpencil, pedesaan dan wilayah yang terkena bencana.</li>
-        <li>Memberdayakan Peternak Lokal</li>
-    </ul>
-
-    <h3 class="note-title">Note :</h3>
-
-    <ul>
-        <li>Donatur yang meminta sebagai hak qurbannya dan sudah melengkapi formulir pequrban, maka produk Superqurban akan dikirim oleh Rumah Zakat melalui jasa pengiriman pada H+90 setelah hari tasyrik ketiga.</li>
-        <li>Dengan menentukan jumlah Superqurban Sapi 1/7 untuk varian Kornet/rendang sebanyak 10 kaleng.</li>
-        <li>Laporan Qurban akan dikirimkan maksimal H+14 dari hari terakhir pemotongan hewan qurban melalui SMS/WA/Email.</li>
-        <li>Setelah pequrban menerima informasi melalui WA/Email, maka laporan sudah siap diunduh melalui aplikasi: https://rumahzakat.org/care/login dengan klik menu My Report qurban, kemudian pilih periode laporan.</li>
-        <li>Klik "Tunaikan Sekarang" untuk pesan dan amankan hewan qurban kamu</li>
-    </ul>
-
-</div>
-
-<!-- Rekomandasi Produk Lainnya -->
-<!-- IMPORT FONT -->
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-    /* WRAPPER AGAR RATA DENGAN HEADER */
+    /* === REKOMENDASI PRODUK === */
     .recommend-section {
         width: 100%;
-        max-width: 1200px;   /* samakan dengan header */
+        max-width: 1000px;   /* DISAMAKAN DENGAN DESKRIPSI PROGRAM */
         margin: 40px auto;
-        padding: 0 20px;     /* samakan dengan header */
+        padding: 0 16px;     /* DISAMAKAN */
         font-family: 'Plus Jakarta Sans', sans-serif;
         box-sizing: border-box;
     }
@@ -362,14 +314,12 @@
         color: #000;
     }
 
-    /* GRID CARD */
     .recommend-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 22px;
     }
 
-    /* CARD STYLE */
     .recommend-card {
         background: #fff;
         border-radius: 10px;
@@ -424,7 +374,52 @@
 </style>
 
 
-<!-- ==== SECTION ==== -->
+<!-- ==== DESKRIPSI PROGRAM ==== -->
+<div class="program-content">
+
+    <h3>SOLDOUT</h3>
+
+    <h3>Semoga Penyesalan Tahun Lalu Tidak Terulang Di Tahun Ini</h3>
+
+    <p>Tak sempat tunaikan ibadah qurban di tahun sebelumnya, dengan alasan salah satunya mungkin karena keterbatasan atau tabungan kita yang belum mencapai target. Tapi semoga tahun ini cita-cita kamu terwujud!</p>
+
+    <p>Menunaikan ibadah qurban sebagai ikhtiar mendekatkan diri dan bentuk penghambaan pada Allah dengan menjadikan ibadah yang paling di cinta-Nya. Juga menjadi bentuk kepedulian sosial terhadap sesama.</p>
+
+    <p>Berbagi dengan mereka yang hidup dalam keterbatasan, untuk kembali merasakan dampak baik ibadah dan nikmat Allah di bulan Dzulhijjah.</p>
+
+    <h3>Pastikan Qurban Kamu Punya Kelebihan Ini</h3>
+
+    <p>Rumah Zakat bersama program Superqurban, sepenuh hati memfasilitasi ibadah qurban sahabat tahun ini dengan mudah cukup pesan hewan via online dari rumah. Kami uruskan mulai dari penyembelihan hingga pendistribusian qurban hingga daerah pelosok, daerah minim pequrban, dan daerah terdampak bencana.</p>
+
+    <p>Dengan inovasi pengolahan hewan qurban dalam bentuk daging olah, yang tahan hingga 2 tahun.</p>
+
+    <h3 class="orange-title">Mengapa Harus Memilih Rendangmu</h3>
+
+    <p>Sebab, Rendangmu Memiliki Keunggulan :</p>
+
+    <ul>
+        <li>Hewan Qurban berkualitas, sehat dan bebas PMK</li>
+        <li>Donatur bisa memilih untuk mendapatkan hak pekurban berupa kornet atau rendangnya yang akan dikirimkan H+90 setelah hari tasyrik ketiga. Atau bisa memilih untuk seluruhnya disedekahkan.</li>
+        <li>Sesuai Syariah</li>
+        <li>Jangkauan lebih luas, tahan lama dan praktis.</li>
+        <li>Aksi distribusi dilakukan sepanjang tahun, menjangkau pelosok, daerah terpencil, pedesaan dan wilayah yang terkena bencana.</li>
+        <li>Memberdayakan Peternak Lokal</li>
+    </ul>
+
+    <h3 class="note-title">Note :</h3>
+
+    <ul>
+        <li>Donatur yang meminta sebagai hak qurbannya dan sudah melengkapi formulir pequrban, maka produk Superqurban akan dikirim oleh Rumah Zakat melalui jasa pengiriman pada H+90 setelah hari tasyrik ketiga.</li>
+        <li>Dengan menentukan jumlah Superqurban Sapi 1/7 untuk varian Kornet/rendang sebanyak 10 kaleng.</li>
+        <li>Laporan Qurban akan dikirimkan maksimal H+14 dari hari terakhir pemotongan hewan qurban melalui SMS/WA/Email.</li>
+        <li>Setelah pequrban menerima informasi melalui WA/Email, maka laporan sudah siap diunduh melalui aplikasi: https://rumahzakat.org/care/login dengan klik menu My Report qurban, kemudian pilih periode laporan.</li>
+        <li>Klik "Tunaikan Sekarang" untuk pesan dan amankan hewan qurban kamu</li>
+    </ul>
+
+</div>
+
+
+<!-- ==== REKOMENDASI PRODUK ==== -->
 <div class="recommend-section">
     
     <div class="recommend-title">Rekomendasi Program Terbaik</div>
@@ -514,3 +509,4 @@
         Tunaikan Sekarang
     </a>
 </div>
+
