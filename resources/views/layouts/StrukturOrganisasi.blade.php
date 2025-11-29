@@ -92,7 +92,7 @@
 
     /* Breadcrumb */
     .breadcrumb {
-        font-size: 25px; /* lebih besar */
+        font-size: 20px; /* lebih besar */
         color: #777;
         margin-bottom: 10px;
     }
@@ -117,7 +117,7 @@
         color: #fff;
         padding: 14px 42px; /* lebih besar */
         border-radius: 10px; /* lebih membulat */
-        font-size: 25px; /* lebih besar */
+        font-size: 20px; /* lebih besar */
         font-weight: 600;
         text-decoration: none;
         transition: .2s ease;
