@@ -104,7 +104,7 @@
 
 <div class="banner-qurban-wrapper">
     <div class="banner-qurban">
-        <img src="/qurban-banner.jpeg" alt="Qurban Banner">
+        <img src="/Rendangmu_1.png" alt="Qurban Banner">
     </div>
 </div>
 
@@ -192,7 +192,7 @@
 
 <div class="section-wrapper">
     
-    <div class="title-produk">Rendangmu Kambing</div>
+    <div class="title-produk">Rendangmu Sapi 1/7</div>
     <div class="subtitle-produk">Manfaat Qurban anda, Jadi semakin luas</div>
 
     <div class="info-card">
@@ -201,7 +201,7 @@
         <div class="info-item">
             <img src="/icon-harga.png" class="info-icon">
             <div>
-                <div class="info-text-title">Rp2.950.000</div>
+                <div class="info-text-title">Rp3.000.000</div>
                 <div class="info-text-sub">*Harga Dapat Berubah</div>
             </div>
         </div>
@@ -434,14 +434,14 @@
         <!-- CARD 1 -->
         <div class="recommend-card">
             <div class="recommend-thumb">
-                <img src="/superqurban-sapi.jpg" alt="Rendangmu Sapi">
+                <img src="/Rendangmu.png" alt="Rendangmu Sapi">
             </div>
             <div class="recommend-body">
                 <h3>Rendangmu Sapi</h3>
 
                 <div class="info-row">
                     <img src="/icon-price.png">
-                    Rp 16.500.000
+                    Rp 21.000.000
                 </div>
 
                 <div class="info-row">
@@ -454,14 +454,14 @@
         <!-- CARD 2 -->
         <div class="recommend-card">
             <div class="recommend-thumb">
-                <img src="/superqurban-kambing.jpg" alt="Rendangmu Kambing">
+                <img src="/Rendangmu_1.png" alt="Rendangmu Kambing">
             </div>
             <div class="recommend-body">
-                <h3>Rendangmu Kambing</h3>
+                <h3>Rendangmu Sapi 1/7</h3>
 
                 <div class="info-row">
                     <img src="/icon-price.png">
-                    Rp 2.500.000
+                    Rp 3.000.000
                 </div>
 
                 <div class="info-row">
@@ -475,9 +475,7 @@
 
 </div>
 
-
 <!--  Tombol Tunaikan Sekarang  -->
-  <!-- IMPORT FONT -->
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -490,7 +488,8 @@
     }
 
     .btn-tunaikan {
-        width: 100%;
+        display: block;       /* <<< WAJIB agar tidak mengecil */
+        width: 100%;          /* full width */
         padding: 14px 0;
         border: 2px solid #f38b11;
         border-radius: 6px;
@@ -500,6 +499,7 @@
         font-weight: 600;
         text-align: center;
         cursor: pointer;
+        text-decoration: none; /* hilangkan underline */
         transition: 0.25s ease;
     }
 
@@ -510,7 +510,7 @@
 </style>
 
 <div class="btn-wrapper">
-    <button class="btn-tunaikan">
+    <a href="{{ url('/pembayaranqurban') }}" class="btn-tunaikan">
         Tunaikan Sekarang
-    </button>
+    </a>
 </div>

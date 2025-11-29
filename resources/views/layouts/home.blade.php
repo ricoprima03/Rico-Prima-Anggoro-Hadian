@@ -953,12 +953,12 @@
 
         <!-- CARD KAMBING -->
         <div class="card">
-            <img src="/kambbing.png" alt="Kambing">
+            <img src="/Rendangmu.png" alt="Kambing">
             <div class="card-body">
-                <h3>Rendangmu Kambing</h3>
-                <p>Rp. 2.900.000,-<br>
-                    - Kornet 30 Kaleng <br>
-                    - Rendang 25 Kaleng
+                <h3>Rendangmu Sapi</h3>
+                <p>Rp. 21.000.000,-<br>
+                    - Hak Kemasan 420 Kaleng <br>
+                    - Hak Shohibul Qurban 140 Kaleng
                 </p>
                 <a href="{{ url('/tunaikansekarangkambing') }}" class="btn-donasi">Tunaikan Langsung</a>
             </div>
@@ -966,12 +966,12 @@
 
         <!-- CARD SAPI -->
         <div class="card">
-            <img src="/sapi.png" alt="Rendangmu Sapi">
+            <img src="/Rendangmu_1.png" alt="Rendangmu Sapi">
             <div class="card-body">
-                <h3>Rendangmu Sapi</h3>
-                <p>Rp. 19.450.000,-<br>
-                    - Kornet 350 Kaleng <br>
-                    - Rendang 250 Kaleng
+                <h3>Rendangmu Sapi 1/7</h3>
+                <p>Rp. 3.000.000,-<br>
+                    - Hak Kemasan 60 Kaleng <br>
+                    - Hak Shohibul Qurban 20 Kaleng
                 </p>
                 <a href="{{ url('/tunaikanSekarangSapi') }}" class="btn-donasi">Tunaikan Langsung</a>
             </div>
