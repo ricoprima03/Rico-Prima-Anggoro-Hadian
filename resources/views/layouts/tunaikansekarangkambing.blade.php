@@ -366,7 +366,7 @@
         
         <!-- KOLOM 1 -->
         <div class="info-item">
-            <img src="/icon-harga.png" class="info-icon">
+            <img src="/Pricetag.png" class="info-icon">
             <div>
                 <div class="info-text-title">Rp21.000.000</div>
                 <div class="info-text-sub">*Harga Dapat Berubah</div>
@@ -375,7 +375,7 @@
 
         <!-- KOLOM 2 -->
         <div class="info-item">
-            <img src="/icon-makanan.png" class="info-icon">
+            <img src="/mangkok.png" class="info-icon">
             <div>
                 <div class="info-text-title">Kornet, Rendang</div>
                 <div class="info-text-sub">Varian Rasa Tersedia</div>
@@ -602,12 +602,12 @@
                 <h3>Rendangmu Sapi</h3>
 
                 <div class="info-row">
-                    <img src="/icon-price.png">
+                    <img src="/harga.png">
                     Rp 21.000.000
                 </div>
 
                 <div class="info-row">
-                    <img src="/icon-food.png">
+                    <img src="/kornet.png">
                     Kornet, Rendang
                 </div>
             </div>
@@ -622,12 +622,12 @@
                 <h3>Rendangmu Sapi 1/7</h3>
 
                 <div class="info-row">
-                    <img src="/icon-price.png">
+                    <img src="/harga.png">
                     Rp 3.000.000
                 </div>
 
                 <div class="info-row">
-                    <img src="/icon-food.png">
+                    <img src="/kornet.png">
                     Kornet, Rendang
                 </div>
             </div>
