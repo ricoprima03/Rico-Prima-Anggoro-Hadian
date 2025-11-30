@@ -295,7 +295,7 @@
             <i>👤</i>
             <div>
                 <b>Anda Pequrban Istimewa!</b>
-                16% Pequrban Super Qurban Sebelumnya Telah Mendonasikan Hak Qurbannya – dan Kali Ini, Anda Salah Satunya!
+                16% Pequrban Rendangmu Sebelumnya Telah Mendonasikan Hak Qurbannya – dan Kali Ini, Anda Salah Satunya!
             </div>
         </div>
 
