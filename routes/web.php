@@ -25,3 +25,7 @@ Route::get('/struktur-organisasi', function () {
 Route::get('/pembayaranqurban', function () {
     return view('layouts.pembayaranqurban');
 });
+
+Route::get('/invoice', function () {
+    return view('layouts.invoice');
+});

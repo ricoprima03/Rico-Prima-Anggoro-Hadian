@@ -109,7 +109,7 @@
 
     <!-- Back -->
     <div class="trx-header">
-        <img src="/icon-back.png" width="22">
+        <img src="/pngtree-vector-back-icon-png-image_4190818-removebg-preview.png" width="22">
         <span>Detail Transaksi</span>
     </div>
 

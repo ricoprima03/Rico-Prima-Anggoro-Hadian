@@ -313,7 +313,7 @@
         Tambah ke <i>🛒</i> <span>0</span>
     </div>
 
-    <button class="btn-next">Selanjutnya</button>
+    <a href="{{ url('/invoice') }}" class="btn-next" style="display:inline-block;text-align:center;">Selanjutnya</a>
 </div>
 
 </body>
