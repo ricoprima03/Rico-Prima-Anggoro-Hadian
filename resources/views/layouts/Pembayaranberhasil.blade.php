@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Status Pembayaran</title>
+<title>Detail Transaksi</title>
 
 <!-- FONT -->
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -110,12 +110,12 @@
     <!-- Back -->
     <div class="trx-header">
         <img src="/pngtree-vector-back-icon-png-image_4190818-removebg-preview.png" width="22">
-        <span>Status Pembayaran</span>
+        <span>Detail Transaksi</span>
     </div>
 
     <!-- Status -->
     <div class="trx-status">
-        <h3>Menunggu Pembayaran</h3>
+        <h3>Penbayaran Berhasil</h3>
         <small>Batas waktu pembayaran 12 Januari 2025</small>
     </div>
 
@@ -155,15 +155,6 @@
             <span style="color:#ff8a00; font-size:18px; font-weight:700;">Rp 21.000.000</span>
         </div>
     </div>
-
-    <!-- Card QR -->
-    <div class="trx-card">
-        <div class="title">Scan QRIS</div>
-        <div class="qr-box">
-            <img src="/qris_bca.png" alt="QRIS">
-        </div>
-    </div>
-    <a href="{{ url('/Pembayaranberhasil') }}" class="btn-next" style="display:inline-block;text-align:center;">Selanjutnya</a>
 
 </div>
 

@@ -29,3 +29,7 @@ Route::get('/pembayaranqurban', function () {
 Route::get('/invoice', function () {
     return view('layouts.invoice');
 });
+
+Route::get('/Pembayaranberhasil', function () {
+    return view('layouts.Pembayaranberhasil');
+});
