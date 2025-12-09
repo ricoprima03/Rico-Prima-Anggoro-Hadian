@@ -577,11 +577,11 @@
         <div class="timeline-line"></div>
 
         <div class="timeline-left">
-            <div class="step">Narahlbung</div>
+            <div class="step">Narahubung</div>
             <div class="step">Rekapitulasi</div>
             <div class="step">Pengadaan</div>
             <div class="step">Pemotongan</div>
-            <div class="step">Pengolahan</div>
+            <div class="step">Pengalengan</div>
             <div class="step">Distribusi</div>
             <div class="step">Siap Santap</div>
         </div>
@@ -592,7 +592,7 @@
                 <img src="/callcanter.png" alt="">
                 <div class="text">
                     <h3>Call Center</h3>
-                    <p>Hubungi narahubung melalui 0854-1700-2970</p>
+                    <p>Hubungi narahubung melalui 0851-6170-2078</p>
                 </div>
             </div>
 
@@ -600,7 +600,7 @@
                 <img src="/rekap.png" alt="">
                 <div class="text">
                     <h3>Rekapitulasi</h3>
-                    <p>Narahubung akan mencatat jumlah qurban yang akan dilakukan.</p>
+                    <p>Narahubung akan mencatat jumlah qurban yang akan ditunaikan.</p>
                 </div>
             </div>
 
@@ -608,7 +608,7 @@
                 <img src="/icon_sapi.png" alt="">
                 <div class="text">
                     <h3>Pengadaan Hewan Qurban</h3>
-                    <p>Pencarian qurban dilaksanakan oleh peternakan mitra yang dijamin sehat.</p>
+                    <p>Pesanan qurban yang masuk akan dibelanjakan sapi terbaik, yang telah dinyatakan sehat oleh PDHI Korwil Jawa Timur.</p>
                 </div>
             </div>
 
@@ -616,15 +616,15 @@
                 <img src="/daging.png" alt="">
                 <div class="text">
                     <h3>Pemotongan Melalui RPH</h3>
-                    <p>Pemotongan dilakukan di rumah potong hewan sesuai standar syariah dan kesehatan.</p>
+                    <p>Sapi disembelih melalui rumah potong yang telah ditentukan sehingga daging terjaga dengan Aman, Sehat, Utuh dan Halal (ASUH).</p>
                 </div>
             </div>
 
             <div class="timeline-card">
                 <img src="/gudang.png" alt="">
                 <div class="text">
-                    <h3>Pengolahan</h3>
-                    <p>Daging diolah menjadi kornet atau rendang dengan masa ketahanan hingga 2 tahun.</p>
+                    <h3>Pengalengan</h3>
+                    <p>Daging kemudian dibawa ke pabrik untuk dijadikan rendang dalam kemasan kaleng. Proses pengalangan memakan waktu Kurang lebih 2 bulan.</p>
                 </div>
             </div>
 
@@ -632,7 +632,7 @@
                 <img src="/truk.png" alt="">
                 <div class="text">
                     <h3>Distribusi</h3>
-                    <p>Daging siap didistribusikan ke pelosok dan wilayah terdampak bencana.</p>
+                    <p>Daging siap didistribusikan kepada sohibul qurban.</p>
                 </div>
             </div>
 
@@ -640,7 +640,7 @@
                 <img src="/kaleng.png" alt="">
                 <div class="text">
                     <h3>Siap Santap</h3>
-                    <p>Produk Rendangmu siap dikonsumsi kapan saja.</p>
+                    <p>Produk Rendangmu telah diterima siap untuk dinikmati.</p>
                 </div>
             </div>
 
