@@ -556,7 +556,7 @@
 
     <h3>Pastikan Qurban Kamu Punya Kelebihan Ini</h3>
 
-    <p>Rumah Zakat bersama program Superqurban, sepenuh hati memfasilitasi ibadah qurban sahabat tahun ini dengan mudah cukup pesan hewan via online dari rumah. Kami uruskan mulai dari penyembelihan hingga pendistribusian qurban hingga daerah pelosok, daerah minim pequrban, dan daerah terdampak bencana.</p>
+    <p>Lazismu bersama program RendangMu, sepenuh hati memfasilitasi ibadah qurban sahabat tahun ini dengan mudah cukup pesan hewan via online dari rumah. Kami uruskan mulai dari penyembelihan hingga pendistribusian qurban hingga daerah pelosok, daerah minim pequrban, dan daerah terdampak bencana.</p>
 
     <p>Dengan inovasi pengolahan hewan qurban dalam bentuk daging olah, yang tahan hingga 2 tahun.</p>
 
@@ -576,10 +576,10 @@
     <h3 class="note-title">Note :</h3>
 
     <ul>
-        <li>Donatur yang meminta sebagai hak qurbannya dan sudah melengkapi formulir pequrban, maka produk Superqurban akan dikirim oleh Rumah Zakat melalui jasa pengiriman pada H+90 setelah hari tasyrik ketiga.</li>
-        <li>Dengan menentukan jumlah Superqurban Sapi 1/7 untuk varian Kornet/rendang sebanyak 10 kaleng.</li>
+        <li>Donatur yang meminta sebagai hak qurbannya dan sudah melengkapi formulir pequrban, maka produk RendangMu akan dikirim oleh Lazismu melalui jasa pengiriman pada H+90 setelah hari tasyrik ketiga.</li>
+        <li>Dengan menentukan jumlah RendangMu Sapi 1/7 untuk varian Kornet/rendang sebanyak 10 kaleng.</li>
         <li>Laporan Qurban akan dikirimkan maksimal H+14 dari hari terakhir pemotongan hewan qurban melalui SMS/WA/Email.</li>
-        <li>Setelah pequrban menerima informasi melalui WA/Email, maka laporan sudah siap diunduh melalui aplikasi: https://rumahzakat.org/care/login dengan klik menu My Report qurban, kemudian pilih periode laporan.</li>
+        <li>Setelah pequrban menerima informasi melalui WA/Email, maka laporan sudah siap diunduh melalui aplikasi: https://lazismudiy.or.id/care/login dengan klik menu My Report qurban, kemudian pilih periode laporan.</li>
         <li>Klik "Tunaikan Sekarang" untuk pesan dan amankan hewan qurban kamu</li>
     </ul>
 

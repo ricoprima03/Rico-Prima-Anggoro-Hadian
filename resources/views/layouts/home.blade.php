@@ -948,7 +948,7 @@
 <div class="distribution-section">
 
     <h2 class="distribution-title">Penyaluran Rendangmu</h2>
-    <p class="distribution-subtitle">Penyaluran Rendangmu tahun 2024</p>
+    <p class="distribution-subtitle">Penyaluran Rendangmu tahun 2025</p>
 
     <div class="map-wrapper">
         <img src="/background-peta-indonesia-abu-silver-putih_852799-39.jpg" alt="Peta Indonesia">
@@ -1227,7 +1227,7 @@
         <img src="/logo_emblem.png" alt="Logo Testimoni">
     </div>
 
-    <h1>TESTIMONI PEQURBAN 2024</h1>
+    <h1>TESTIMONI PEQURBAN 2025</h1>
 
     <div class="gallery-wrapper">
         <div class="gallery-item">
@@ -1414,7 +1414,7 @@
     </div>
 
     <div class="footer-bottom">
-        © 2023 Lazismu D.I. Yogyakarta — All Rights Reserved.
+        © 2025 Lazismu D.I. Yogyakarta — All Rights Reserved.
     </div>
 
 </footer>

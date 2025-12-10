@@ -476,17 +476,17 @@
 
 <div class="pengurus-wrapper">
 
-    <div class="pengurus-title">Dewan Penngawas Syariah</div>
+    <div class="pengurus-title">Dewan Pengawas Syariah</div>
 
     <div class="pengurus-grid">
 
         <!-- ANGGOTA 1 -->
         <div class="pengurus-card">
             <div class="pengurus-photo-box">
-                <img src="ahmad-juwaini.jpg" alt="Ahmad Juwaini">
+                <img src="ahmad-juwaini.jpg" alt="Ali Yusuf S.Th.I.,M.Hum">
             </div>
             <div class="pengurus-role">ANGGOTA</div>
-            <div class="pengurus-name">Ahmad Juwaini</div>
+            <div class="pengurus-name">Ali Yusuf S.Th.I.,M.Hum</div>
         </div>
 
         <!-- ANGGOTA 2 -->
