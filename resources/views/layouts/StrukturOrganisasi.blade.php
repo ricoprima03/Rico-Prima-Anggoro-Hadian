@@ -485,35 +485,35 @@
             <div class="pengurus-photo-box">
                 <img src="ahmad-juwaini.jpg" alt="Ali Yusuf S.Th.I.,M.Hum">
             </div>
-            <div class="pengurus-role">ANGGOTA</div>
+            <div class="pengurus-role">KETUA</div>
             <div class="pengurus-name">Ali Yusuf S.Th.I.,M.Hum</div>
         </div>
 
         <!-- ANGGOTA 2 -->
         <div class="pengurus-card">
             <div class="pengurus-photo-box">
-                <img src="herdiansyah.jpg" alt="Herdiansyah">
+                <img src="herdiansyah.jpg" alt="Atang Sholihin S.Pd.I.,M.S.I">
             </div>
             <div class="pengurus-role">ANGGOTA</div>
-            <div class="pengurus-name">Herdiansyah</div>
+            <div class="pengurus-name">Atang Sholihin S.Pd.I.,M.S.I</div>
         </div>
 
         <!-- ANGGOTA 3 -->
         <div class="pengurus-card">
             <div class="pengurus-photo-box">
-                <img src="etika-setiawanti.jpg" alt="Etika Setiawanti">
+                <img src="Rifqi Muhammad S.E.,M.H.,M.Sc.,SAS.,P.h.D.jpg" alt="Rifqi Muhammad S.E.,M.H.,M.Sc.,SAS.,P.h.D">
             </div>
             <div class="pengurus-role">ANGGOTA</div>
-            <div class="pengurus-name">Etika Setiawanti</div>
+            <div class="pengurus-name">Rifqi Muhammad S.E.,M.H.,M.Sc.,SAS.,Ph.D</div>
         </div>
 
         <!-- AMGGOTA 4 -->
         <div class="pengurus-card">
             <div class="pengurus-photo-box">
-                <img src="tri-esriani.jpg" alt="Tri Esriani">
+                <img src="Prof. Rizal Yaya. S.E.,M.Sc.,Ph.D.,CA.,Akt.jpg" alt="Prof. Rizal Yaya. S.E.,M.Sc.,Ph.D.,CA.,Akt">
             </div>
             <div class="pengurus-role">ANGGOTA</div>
-            <div class="pengurus-name">Tri Esriani</div>
+            <div class="pengurus-name">Prof. Rizal Yaya. S.E.,M.Sc.,Ph.D.,CA.,Akt</div>
         </div>
 
     </div>
@@ -602,19 +602,19 @@
         <!-- SEKRETARIS -->
         <div class="sekretaris-card">
             <div class="sekretaris-photo">
-                <img src="sekretaris.jpg" alt="Sekretaris">
+                <img src="Eka Yuhendri. S.H.I.,M.H.jpg" alt="Eka Yuhendri. S.H.I.,M.H">
             </div>
             <div class="sekretaris-role">SEKRETARIS</div>
-            <div class="sekretaris-name">Nama Sekretaris</div>
+            <div class="sekretaris-name">Eka Yuhendri. S.H.I.,M.H.</div>
         </div>
 
         <!-- WAKIL SEKRETARIS -->
         <div class="sekretaris-card">
             <div class="sekretaris-photo">
-                <img src="wakil-sekretaris.jpg" alt="Wakil Sekretaris">
+                <img src="Alfis Khoirul Khisoll.S.Kom.I.,M.SI.jpg" alt="Alfis Khoirul Khisoll.S.Kom.I.,M.SI">
             </div>
             <div class="sekretaris-role">WAKIL SEKRETARIS</div>
-            <div class="sekretaris-name">Nama Wakil Sekretaris</div>
+            <div class="sekretaris-name">Alfis Khoirul Khisoll.S.Kom.I.,M.SI</div>
         </div>
 
     </div>
@@ -710,37 +710,37 @@
         <!-- ANGGOTA 1 -->
         <div class="pengurus-card">
             <div class="pengurus-photo-box">
-                <img src="ahmad-juwaini.jpg" alt="Ahmad Juwaini">
+                <img src="Purnomo.S.T,M.M.jpg" alt="Purnomo.S.T,M.M">
             </div>
             <div class="pengurus-role">WAKIL KETUA</div>
-            <div class="pengurus-name">Ahmad Juwaini</div>
+            <div class="pengurus-name">Purnomo.S.T,M.M</div>
         </div>
 
         <!-- ANGGOTA 2 -->
         <div class="pengurus-card">
             <div class="pengurus-photo-box">
-                <img src="herdiansyah.jpg" alt="Herdiansyah">
+                <img src="Anis Rofiah.S.Th.I.,S.Pd.,M.S.I.jpg" alt="Anis Rofiah.S.Th.I.,S.Pd.,M.S.I">
             </div>
             <div class="pengurus-role">ANGGOTA</div>
-            <div class="pengurus-name">Herdiansyah</div>
+            <div class="pengurus-name">Anis Rofiah.S.Th.I.,S.Pd.,M.S.I</div>
         </div>
 
         <!-- ANGGOTA 3 -->
         <div class="pengurus-card">
             <div class="pengurus-photo-box">
-                <img src="etika-setiawanti.jpg" alt="Etika Setiawanti">
+                <img src="Luqman Satriya Siambodo.S.T..jpg" alt="Luqman Satriya Siambodo.S.T.">
             </div>
             <div class="pengurus-role">ANGGOTA</div>
-            <div class="pengurus-name">Etika Setiawanti</div>
+            <div class="pengurus-name">Luqman Satriya Siambodo.S.T.</div>
         </div>
 
         <!-- AMGGOTA 4 -->
         <div class="pengurus-card">
             <div class="pengurus-photo-box">
-                <img src="tri-esriani.jpg" alt="Tri Esriani">
+                <img src="Wahyu Tri Nur Ahmad Firdaus.S.E..jpg" alt="Wahyu Tri Nur Ahmad Firdaus.S.E.">
             </div>
             <div class="pengurus-role">ANGGOTA</div>
-            <div class="pengurus-name">Tri Esriani</div>
+            <div class="pengurus-name">Wahyu Tri Nur Ahmad Firdaus.S.E.</div>
         </div>
 
     </div>
@@ -832,26 +832,26 @@
 
         <div class="dewan-card">
             <div class="dewan-photo">
-                <img src="ketua.jpg">
+                <img src=">Misbahul Anwar.M.SI.jpg" alt=">Misbahul Anwar.M.SI.">
             </div>
             <div class="dewan-role">WAKIL KETUA</div>
-            <div class="dewan-name">Nama Ketua</div>
+            <div class="dewan-name">Misbahul Anwar.M.SI.</div>
         </div>
 
         <div class="dewan-card">
             <div class="dewan-photo">
-                <img src="anggota1.jpg">
+                <img src="Sutrisno Wibowo S.E.,M.M.jpg" alt=">Sutrisno Wibowo S.E.,M.M"> 
             </div>
             <div class="dewan-role">ANGGOTA</div>
-            <div class="dewan-name">Nama Anggota 1</div>
+            <div class="dewan-name">Sutrisno Wibowo S.E.,M.M</div>
         </div>
 
         <div class="dewan-card">
             <div class="dewan-photo">
-                <img src="anggota2.jpg">
+                <img src="Hafiez Sofyani. M.Sc.jpg"  alt=">Hafiez Sofyani. M.Sc">
             </div>
             <div class="dewan-role">ANGGOTA</div>
-            <div class="dewan-name">Nama Anggota 2</div>
+            <div class="dewan-name">Hafiez Sofyani. M.Sc</div>
         </div>
 
     </div>
@@ -947,37 +947,37 @@
         <!-- ANGGOTA 1 -->
         <div class="pengurus-card">
             <div class="pengurus-photo-box">
-                <img src="ahmad-juwaini.jpg" alt="Ahmad Juwaini">
+                <img src="Dwi Sentosa Pambudi.S.H.I.,M.S.I.jpg" alt="Dwi Sentosa Pambudi.S.H.I.,M.S.I">
             </div>
             <div class="pengurus-role">WAKIL KETUA</div>
-            <div class="pengurus-name">Ahmad Juwaini</div>
+            <div class="pengurus-name">Dwi Sentosa Pambudi.S.H.I.,M.S.I</div>
         </div>
 
         <!-- ANGGOTA 2 -->
         <div class="pengurus-card">
             <div class="pengurus-photo-box">
-                <img src="herdiansyah.jpg" alt="Herdiansyah">
+                <img src="Dr.Muhammad Anis.M.A.jpg" alt="Dr.Muhammad Anis.M.A">
             </div>
             <div class="pengurus-role">ANGGOTA</div>
-            <div class="pengurus-name">Herdiansyah</div>
+            <div class="pengurus-name">Dr.Muhammad Anis.M.A</div>
         </div>
 
         <!-- ANGGOTA 3 -->
         <div class="pengurus-card">
             <div class="pengurus-photo-box">
-                <img src="etika-setiawanti.jpg" alt="Etika Setiawanti">
+                <img src="Mohammad Dwi Iskandar.S.Ag.,M.S.I..jpg" alt="Mohammad Dwi Iskandar.S.Ag.,M.S.I.">
             </div>
             <div class="pengurus-role">ANGGOTA</div>
-            <div class="pengurus-name">Etika Setiawanti</div>
+            <div class="pengurus-name">Mohammad Dwi Iskandar.S.Ag.,M.S.I.</div>
         </div>
 
         <!-- AMGGOTA 4 -->
         <div class="pengurus-card">
             <div class="pengurus-photo-box">
-                <img src="tri-esriani.jpg" alt="Tri Esriani">
+                <img src="Rohimah.S.Pd.jpg" alt="Rohimah.S.Pd">
             </div>
             <div class="pengurus-role">ANGGOTA</div>
-            <div class="pengurus-name">Tri Esriani</div>
+            <div class="pengurus-name">Rohimah.S.Pd</div>
         </div>
 
     </div>
@@ -1072,37 +1072,37 @@
         <!-- ANGGOTA 1 -->
         <div class="pengurus-card">
             <div class="pengurus-photo-box">
-                <img src="ahmad-juwaini.jpg" alt="Ahmad Juwaini">
+                <img src="Maryono.S.Pd.,M.T.jpg" alt="Maryono.S.Pd.,M.T">
             </div>
             <div class="pengurus-role">WAKIL KETUA</div>
-            <div class="pengurus-name">Ahmad Juwaini</div>
+            <div class="pengurus-name">Maryono.S.Pd.,M.T</div>
         </div>
 
         <!-- ANGGOTA 2 -->
         <div class="pengurus-card">
             <div class="pengurus-photo-box">
-                <img src="herdiansyah.jpg" alt="Herdiansyah">
+                <img src="Arifudin Nurrahman.jpg" alt="Arifudin Nurrahman">
             </div>
             <div class="pengurus-role">ANGGOTA</div>
-            <div class="pengurus-name">Herdiansyah</div>
+            <div class="pengurus-name">Arifudin Nurrahman</div>
         </div>
 
         <!-- ANGGOTA 3 -->
         <div class="pengurus-card">
             <div class="pengurus-photo-box">
-                <img src="etika-setiawanti.jpg" alt="Etika Setiawanti">
+                <img src=">Muh Saeful Effendi.M.Pd.B.I.jpg" alt=">Muh Saeful Effendi.M.Pd.B.I">
             </div>
             <div class="pengurus-role">ANGGOTA</div>
-            <div class="pengurus-name">Etika Setiawanti</div>
+            <div class="pengurus-name">Muh Saeful Effendi.M.Pd.B.I</div>
         </div>
 
         <!-- AMGGOTA 4 -->
         <div class="pengurus-card">
             <div class="pengurus-photo-box">
-                <img src="tri-esriani.jpg" alt="Tri Esriani">
+                <img src="Adhitiya Rechamdy Cristian.S.E.,M.M.jpg" alt="Adhitiya Rechamdy Cristian.S.E.,M.M">
             </div>
             <div class="pengurus-role">ANGGOTA</div>
-            <div class="pengurus-name">Tri Esriani</div>
+            <div class="pengurus-name">Adhitiya Rechamdy Cristian.S.E.,M.M</div>
         </div>
 
     </div>
@@ -1193,26 +1193,26 @@
 
         <div class="dewan-card">
             <div class="dewan-photo">
-                <img src="ketua.jpg">
+                <img src="Budi Santoso.S.Pal.,M.K.M..jpg" alt="Budi Santoso.S.Pal.,M.K.M">
             </div>
             <div class="dewan-role">WAKIL KETUA</div>
-            <div class="dewan-name">Nama Ketua</div>
+            <div class="dewan-name">Budi Santoso.S.Pal.,M.K.M.</div>
         </div>
 
         <div class="dewan-card">
             <div class="dewan-photo">
-                <img src="anggota1.jpg">
+                <img src="Herman Yuliyansyah.S.T.,M.Eng.Ph.D.jpg" alt="Herman Yuliyansyah.S.T.,M.Eng.Ph.D.">>
             </div>
             <div class="dewan-role">ANGGOTA</div>
-            <div class="dewan-name">Nama Anggota 1</div>
+            <div class="dewan-name">Herman Yuliyansyah.S.T.,M.Eng.Ph.D.</div>
         </div>
 
         <div class="dewan-card">
             <div class="dewan-photo">
-                <img src="anggota2.jpg">
+                <img src="Yudistra Rahmawati.S.T..jpg" alt="Yudistra Rahmawati.S.T.">
             </div>
             <div class="dewan-role">ANGGOTA</div>
-            <div class="dewan-name">Nama Anggota 2</div>
+            <div class="dewan-name">Yudistra Rahmawati.S.T.</div>
         </div>
 
     </div>
