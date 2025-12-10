@@ -44,7 +44,7 @@
         font-weight: 600;
     }
 
-    /* Page Wrapper — agar sejajar dengan header */
+    /* Page Wrapper */
     .page-wrapper {
         max-width: 1200px;
         margin: 0 auto;
@@ -56,7 +56,7 @@
         height: 90px;
     }
 
-    /* Header Form */
+    /* Form Header */
     .form-header {
         display: flex;
         align-items: center;
@@ -72,7 +72,7 @@
         font-weight: 600;
     }
 
-    /* Select */
+    /* Select Box */
     .select-box {
         width: 100%;
         padding: 14px;
@@ -84,6 +84,11 @@
         color: #777;
         background: white;
         cursor: pointer;
+    }
+
+    /* Dropdown menu */
+    .dropdown-item:hover {
+        background: #f5f5f5;
     }
 
     /* Counter */
@@ -113,7 +118,6 @@
         cursor: pointer;
     }
 
-    /* Input Box */
     .input-box {
         width: 100%;
         padding: 14px;
@@ -210,13 +214,10 @@
 <!-- HEADER -->
 <header>
     <div class="header-container">
-
-        <!-- Logo -->
         <div>
             <img src="/logo-lazismu.png" alt="Lazismu" style="height:100px;">
         </div>
 
-        <!-- Navigation -->
         <nav style="display:flex; gap:22px; align-items:center;">
             <a href="#">HOME</a>
             <a href="{{ url('/struktur-organisasi') }}">TENTANG KAMI</a>
@@ -225,7 +226,6 @@
             <a href="{{ url('/qurban') }}">BERITA</a>
             <a href="#">BLOG</a>
 
-            <!-- Search -->
             <button style="
                 background:#ff9900;
                 border:none;
@@ -237,68 +237,78 @@
                 <img src="/search-icon.png-removebg-preview.png" alt="Search" style="width:22px;">
             </button>
         </nav>
-
     </div>
 </header>
 
-<!-- Spacer -->
 <div class="top-space"></div>
 
 <!-- PAGE WRAPPER -->
 <div class="page-wrapper">
 
-    <!-- Form Header -->
     <div class="form-header">
         <i>&larr;</i>
         Lengkapi Data Berikut
     </div>
 
-    <!-- CONTENT -->
-    <div>
+    <!-- Pilih Varian -->
+    <label>Pilih Varian</label>
 
-        <!-- Pilih Varian -->
-        <label>Pilih Varian</label>
-        <div class="select-box">
-            Pilih varian qurban
-            <i>⌄</i>
+    <div class="select-box" onclick="toggleDropdown()">
+        <span id="selectedVarian">Pilih varian qurban</span>
+        <i>&#9662;</i>
+    </div>
+
+    <!-- Dropdown List -->
+    <div id="dropdownVarian" style="
+        display:none;
+        border:1px solid #ddd;
+        border-radius:8px;
+        margin-top:4px;
+        overflow:hidden;
+    ">
+        <div onclick="chooseVarian('Rendangmu Sapi')" class="dropdown-item" style="padding:12px; cursor:pointer; border-bottom:1px solid #eee;">
+            Rendangmu Sapi
         </div>
 
-        <!-- Jumlah Hewan -->
-        <label style="margin-top:18px;">Jumlah Hewan</label>
-        <div class="counter">
-            <input type="number" value="1">
-            <button>-</button>
-            <button>+</button>
+        <div onclick="chooseVarian('Rendangmu Sapi 1/7')" class="dropdown-item" style="padding:12px; cursor:pointer;">
+            Rendangmu Sapi 1/7
         </div>
+    </div>
 
-        <!-- Nama Qurban -->
-        <label style="margin-top:18px;">Qurban Atas Nama</label>
-        <input class="input-box" placeholder="Contoh : Iqbal Muhammad Farisi">
-        <div class="error">Dapat di isi hingga nama</div>
+    <!-- Jumlah Hewan -->
+    <label style="margin-top:18px;">Jumlah Hewan</label>
+    <div class="counter">
+        <input type="number" value="1">
+        <button>-</button>
+        <button>+</button>
+    </div>
 
-        <!-- Hak -->
-        <label style="margin-top:18px;">Hak Pequrban</label>
-        <div class="radio-group">
-            <label class="radio-item">
-                <input type="radio" name="hak" checked>
-                Sedekahkan Hak saya
-            </label>
+    <!-- Nama -->
+    <label style="margin-top:18px;">Qurban Atas Nama</label>
+    <input class="input-box" placeholder="Contoh : Iqbal Muhammad Farisi">
+    <div class="error">Dapat di isi hingga nama</div>
 
-            <label class="radio-item">
-                <input type="radio" name="hak">
-                Kirimkan Hak saya
-            </label>
+    <!-- Hak -->
+    <label style="margin-top:18px;">Hak Pequrban</label>
+    <div class="radio-group">
+        <label class="radio-item">
+            <input type="radio" name="hak" checked>
+            Sedekahkan Hak saya
+        </label>
+
+        <label class="radio-item">
+            <input type="radio" name="hak">
+            Kirimkan Hak saya
+        </label>
+    </div>
+
+    <!-- Alert -->
+    <div class="alert">
+        <i>👤</i>
+        <div>
+            <b>Anda Pequrban Istimewa!</b>
+            16% Pequrban Rendangmu Sebelumnya Telah Mendonasikan Hak Qurbannya – dan Kali Ini, Anda Salah Satunya!
         </div>
-
-        <!-- Alert -->
-        <div class="alert">
-            <i>👤</i>
-            <div>
-                <b>Anda Pequrban Istimewa!</b>
-                16% Pequrban Rendangmu Sebelumnya Telah Mendonasikan Hak Qurbannya – dan Kali Ini, Anda Salah Satunya!
-            </div>
-        </div>
-
     </div>
 
 </div>
@@ -310,11 +320,25 @@
     </div>
 
     <div class="btn-cart">
-        Tambah ke <i>🛒</i> <span>0</span>
+        Tambah ke 🛒 <span>0</span>
     </div>
 
-    <a href="{{ url('/invoice') }}" class="btn-next" style="display:inline-block;text-align:center;">Selanjutnya</a>
+    <a href="{{ url('/invoice') }}" class="btn-next">Selanjutnya</a>
 </div>
+
+
+<!-- SCRIPT DROPDOWN -->
+<script>
+function toggleDropdown() {
+    let dd = document.getElementById("dropdownVarian");
+    dd.style.display = dd.style.display === "none" ? "block" : "none";
+}
+
+function chooseVarian(name) {
+    document.getElementById("selectedVarian").innerText = name;
+    document.getElementById("dropdownVarian").style.display = "none";
+}
+</script>
 
 </body>
 </html>
