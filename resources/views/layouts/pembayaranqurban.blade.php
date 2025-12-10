@@ -16,6 +16,12 @@
         color: #333;
     }
 
+    /* Untuk meratakan semua kotak */
+    .form-field {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
     /* Header Fixed */
     header {
         position: fixed;
@@ -74,7 +80,6 @@
 
     /* Select Box */
     .select-box {
-        width: 100%;
         padding: 14px;
         margin-top: 6px;
         border: 1px solid #ddd;
@@ -100,7 +105,6 @@
     }
 
     .counter input {
-        width: 80px;
         padding: 12px;
         border-radius: 8px;
         border: 1px solid #ddd;
@@ -119,7 +123,6 @@
     }
 
     .input-box {
-        width: 100%;
         padding: 14px;
         border-radius: 8px;
         border: 1px solid #ddd;
@@ -253,7 +256,7 @@
     <!-- Pilih Varian -->
     <label>Pilih Varian</label>
 
-    <div class="select-box" onclick="toggleDropdown()">
+    <div class="select-box form-field" onclick="toggleDropdown()">
         <span id="selectedVarian">Pilih varian qurban</span>
         <i>&#9662;</i>
     </div>
@@ -277,15 +280,15 @@
 
     <!-- Jumlah Hewan -->
     <label style="margin-top:18px;">Jumlah Hewan</label>
-    <div class="counter">
-        <input type="number" value="1">
+    <div class="counter form-field">
+        <input type="number" value="1" class="form-field">
         <button>-</button>
         <button>+</button>
     </div>
 
     <!-- Nama -->
     <label style="margin-top:18px;">Qurban Atas Nama</label>
-    <input class="input-box" placeholder="Contoh : Iqbal Muhammad Farisi">
+    <input class="input-box form-field" placeholder="Contoh : Iqbal Muhammad Farisi">
     <div class="error">Dapat di isi hingga nama</div>
 
     <!-- Hak -->
