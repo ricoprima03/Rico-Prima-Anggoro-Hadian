@@ -1,16 +1,47 @@
 {
-  "success": true,
-  "data": [
-    {
-      "id": 1,
-      "nama": "Ahmad Fauzi",
-      "email": "ahmad@gmail.com",
-      "jenis_qurban": "Rendangmu Sapi",
-      "jumlah_hewan": 1,
-      "alamat": "Jl. Malioboro, Yogyakarta",
-      "status_pembayaran": "Lunas",
-      "created_at": "2025-12-17T00:20:00.000000Z"
-    }
-  ],
-  "message": "Data qurban berhasil diambil"
+	"success": true,
+	"data": [
+		{
+			"id": 1,
+			"nama": "Ahmad Fauzi",
+			"email": "ahmad@gmail.com",
+			"jenis_qurban": "Rendangmu Sapi",
+			"jumlah_hewan": 1,
+			"alamat": "Jl. Malioboro, Yogyakarta",
+			"status_pembayaran": "Lunas",
+			"created_at": "2025-12-16T19:27:40.000000Z",
+			"updated_at": "2025-12-16T19:27:40.000000Z"
+		},
+		{
+			"id": 2,
+			"nama": "Ardianto Aly Romadhon",
+			"email": "ardianto@gmail.com",
+			"jenis_qurban": "Rendangmu Sapi",
+			"jumlah_hewan": 1,
+			"alamat": "manokwari",
+			"created_at": "2025-12-16T21:14:20.000000Z",
+			"updated_at": "2025-12-16T21:14:20.000000Z"
+		},
+		{
+			"id": 3,
+			"nama": "blabla",
+			"email": "ricoprima03@gmail.com",
+			"jenis_qurban": "Rendangmu Sapi",
+			"jumlah_hewan": 1,
+			"alamat": "komplek bandara  iskandar",
+			"created_at": "2025-12-16T21:14:20.000000Z",
+			"updated_at": "2025-12-16T21:14:20.000000Z"
+		},
+		{
+			"id": 4,
+			"nama": "blabla",
+			"email": "ricoprima03@gmail.com",
+			"jenis_qurban": "Rendangmu Sapi",
+			"jumlah_hewan": 1,
+			"alamat": "komplek bandara  iskandar",
+			"created_at": "2025-12-16T21:14:20.000000Z",
+			"updated_at": "2025-12-16T21:14:20.000000Z"
+		}
+	],
+	"message": "Data qurban berhasil diambil"
 }
