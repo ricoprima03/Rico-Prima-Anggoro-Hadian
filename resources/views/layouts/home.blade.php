@@ -24,61 +24,288 @@
 <!-- Import Jakarta Sans font -->
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-<!-- Header Lazismu (Fixed & Logo Besar) -->
-<header style="
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    border-bottom: 1px solid #eee;
-    padding: 0;
-    z-index: 9999;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-">
-    <div style="
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        max-width: 1200px;
-        margin: 0 auto;
-        height: 80px; /* Tinggi header lebih besar */
-    ">
-        
-        <!-- LOGO LEBIH BESAR -->
-        <div style="display: flex; align-items: center;">
-            <img src="/logo-lazismu.png" 
-                 alt="Lazismu" 
-                 style="height: 100px;"> <!-- perbesar logo -->
+<!-- ==== HEADER ==== -->
+<style>
+    body {
+        margin: 0;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* HEADER */
+    header {
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#fff;
+    border-bottom:1px solid #eee;
+    z-index:9999;
+}
+
+.header-container{
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px;
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo img{height:90px}
+
+/* ===== NAV ===== */
+nav{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+nav a{
+    color:#ff9900;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:600;
+}
+
+/* ===== DROPDOWN DESKTOP ===== */
+.nav-dropdown{
+    position:relative;
+}
+
+.dropdown-menu{
+    position:absolute;
+    top:140%;
+    left:0;
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    min-width:240px;
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(10px);
+    transition:.3s ease;
+}
+
+.nav-dropdown:hover .dropdown-menu{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+.dropdown-menu a{
+    display:block;
+    padding:14px 18px;
+    color:#333;
+}
+
+.dropdown-menu a:hover{
+    background:#f5f5f5;
+}
+
+/* ===== SEARCH ===== */
+.search-btn{
+    width:42px;
+    height:42px;
+    background:#ff9900;
+    border:none;
+    border-radius:2px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.search-btn img{width:22px}
+
+/* ===== SEARCH POPUP ===== */
+.search-popup{
+    position:fixed;
+    top:100px;
+    right:20px;
+    background:#fff;
+    border:1px solid #ff9900;
+    border-radius:6px;
+    padding:15px;
+    width:250px;
+    display:none;
+    box-shadow:0 4px 8px rgba(0,0,0,.15);
+}
+
+.search-popup input{
+    width:100%;
+    padding:10px;
+    border:1px solid #ddd;
+    border-radius:5px;
+}
+
+/* ===== BURGER ===== */
+.burger{
+    width:35px;
+    height:25px;
+    display:none;
+    cursor:pointer;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.burger span{
+    height:4px;
+    background:#ff9900;
+    border-radius:2px;
+}
+
+/* ===== MOBILE MENU ===== */
+.mobile-menu{
+    display:none;
+    flex-direction:column;
+    background:#fff;
+    padding:20px;
+    border-top:1px solid #eee;
+}
+
+.mobile-menu a{
+    padding:10px 0;
+    font-size:16px;
+    color:#ff9900;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* ===== MOBILE DROPDOWN ===== */
+.mobile-dropdown{
+    cursor:pointer;
+    padding:10px 0;
+    font-weight:600;
+    color:#ff9900;
+}
+
+.mobile-submenu{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease;
+    padding-left:16px;
+}
+
+.mobile-submenu a{
+    padding:8px 0;
+    display:block;
+    color:#333;
+}
+
+.mobile-submenu.show{
+    max-height:400px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+    nav{display:none}
+    .burger{display:flex}
+    .mobile-menu.show{display:flex}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="header-container">
+
+        <div class="logo">
+            <img src="/logo-lazismu.png">
         </div>
 
-        <!-- NAVIGATION -->
-        <nav style="display: flex; align-items: center; gap: 22px;">
-            <a href="#" style="color: #ff9900; text-decoration: none; font-size: 15px; font-weight: 600;">HOME</a>
-            <a href="#" style="color: #ff9900; text-decoration: none; font-size: 15px; font-weight: 600;">TENTANG KAMI</a>
-            <a href="#" style="color: #ff9900; text-decoration: none; font-size: 15px; font-weight: 600;">PROGRAM</a>
-            <a href="#" style="color: #ff9900; text-decoration: none; font-size: 15px; font-weight: 600;">LAYANAN</a>
-            <a href="{{ url('/qurban') }}" style="color: #ff9900; text-decoration: none; font-size: 15px; font-weight: 600;">BERITA</a>
-            <a href="#" style="color: #ff9900; text-decoration: none; font-size: 15px; font-weight: 600;">BLOG</a>
+        <!-- NAV DESKTOP -->
+        <nav>
+            <a href="{{ url('/home') }}">HOME</a>
 
-            <!-- Tombol Oranye -->
-            <button style="
-                background: #ff9900;
-                border: none;
-                width: 42px;
-                height: 42px;
-                border-radius: 2px;
-                margin-left: 12px;
-                cursor: pointer;
-            "><img src="/search-icon.png-removebg-preview.png" alt="Search" style="width: 22px; height: 22px;">
+            <div class="nav-dropdown">
+                <a href="javascript:void(0)">TENTANG KAMI ▾</a>
+                <div class="dropdown-menu">
+                    <a href="#">Latar Belakang</a>
+                    <a href="#">Visi & Misi</a>
+                    <a href="{{ url('/struktur-organisasi') }}">Struktur Pengelola</a>
+                    <a href="#">Kebijakan Strategis</a>
+                    <a href="#">Kebijakan Mutu</a>
+                    <a href="#">Laporan</a>
+                    <a href="#">Mitra</a>
+                </div>
             </div>
+
+            <a href="#">PROGRAM</a>
+            <a href="#">LAYANAN</a>
+            <a href="{{ url('/qurban') }}">BERITA</a>
+            <a href="#">BLOG</a>
+
+            <button class="search-btn" id="open-search">
+                <img src="/search-icon.png-removebg-preview.png">
+            </button>
         </nav>
+
+        <!-- BURGER -->
+        <div class="burger" id="burger-menu">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobile-nav">
+        <a href="{{ url('/home') }}">HOME</a>
+
+        <div class="mobile-dropdown" id="mobile-tentang">
+            TENTANG KAMI ▾
+        </div>
+        <div class="mobile-submenu" id="mobile-submenu">
+            <a href="#">Latar Belakang</a>
+            <a href="#">Visi & Misi</a>
+            <a href="{{ url('/struktur-organisasi') }}">Struktur Pengelola</a>
+            <a href="#">Kebijakan Strategis</a>
+            <a href="#">Kebijakan Mutu</a>
+            <a href="#">Laporan</a>
+            <a href="#">Mitra</a>
+        </div>
+
+        <a href="#">PROGRAM</a>
+        <a href="#">LAYANAN</a>
+        <a href="{{ url('/qurban') }}">BERITA</a>
+        <a href="#">BLOG</a>
+
+        <button class="search-btn" id="open-search-mobile">
+            <img src="/search-icon.png-removebg-preview.png">
+        </button>
     </div>
 </header>
 
-<!-- Spacer agar konten tidak tertutup header -->
-<div style="height: 90px;"></div>
+<div style="height:110px"></div>
 
+<!-- SEARCH POPUP -->
+<div class="search-popup" id="search-popup">
+    <input type="text" placeholder="Cari sesuatu...">
+</div>
+
+<script>
+const burger=document.getElementById("burger-menu");
+const mobileMenu=document.getElementById("mobile-nav");
+const mobileTentang=document.getElementById("mobile-tentang");
+const mobileSubmenu=document.getElementById("mobile-submenu");
+
+burger.onclick=()=>mobileMenu.classList.toggle("show");
+mobileTentang.onclick=()=>mobileSubmenu.classList.toggle("show");
+
+const searchBtn=document.getElementById("open-search");
+const searchBtnMobile=document.getElementById("open-search-mobile");
+const searchPopup=document.getElementById("search-popup");
+
+function openSearch(){searchPopup.style.display="block";}
+searchBtn.onclick=openSearch;
+searchBtnMobile.onclick=openSearch;
+
+document.addEventListener("click",e=>{
+    if(!searchPopup.contains(e.target)&&!e.target.closest(".search-btn")){
+        searchPopup.style.display="none";
+    }
+});
+</script>
 
 <!-- Banner Qurban -->
 <div style="width: 100%; display: flex; justify-content: center; margin-top: 24px;">
@@ -411,11 +638,11 @@
         <div class="timeline-line"></div>
 
         <div class="timeline-left">
-            <div class="step">Narahlbung</div>
+            <div class="step">Narahubung</div>
             <div class="step">Rekapitulasi</div>
             <div class="step">Pengadaan</div>
             <div class="step">Pemotongan</div>
-            <div class="step">Pengolahan</div>
+            <div class="step">Pengalengan</div>
             <div class="step">Distribusi</div>
             <div class="step">Siap Santap</div>
         </div>
@@ -426,7 +653,7 @@
                 <img src="/callcanter.png" alt="">
                 <div class="text">
                     <h3>Call Center</h3>
-                    <p>Hubungi narahubung melalui 0854-1700-2970</p>
+                    <p>Hubungi narahubung melalui 0851-6170-2078</p>
                 </div>
             </div>
 
@@ -434,7 +661,7 @@
                 <img src="/rekap.png" alt="">
                 <div class="text">
                     <h3>Rekapitulasi</h3>
-                    <p>Narahubung akan mencatat jumlah qurban yang akan dilakukan.</p>
+                    <p>Narahubung akan mencatat jumlah qurban yang akan ditunaikan.</p>
                 </div>
             </div>
 
@@ -442,7 +669,7 @@
                 <img src="/icon_sapi.png" alt="">
                 <div class="text">
                     <h3>Pengadaan Hewan Qurban</h3>
-                    <p>Pencarian qurban dilaksanakan oleh peternakan mitra yang dijamin sehat.</p>
+                    <p>Pesanan qurban yang masuk akan dibelanjakan sapi terbaik, yang telah dinyatakan sehat oleh PDHI Korwil Jawa Timur.</p>
                 </div>
             </div>
 
@@ -450,15 +677,15 @@
                 <img src="/daging.png" alt="">
                 <div class="text">
                     <h3>Pemotongan Melalui RPH</h3>
-                    <p>Pemotongan dilakukan di rumah potong hewan sesuai standar syariah dan kesehatan.</p>
+                    <p>Sapi disembelih melalui rumah potong yang telah ditentukan sehingga daging terjaga dengan Aman, Sehat, Utuh dan Halal (ASUH).</p>
                 </div>
             </div>
 
             <div class="timeline-card">
                 <img src="/gudang.png" alt="">
                 <div class="text">
-                    <h3>Pengolahan</h3>
-                    <p>Daging diolah menjadi kornet atau rendang dengan masa ketahanan hingga 2 tahun.</p>
+                    <h3>Pengalengan</h3>
+                    <p>Daging kemudian dibawa ke pabrik untuk dijadikan rendang dalam kemasan kaleng. Proses pengalangan memakan waktu Kurang lebih 2 bulan.</p>
                 </div>
             </div>
 
@@ -466,7 +693,7 @@
                 <img src="/truk.png" alt="">
                 <div class="text">
                     <h3>Distribusi</h3>
-                    <p>Daging siap didistribusikan ke pelosok dan wilayah terdampak bencana.</p>
+                    <p>Daging siap didistribusikan kepada sohibul qurban.</p>
                 </div>
             </div>
 
@@ -474,7 +701,7 @@
                 <img src="/kaleng.png" alt="">
                 <div class="text">
                     <h3>Siap Santap</h3>
-                    <p>Produk Rendangmu siap dikonsumsi kapan saja.</p>
+                    <p>Produk Rendangmu telah diterima siap untuk dinikmati.</p>
                 </div>
             </div>
 
@@ -782,7 +1009,7 @@
 <div class="distribution-section">
 
     <h2 class="distribution-title">Penyaluran Rendangmu</h2>
-    <p class="distribution-subtitle">Penyaluran Rendangmu tahun 2024</p>
+    <p class="distribution-subtitle">Penyaluran Rendangmu tahun 2025</p>
 
     <div class="map-wrapper">
         <img src="/background-peta-indonesia-abu-silver-putih_852799-39.jpg" alt="Peta Indonesia">
@@ -953,27 +1180,27 @@
 
         <!-- CARD KAMBING -->
         <div class="card">
-            <img src="/kambbing.png" alt="Kambing">
+            <img src="/Rendangmu.png" alt="Kambing">
             <div class="card-body">
-                <h3>Rendangmu Kambing</h3>
-                <p>Rp. 2.900.000,-<br>
-                    - Kornet 30 Kaleng <br>
-                    - Rendang 25 Kaleng
+                <h3>Rendangmu Sapi</h3>
+                <p>Rp. 21.000.000,-<br>
+                    - Hak Kemasan 420 Kaleng <br>
+                    - Hak Shohibul Qurban 140 Kaleng
                 </p>
-                <a href="#" class="btn-donasi">Tunaikan Langsung</a>
+                <a href="{{ url('/tunaikansekarangkambing') }}" class="btn-donasi">Tunaikan Langsung</a>
             </div>
         </div>
 
         <!-- CARD SAPI -->
         <div class="card">
-            <img src="/sapi.png" alt="Rendangmu Sapi">
+            <img src="/Rendangmu_1.png" alt="Rendangmu Sapi">
             <div class="card-body">
-                <h3>Rendangmu Sapi</h3>
-                <p>Rp. 19.450.000,-<br>
-                    - Kornet 350 Kaleng <br>
-                    - Rendang 250 Kaleng
+                <h3>Rendangmu Sapi 1/7</h3>
+                <p>Rp. 3.000.000,-<br>
+                    - Hak Kemasan 60 Kaleng <br>
+                    - Hak Shohibul Qurban 20 Kaleng
                 </p>
-                <a href="#" class="btn-donasi">Tunaikan Langsung</a>
+                <a href="{{ url('/tunaikanSekarangSapi') }}" class="btn-donasi">Tunaikan Langsung</a>
             </div>
         </div>
 
@@ -1061,7 +1288,7 @@
         <img src="/logo_emblem.png" alt="Logo Testimoni">
     </div>
 
-    <h1>TESTIMONI PEQURBAN 2024</h1>
+    <h1>TESTIMONI PEQURBAN 2025</h1>
 
     <div class="gallery-wrapper">
         <div class="gallery-item">
@@ -1248,7 +1475,7 @@
     </div>
 
     <div class="footer-bottom">
-        © 2023 Lazismu D.I. Yogyakarta — All Rights Reserved.
+        © 2025 Lazismu D.I. Yogyakarta — All Rights Reserved.
     </div>
 
 </footer>
