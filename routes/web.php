@@ -33,3 +33,7 @@ Route::get('/invoice', function () {
 Route::get('/Pembayaranberhasil', function () {
     return view('layouts.Pembayaranberhasil');
 });
+
+Route::get('/home', function () {
+    return view('layouts.home');
+});
