@@ -22,16 +22,18 @@ class QurbanController extends Controller
     public function store(Request $request)
     {
 
+
         $request->validate([
             'nama' => 'required',
             'email' => 'required|email',
             'jenis_qurban' => 'required',
             'jumlah_hewan' => 'required|integer',
             'alamat' => 'required',
+            'harga' => 'required|integer',
         ]);
 
         $qurban = Qurban::create($request->only([
-            'nama', 'email', 'jenis_qurban', 'jumlah_hewan', 'alamat'
+            'nama', 'email', 'jenis_qurban', 'jumlah_hewan', 'alamat', 'harga'
         ]));
 
         return response()->json([

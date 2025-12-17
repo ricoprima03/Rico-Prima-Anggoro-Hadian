@@ -12,6 +12,6 @@ class Qurban extends Model
         'jenis_qurban',
         'jumlah_hewan',
         'alamat',
-        'status_pembayaran',
+        'harga',
     ];
 }

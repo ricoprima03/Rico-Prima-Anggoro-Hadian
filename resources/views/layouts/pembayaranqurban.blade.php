@@ -262,14 +262,14 @@
             <i>&#9662;</i>
         </div>
         <div id="dropdownVarian" style="display:none; border:1px solid #ddd; border-radius:8px; margin-top:4px; overflow:hidden;">
-            <div onclick="chooseVarian('Rendangmu Sapi')" class="dropdown-item" style="padding:12px; cursor:pointer; border-bottom:1px solid #eee;">Rendangmu Sapi</div>
-            <div onclick="chooseVarian('Rendangmu Sapi 1/7')" class="dropdown-item" style="padding:12px; cursor:pointer;">Rendangmu Sapi 1/7</div>
+            <div onclick="chooseVarian('Rendangmu Sapi', 21000000)" class="dropdown-item" style="padding:12px; cursor:pointer; border-bottom:1px solid #eee;">Rendangmu Sapi</div>
+            <div onclick="chooseVarian('Rendangmu Sapi 1/7', 3000000)" class="dropdown-item" style="padding:12px; cursor:pointer;">Rendangmu Sapi 1/7</div>
         </div>
 
         <!-- Jumlah Hewan -->
         <label style="margin-top:18px;">Jumlah Hewan</label>
         <div class="counter form-field">
-            <input id="jumlahHewan" type="number" value="1" min="1" class="form-field">
+            <input id="jumlahHewan" type="number" value="1" min="1" class="form-field" onchange="updateTotalHarga()" oninput="updateTotalHarga()">
         </div>
 
         <!-- Nama -->
@@ -309,14 +309,14 @@
             </div>
         </div>
 
-        <button type="submit" class="btn-next" style="margin-top:18px;">Simpan Data</button>
+        <!-- Tombol Simpan Data dihapus, aksi simpan dipindah ke tombol Selanjutnya di bawah -->
     </form>
 
 </div>
 
 <!-- FOOTER -->
 <div class="footer">
-    <div class="price">
+    <div class="price" id="totalHargaBox">
         Total<br>Rp,-
     </div>
 
@@ -324,47 +324,64 @@
         Tambah ke 🛒 <span>0</span>
     </div>
 
-    <a href="{{ url('/invoice') }}" class="btn-next">Selanjutnya</a>
+    <button type="button" class="btn-next" id="btnSelanjutnya">Selanjutnya</button>
 </div>
 
 
 
 <!-- SCRIPT DROPDOWN & FORM -->
 <script>
+let hargaVarian = 0;
+
 function toggleDropdown() {
     let dd = document.getElementById("dropdownVarian");
     dd.style.display = dd.style.display === "none" ? "block" : "none";
 }
 
-function chooseVarian(name) {
+function chooseVarian(name, harga) {
     document.getElementById("selectedVarian").innerText = name;
     document.getElementById("dropdownVarian").style.display = "none";
+    hargaVarian = harga;
+    updateTotalHarga();
 }
 
-document.getElementById('formQurban').onsubmit = async function(e) {
-    e.preventDefault();
+function updateTotalHarga() {
+    const jumlah = parseInt(document.getElementById('jumlahHewan').value) || 1;
+    let total = hargaVarian * jumlah;
+    let totalBox = document.getElementById('totalHargaBox');
+    if (hargaVarian > 0) {
+        totalBox.innerHTML = 'Total<br>Rp ' + total.toLocaleString('id-ID');
+    } else {
+        totalBox.innerHTML = 'Total<br>Rp -';
+    }
+}
+
+document.getElementById('btnSelanjutnya').onclick = async function() {
     const nama = document.getElementById('namaQurban').value;
     const email = document.getElementById('emailQurban').value;
     const jenis_qurban = document.getElementById('selectedVarian').innerText;
     const jumlah_hewan = document.getElementById('jumlahHewan').value;
     const alamat = document.getElementById('alamatQurban').value;
+    const harga = hargaVarian;
     if (jenis_qurban === 'Pilih varian qurban') {
         alert('Pilih varian qurban terlebih dahulu!');
         return;
     }
-
+    if (!nama || !email || !alamat) {
+        alert('Mohon lengkapi semua data!');
+        return;
+    }
     const res = await fetch('/api/qurban', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify({
-            nama, email, jenis_qurban, jumlah_hewan, alamat
+            nama, email, jenis_qurban, jumlah_hewan, alamat, harga
         })
     });
     const data = await res.json();
     if (data.success) {
         alert('Data berhasil disimpan!');
-        document.getElementById('formQurban').reset();
-        document.getElementById('selectedVarian').innerText = 'Pilih varian qurban';
+        window.location.href = '/invoice';
     } else {
         alert('Gagal menyimpan data!');
     }

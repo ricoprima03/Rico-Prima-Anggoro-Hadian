@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('jenis_qurban'); // Renadngmu Sapi / Rendangmu  Sapi 1/7
             $table->integer('jumlah_hewan');
             $table->text('alamat');
+            $table->bigInteger('harga');
             $table->timestamps();
         });
     }
