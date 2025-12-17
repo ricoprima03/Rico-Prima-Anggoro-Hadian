@@ -391,6 +391,13 @@ document.getElementById('btnSelanjutnya').onclick = async function() {
     });
     const data = await res.json();
     if (data.success) {
+        // Simpan data ke sessionStorage untuk invoice
+        // Buat nomor invoice konsisten dan simpan ke session
+        let nomor_invoice = '#INV' + Date.now();
+        sessionStorage.setItem('nomor_invoice', nomor_invoice);
+        sessionStorage.setItem('dataQurban', JSON.stringify({
+            nama, email, jenis_qurban, jumlah_hewan, alamat, harga, nomor_invoice
+        }));
         await Swal.fire({
             icon: 'success',
             title: 'Data berhasil disimpan!',

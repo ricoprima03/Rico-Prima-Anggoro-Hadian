@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Status Pembayaran</title>
@@ -116,7 +118,7 @@
     <!-- Status -->
     <div class="trx-status">
         <h3>Menunggu Pembayaran</h3>
-        <small>Batas waktu pembayaran 12 Januari 2025</small>
+        <small id="batasWaktu">Batas waktu pembayaran</small>
     </div>
 
     <!-- Card Rincian -->
@@ -125,12 +127,12 @@
 
         <div class="trx-row">
             <label>Nama Program</label>
-            <span>Rendangmu Sapi</span>
+            <span id="namaProgram">-</span>
         </div>
 
         <div class="trx-row">
             <label>Nomor Invoice</label>
-            <span>#INV203982038</span>
+            <span id="nomorInvoice">-</span>
         </div>
 
         <div class="trx-row">
@@ -142,7 +144,7 @@
 
         <div class="trx-row">
             <label>Total Donasi</label>
-            <span>Rp 21.000.000</span>
+            <span id="totalDonasi">-</span>
         </div>
 
         <div class="trx-row">
@@ -152,7 +154,7 @@
 
         <div class="trx-row">
             <label>Total Pembayaran</label>
-            <span style="color:#ff8a00; font-size:18px; font-weight:700;">Rp 21.000.000</span>
+            <span id="totalPembayaran" style="color:#ff8a00; font-size:18px; font-weight:700;">-</span>
         </div>
     </div>
 
@@ -168,4 +170,44 @@
 </div>
 
 </body>
+<script>
+// Batas waktu pembayaran: besok (hari ini + 1)
+const bulanIndo = ['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
+let now = new Date();
+let besok = new Date(now.getTime() + 24*60*60*1000);
+let tgl = besok.getDate();
+let bln = bulanIndo[besok.getMonth()];
+let thn = besok.getFullYear();
+document.getElementById('batasWaktu').innerText = `Batas waktu pembayaran ${tgl} ${bln} ${thn}`;
+</script>
+<script>
+// Ambil data dari sessionStorage (diset di pembayaranqurban.blade.php setelah submit)
+const dataQurban = JSON.parse(sessionStorage.getItem('dataQurban'));
+if (dataQurban) {
+    document.getElementById('namaProgram').innerText = dataQurban.jenis_qurban || '-';
+    // Nomor invoice: contoh dinamis, bisa pakai id atau timestamp
+    // Ambil nomor invoice dari session agar konsisten
+    let nomor_invoice = sessionStorage.getItem('nomor_invoice') || dataQurban.nomor_invoice || ('#INV' + Date.now());
+    document.getElementById('nomorInvoice').innerText = nomor_invoice;
+    // Total donasi = harga * jumlah_hewan
+    let total = (parseInt(dataQurban.harga) || 0) * (parseInt(dataQurban.jumlah_hewan) || 1);
+    document.getElementById('totalDonasi').innerText = 'Rp ' + total.toLocaleString('id-ID');
+    // Kode unik (random 3 digit, simpan di session agar konsisten)
+    let kodeUnik = sessionStorage.getItem('kodeUnik');
+    if (!kodeUnik) {
+        kodeUnik = Math.floor(100 + Math.random() * 900);
+        sessionStorage.setItem('kodeUnik', kodeUnik);
+    } else {
+        kodeUnik = parseInt(kodeUnik);
+    }
+    // Tampilkan kode unik
+    document.querySelectorAll('.trx-row').forEach(function(row) {
+        if (row.querySelector('label') && row.querySelector('label').innerText.includes('Kode Unik')) {
+            row.querySelector('span').innerText = kodeUnik;
+        }
+    });
+    // Total pembayaran = total donasi + kode unik
+    document.getElementById('totalPembayaran').innerText = 'Rp ' + (total + kodeUnik).toLocaleString('id-ID');
+}
+</script>
 </html>
