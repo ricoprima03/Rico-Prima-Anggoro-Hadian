@@ -211,6 +211,9 @@
     }
 </style>
 
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 <body>
 
@@ -364,11 +367,19 @@ document.getElementById('btnSelanjutnya').onclick = async function() {
     const alamat = document.getElementById('alamatQurban').value;
     const harga = hargaVarian;
     if (jenis_qurban === 'Pilih varian qurban') {
-        alert('Pilih varian qurban terlebih dahulu!');
+        Swal.fire({
+            icon: 'warning',
+            title: 'Pilih varian qurban terlebih dahulu!',
+            confirmButtonColor: '#ff9900'
+        });
         return;
     }
     if (!nama || !email || !alamat) {
-        alert('Mohon lengkapi semua data!');
+        Swal.fire({
+            icon: 'warning',
+            title: 'Mohon lengkapi semua data!',
+            confirmButtonColor: '#ff9900'
+        });
         return;
     }
     const res = await fetch('/api/qurban', {
@@ -380,10 +391,18 @@ document.getElementById('btnSelanjutnya').onclick = async function() {
     });
     const data = await res.json();
     if (data.success) {
-        alert('Data berhasil disimpan!');
+        await Swal.fire({
+            icon: 'success',
+            title: 'Data berhasil disimpan!',
+            confirmButtonColor: '#ff9900'
+        });
         window.location.href = '/invoice';
     } else {
-        alert('Gagal menyimpan data!');
+        Swal.fire({
+            icon: 'error',
+            title: 'Gagal menyimpan data!',
+            confirmButtonColor: '#ff9900'
+        });
     }
 };
 </script>
