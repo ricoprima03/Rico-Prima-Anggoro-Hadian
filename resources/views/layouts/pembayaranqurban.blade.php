@@ -211,6 +211,9 @@
     }
 </style>
 
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 <body>
 
@@ -248,77 +251,75 @@
 <!-- PAGE WRAPPER -->
 <div class="page-wrapper">
 
-    <div class="form-header">
-        <i>&larr;</i>
-        Lengkapi Data Berikut
-    </div>
 
-    <!-- Pilih Varian -->
-    <label>Pilih Varian</label>
-
-    <div class="select-box form-field" onclick="toggleDropdown()">
-        <span id="selectedVarian">Pilih varian qurban</span>
-        <i>&#9662;</i>
-    </div>
-
-    <!-- Dropdown List -->
-    <div id="dropdownVarian" style="
-        display:none;
-        border:1px solid #ddd;
-        border-radius:8px;
-        margin-top:4px;
-        overflow:hidden;
-    ">
-        <div onclick="chooseVarian('Rendangmu Sapi')" class="dropdown-item" style="padding:12px; cursor:pointer; border-bottom:1px solid #eee;">
-            Rendangmu Sapi
+    <form id="formQurban">
+        <div class="form-header">
+            <i>&larr;</i>
+            Lengkapi Data Berikut
         </div>
 
-        <div onclick="chooseVarian('Rendangmu Sapi 1/7')" class="dropdown-item" style="padding:12px; cursor:pointer;">
-            Rendangmu Sapi 1/7
+        <!-- Pilih Varian -->
+        <label>Pilih Varian</label>
+        <div class="select-box form-field" onclick="toggleDropdown()">
+            <span id="selectedVarian">Pilih varian qurban</span>
+            <i>&#9662;</i>
         </div>
-    </div>
-
-    <!-- Jumlah Hewan -->
-    <label style="margin-top:18px;">Jumlah Hewan</label>
-    <div class="counter form-field">
-        <input type="number" value="1" class="form-field">
-        <button>-</button>
-        <button>+</button>
-    </div>
-
-    <!-- Nama -->
-    <label style="margin-top:18px;">Qurban Atas Nama</label>
-    <input class="input-box form-field" placeholder="Contoh : Iqbal Muhammad Farisi">
-    <div class="error">Dapat di isi hingga nama</div>
-
-    <!-- Hak -->
-    <label style="margin-top:18px;">Hak Pequrban</label>
-    <div class="radio-group">
-        <label class="radio-item">
-            <input type="radio" name="hak" checked>
-            Sedekahkan Hak saya
-        </label>
-
-        <label class="radio-item">
-            <input type="radio" name="hak">
-            Kirimkan Hak saya
-        </label>
-    </div>
-
-    <!-- Alert -->
-    <div class="alert">
-        <i>👤</i>
-        <div>
-            <b>Anda Pequrban Istimewa!</b>
-            16% Pequrban Rendangmu Sebelumnya Telah Mendonasikan Hak Qurbannya – dan Kali Ini, Anda Salah Satunya!
+        <div id="dropdownVarian" style="display:none; border:1px solid #ddd; border-radius:8px; margin-top:4px; overflow:hidden;">
+            <div onclick="chooseVarian('Rendangmu Sapi', 21000000)" class="dropdown-item" style="padding:12px; cursor:pointer; border-bottom:1px solid #eee;">Rendangmu Sapi</div>
+            <div onclick="chooseVarian('Rendangmu Sapi 1/7', 3000000)" class="dropdown-item" style="padding:12px; cursor:pointer;">Rendangmu Sapi 1/7</div>
         </div>
-    </div>
+
+        <!-- Jumlah Hewan -->
+        <label style="margin-top:18px;">Jumlah Hewan</label>
+        <div class="counter form-field">
+            <input id="jumlahHewan" type="number" value="1" min="1" class="form-field" onchange="updateTotalHarga()" oninput="updateTotalHarga()">
+        </div>
+
+        <!-- Nama -->
+        <label style="margin-top:18px;">Qurban Atas Nama</label>
+        <input id="namaQurban" class="input-box form-field" placeholder="Contoh : Iqbal Muhammad Farisi" required>
+        <div class="error">Dapat di isi hingga nama</div>
+
+        <!-- Email -->
+        <label style="margin-top:18px;">Email</label>
+        <input id="emailQurban" class="input-box form-field" placeholder="Email" type="email" required>
+
+        <!-- Alamat -->
+        <label style="margin-top:18px;">Alamat</label>
+        <input id="alamatQurban" class="input-box form-field" placeholder="Alamat lengkap" required>
+
+
+
+        <!-- Hak -->
+        <label style="margin-top:18px;">Hak Pequrban</label>
+        <div class="radio-group">
+            <label class="radio-item">
+                <input type="radio" name="hak" checked>
+                Sedekahkan Hak saya
+            </label>
+            <label class="radio-item">
+                <input type="radio" name="hak">
+                Kirimkan Hak saya
+            </label>
+        </div>
+
+        <!-- Alert -->
+        <div class="alert">
+            <i>👤</i>
+            <div>
+                <b>Anda Pequrban Istimewa!</b>
+                16% Pequrban Rendangmu Sebelumnya Telah Mendonasikan Hak Qurbannya – dan Kali Ini, Anda Salah Satunya!
+            </div>
+        </div>
+
+        <!-- Tombol Simpan Data dihapus, aksi simpan dipindah ke tombol Selanjutnya di bawah -->
+    </form>
 
 </div>
 
 <!-- FOOTER -->
 <div class="footer">
-    <div class="price">
+    <div class="price" id="totalHargaBox">
         Total<br>Rp,-
     </div>
 
@@ -326,21 +327,91 @@
         Tambah ke 🛒 <span>0</span>
     </div>
 
-    <a href="{{ url('/invoice') }}" class="btn-next">Selanjutnya</a>
+    <button type="button" class="btn-next" id="btnSelanjutnya">Selanjutnya</button>
 </div>
 
 
-<!-- SCRIPT DROPDOWN -->
+
+<!-- SCRIPT DROPDOWN & FORM -->
 <script>
+let hargaVarian = 0;
+
 function toggleDropdown() {
     let dd = document.getElementById("dropdownVarian");
     dd.style.display = dd.style.display === "none" ? "block" : "none";
 }
 
-function chooseVarian(name) {
+function chooseVarian(name, harga) {
     document.getElementById("selectedVarian").innerText = name;
     document.getElementById("dropdownVarian").style.display = "none";
+    hargaVarian = harga;
+    updateTotalHarga();
 }
+
+function updateTotalHarga() {
+    const jumlah = parseInt(document.getElementById('jumlahHewan').value) || 1;
+    let total = hargaVarian * jumlah;
+    let totalBox = document.getElementById('totalHargaBox');
+    if (hargaVarian > 0) {
+        totalBox.innerHTML = 'Total<br>Rp ' + total.toLocaleString('id-ID');
+    } else {
+        totalBox.innerHTML = 'Total<br>Rp -';
+    }
+}
+
+document.getElementById('btnSelanjutnya').onclick = async function() {
+    const nama = document.getElementById('namaQurban').value;
+    const email = document.getElementById('emailQurban').value;
+    const jenis_qurban = document.getElementById('selectedVarian').innerText;
+    const jumlah_hewan = document.getElementById('jumlahHewan').value;
+    const alamat = document.getElementById('alamatQurban').value;
+    const harga = hargaVarian;
+    if (jenis_qurban === 'Pilih varian qurban') {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Pilih varian qurban terlebih dahulu!',
+            confirmButtonColor: '#ff9900'
+        });
+        return;
+    }
+    if (!nama || !email || !alamat) {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Mohon lengkapi semua data!',
+            confirmButtonColor: '#ff9900'
+        });
+        return;
+    }
+    const res = await fetch('/api/qurban', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+            nama, email, jenis_qurban, jumlah_hewan, alamat, harga
+        })
+    });
+    const data = await res.json();
+    if (data.success) {
+        // Simpan data ke sessionStorage untuk invoice
+        // Buat nomor invoice konsisten dan simpan ke session
+        let nomor_invoice = '#INV' + Date.now();
+        sessionStorage.setItem('nomor_invoice', nomor_invoice);
+        sessionStorage.setItem('dataQurban', JSON.stringify({
+            nama, email, jenis_qurban, jumlah_hewan, alamat, harga, nomor_invoice
+        }));
+        await Swal.fire({
+            icon: 'success',
+            title: 'Data berhasil disimpan!',
+            confirmButtonColor: '#ff9900'
+        });
+        window.location.href = '/invoice';
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Gagal menyimpan data!',
+            confirmButtonColor: '#ff9900'
+        });
+    }
+};
 </script>
 
 </body>
