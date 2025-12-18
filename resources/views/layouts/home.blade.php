@@ -307,10 +307,107 @@ document.addEventListener("click",e=>{
 });
 </script>
 
-<!-- Banner Qurban -->
-<div style="width: 100%; display: flex; justify-content: center; margin-top: 24px;">
-	<img src="/qurban-banner.jpeg" alt="Qurban Banner" style="max-width: 1000px; width: 100%; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);">
+<!-- ===== BANNER QURBAN SLIDER ===== -->
+<div class="banner-slider">
+    <div class="banner-track">
+        <img src="/qurban-banner.jpeg" alt="Qurban Banner 1">
+        <img src="/Rendangmu.jpeg" alt="Qurban Banner 2">
+        <img src="/Rendangmu_baner.jpg" alt="Qurban Banner 3">
+    </div>
+
+    <button class="slide-btn prev">‹</button>
+    <button class="slide-btn next">›</button>
 </div>
+
+<style>
+/* ===== SLIDER STYLE ===== */
+.banner-slider {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    margin: 24px auto;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.banner-track {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+
+.banner-track img {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 16px;
+}
+
+/* BUTTON NAVIGATION */
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 153, 0, 0.85);
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    padding: 6px 14px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.slide-btn.prev {
+    left: 12px;
+}
+
+.slide-btn.next {
+    right: 12px;
+}
+
+.slide-btn:hover {
+    background: #ff9900;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .slide-btn {
+        font-size: 22px;
+        padding: 4px 12px;
+    }
+}
+</style>
+
+<script>
+/* ===== SLIDER SCRIPT ===== */
+const track = document.querySelector('.banner-track');
+const slides = document.querySelectorAll('.banner-track img');
+const nextBtn = document.querySelector('.next');
+const prevBtn = document.querySelector('.prev');
+
+let index = 0;
+
+function updateSlide() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+}
+
+nextBtn.addEventListener('click', () => {
+    index = (index + 1) % slides.length;
+    updateSlide();
+});
+
+prevBtn.addEventListener('click', () => {
+    index = (index - 1 + slides.length) % slides.length;
+    updateSlide();
+});
+
+/* AUTO SLIDE KE KANAN */
+setInterval(() => {
+    index = (index + 1) % slides.length;
+    updateSlide();
+}, 4000);
+</script>
+
 
 <!-- Info Rendangmu -->
 <div style="
