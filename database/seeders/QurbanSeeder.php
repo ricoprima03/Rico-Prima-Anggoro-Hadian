@@ -15,6 +15,7 @@ class QurbanSeeder extends Seeder
             'jenis_qurban' => 'Rendangmu Sapi',
             'jumlah_hewan' => 1,
             'alamat' => 'Jl. Malioboro, Yogyakarta',
+            'harga' => 2500000,
             'status_pembayaran' => 'Lunas',
         ]);
     }

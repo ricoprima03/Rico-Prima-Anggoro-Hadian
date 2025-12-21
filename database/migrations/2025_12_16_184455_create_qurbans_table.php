@@ -19,6 +19,7 @@ return new class extends Migration
             $table->integer('jumlah_hewan');
             $table->text('alamat');
             $table->bigInteger('harga');
+            $table->string('status_pembayaran')->nullable();
             $table->timestamps();
         });
     }
